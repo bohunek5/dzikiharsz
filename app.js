@@ -1,11 +1,12 @@
-import { initShell } from './js/shell.js';
+import { initContactMap } from './js/contact-map.js?v=20261023-culinary';
+import { initShell } from './js/shell.js?v=20261023-culinary';
 import { initStorefront } from './js/storefront.js';
-import { initCinema } from './js/cinema.js';
+import { initCinema } from './js/cinema.js?v=20261023-culinary';
 import { initI18n } from './js/i18n.js';
-import { initJourney } from './js/journey.js';
-import { initFooterFilm } from './js/footer-film.js?v=20261023-black-footer';
+import { initJourney } from './js/journey.js?v=20261023-culinary';
+import { initFooterFilm } from './js/footer-film.js?v=20261023-culinary';
 import { initAvailability } from './js/availability.js';
-import { initPierogiOffer } from './js/pierogi-offer.js';
+import { initPierogiOffer } from './js/pierogi-offer.js?v=20261023-culinary';
 
 initShell();
 await initStorefront();
@@ -15,5 +16,6 @@ await initI18n();
 await initAvailability();
 await initPierogiOffer();
 initFooterFilm();
+initContactMap();
 await document.fonts.ready;
 window.__ready = true;

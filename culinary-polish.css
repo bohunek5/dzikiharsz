@@ -1,0 +1,72 @@
+/* Culinary light, neutral shadows and lightweight rendered delivery miniatures.
+   Existing fonts, text sizes and hero layout are intentionally preserved. */
+.hero{background:#000}
+.hero .hero-shade{
+  background:
+    linear-gradient(180deg,#000 0%,#000b 10%,#0001 29%,#0000 48%,#0006 65%,#000e 83%,#000 100%),
+    linear-gradient(90deg,#0004,#0000 75%);
+}
+body:not(.inner-page) .site-header:not(.is-scrolled):not(.menu-open){background:linear-gradient(#000e,#0007 75%,#0000);border-bottom-color:#ffffff1a}
+.hero-content h1{text-shadow:0 2px 2px #0006,0 6px 24px #0008}
+.hero-content>p,.hero-content>.eyebrow{text-shadow:0 2px 9px #000c}
+.shipping-journey{text-shadow:0 2px 7px #0008}
+.hero-content>.button{text-shadow:none;box-shadow:0 8px 26px #0003}
+.notice-strip,html[data-theme=dark] .notice-strip{background:#000;color:#e8ddca}
+.intro,html[data-theme=dark] .intro{background:linear-gradient(180deg,#000 0%,#0e0d0b 48%,#000 100%);color:#f6efe2}
+.intro-heading h2 em,html[data-theme=dark] .intro-heading h2 em{color:#e0d2bb}
+.intro .intro-copy,html[data-theme=dark] .intro .intro-copy{color:#c3beb3}
+.intro .intro-copy p:first-child,html[data-theme=dark] .intro .intro-copy p:first-child{color:#eee5d7}
+.pierogi-offer+.place .place-shade{background:linear-gradient(180deg,#000 0%,#0008 10%,#0000 30%),linear-gradient(90deg,#0009,#0001 85%),linear-gradient(0deg,#0006,#0000 45%)}
+.journey-icon img{display:block;width:100%;height:100%;object-fit:contain;object-position:left center;filter:drop-shadow(0 5px 7px #0005)}
+.journey-step.is-current .journey-icon img{animation:journey-miniature-lift 2.6s ease-in-out infinite}
+.journey-still .journey-icon img{animation-play-state:paused}
+@keyframes journey-miniature-lift{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.journey-toggle{
+  display:inline-grid;
+  place-items:center;
+  width:40px;
+  height:40px;
+  min-width:40px;
+  min-height:40px;
+  padding:0;
+  border:1px solid #ffffff45;
+  border-radius:50%;
+  color:#f5ead9;
+  background:#0003;
+  text-decoration:none;
+  text-shadow:none;
+}
+.journey-toggle:hover{background:#ffffff12;border-color:#ffffff9c}
+.journey-toggle:focus-visible{outline:2px solid #efd0a0;outline-offset:4px}
+.journey-toggle svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round}
+.journey-toggle .journey-play{display:none;fill:currentColor;stroke:none}
+.journey-toggle[aria-pressed=true] .journey-pause{display:none}
+.journey-toggle[aria-pressed=true] .journey-play{display:block}
+
+/* The shop banner stays black in both themes. */
+.shop-hero,html[data-theme=dark] .shop-hero{background:#000}
+.shop-hero-photo::after,html[data-theme=dark] .shop-hero-photo::after{background:linear-gradient(90deg,#000,transparent 35%)}
+.shop-hero h1{text-shadow:0 3px 16px #0006}
+.shop-hero p,.shop-hero .breadcrumbs{color:#eee5d8}
+
+/* About and contact use the same warm paper and charcoal as the catalog. */
+.inner-page .page-heading{background:var(--cream);color:var(--ink)}
+.story-row,.contact-channels,.contact-visit,.page-cta{background:var(--paper);color:var(--ink)}
+.story-row.reverse,.place-cards,.contact-notes{background:var(--surface);color:var(--ink)}
+.story-copy p,.place-cards p,.contact-notes p,.contact-channels p,.contact-visit p{color:var(--muted)}
+.story-image,.about-cover{border-radius:6px;overflow:hidden}
+.story-image img,.about-cover img{filter:none}
+.contact-visit address{color:var(--ink)}
+html[data-theme=dark] .inner-page .page-heading{background:#171715}
+html[data-theme=dark] :is(.story-row,.contact-channels,.contact-visit,.page-cta){background:#111110}
+html[data-theme=dark] :is(.story-row.reverse,.place-cards,.contact-notes){background:#1b1b18}
+
+@media(max-width:760px){
+  .hero .hero-shade{background:linear-gradient(180deg,#000 0%,#0008 12%,#0000 28%,#0001 43%,#000b 64%,#000f 82%,#000 100%)}
+  .shop-hero-photo::after,html[data-theme=dark] .shop-hero-photo::after{background:linear-gradient(90deg,#000,#0004 90%),linear-gradient(0deg,#000,transparent 85%)}
+  .journey-toggle{width:44px;height:44px;min-width:44px;min-height:44px}
+}
+@media(prefers-reduced-motion:reduce){
+  .journey-step.is-current .journey-icon img{animation:none}
+  .journey-toggle{display:none}
+}

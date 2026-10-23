@@ -1,0 +1,105 @@
+/* Quiet photo mounts, with the existing unmodified Dziki Harsz wheel.
+   Load after the shared/shop styles. No typography or catalog changes. */
+:root{
+  --photo-mat:#f4eee2;
+  --photo-edge:#ad89565c;
+  --photo-inner:#fff5dfb3;
+  --photo-radius:6px;
+}
+
+.product-photo,
+.delivery-photo{
+  border:1px solid var(--photo-edge);
+  border-radius:var(--photo-radius);
+  box-shadow:0 3px 12px #3229170a;
+  isolation:isolate;
+}
+.product-photo::after,
+.delivery-photo::after{
+  content:"";
+  position:absolute;
+  inset:5px;
+  border:1px solid var(--photo-inner);
+  border-radius:2px;
+  pointer-events:none;
+  z-index:1;
+}
+.product-photo::before,
+.delivery-photo::before,
+.detail-visual::before{
+  content:"";
+  position:absolute;
+  width:26px;
+  height:26px;
+  left:9px;
+  bottom:9px;
+  border:1px solid #a57b405c;
+  border-radius:50%;
+  background:var(--photo-mat) url('assets/logo-wheel.svg') center/18px 18px no-repeat;
+  box-shadow:0 1px 4px #20170812;
+  pointer-events:none;
+  z-index:2;
+}
+.product-photo-wrap>.quick-view{z-index:3}
+.product-photo:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.product-badge{z-index:3}
+
+.detail-visual{position:relative;border-radius:var(--photo-radius)}
+.detail-main-image{
+  border:1px solid var(--photo-edge);
+  padding:5px;
+  background:var(--photo-mat);
+  border-radius:var(--photo-radius);
+}
+.detail-visual::before{top:13px;bottom:auto;left:13px;width:30px;height:30px;background-size:21px 21px}
+.detail-thumbnails{border-radius:0 0 var(--photo-radius) var(--photo-radius)}
+.detail-thumbnails button{border-radius:3px;overflow:hidden}
+.detail-thumbnails button[aria-pressed=true]{border-color:var(--accent)}
+.delivery-photo::before{top:13px;bottom:auto;left:13px;width:30px;height:30px;background-size:21px 21px}
+.delivery-photo .photo-caption{z-index:2}
+.related-card img{border:1px solid var(--photo-edge);padding:3px;background:var(--photo-mat);border-radius:5px}
+
+/* Matte charcoal replaces the blue night surfaces. The original daytime
+   brand palette and the main photographic hero keep their own colors. */
+html[data-theme=dark],
+html[data-theme=dark] .shop-page{
+  --paper:#111110;
+  --cream:#171715;
+  --surface:#1b1b18;
+  --ink:#f2eee5;
+  --muted:#bfbcb2;
+  --line:#383830;
+  --accent:#d9b681;
+  --photo-mat:#e9ddc5;
+  --photo-edge:#c9a77266;
+  --photo-inner:#f7e2b982;
+}
+html[data-theme=dark],
+html[data-theme=dark] body{background:#111110}
+html[data-theme=dark] .shop-hero{background:#111110}
+html[data-theme=dark] .shop-hero-photo::after{background:linear-gradient(90deg,#111110,transparent 32%)}
+html[data-theme=dark] .shop-hero p,
+html[data-theme=dark] .shop-hero .breadcrumbs{color:#d7d2c7}
+html[data-theme=dark] .shop-availability,
+html[data-theme=dark] .product-availability,
+html[data-theme=dark] .detail-visual{background:#1b1b18}
+html[data-theme=dark] .shop-page .add-button{background:#dfbf8c;border-color:#dfbf8c;color:#171714}
+html[data-theme=dark] .shop-page .add-button:hover{background:#ecd2a8;border-color:#ecd2a8}
+html[data-theme=dark] .notice-strip,
+html[data-theme=dark] .delivery{background:#1b1b18;color:var(--ink)}
+html[data-theme=dark] .delivery-content>p,
+html[data-theme=dark] .delivery-steps p,
+html[data-theme=dark] .delivery-steps li>span{color:var(--muted)}
+html[data-theme=dark] .intro{background:linear-gradient(0deg,#000,transparent 32%),#111110}
+html[data-theme=dark] .intro .intro-copy,
+html[data-theme=dark] .intro-heading h2 em{color:#d1cabe}
+html[data-theme=dark] .intro .intro-copy p:first-child{color:#eee7db}
+html[data-theme=dark] .toast{background:#e9d3af;color:#191916}
+html[data-theme=dark] .dialog-status{background:#e9d3af!important;color:#191916!important}
+html[data-theme=dark] dialog::backdrop{background:#000b}
+
+@media(max-width:760px){
+  .product-photo::after{inset:4px}
+  .product-photo::before{width:22px;height:22px;left:8px;bottom:8px;background-size:15px 15px}
+  html[data-theme=dark] .shop-hero-photo::after{background:linear-gradient(90deg,#111110,#11111070 80%),linear-gradient(0deg,#111110,transparent 75%)}
+}

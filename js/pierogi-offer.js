@@ -1,41 +1,49 @@
 import {getLanguage} from './i18n.js';
 
 export const offerFlavours = [
-  ['sandacz', 'pierogi-z-sandaczem-6', 'assets/process-pierog-split.webp'],
-  ['kaczka', 'pierogi-z-kaczka-17', 'assets/offer-kaczka.webp'],
-  ['ruskie', 'pierogi-ruskie-12', 'assets/offer-ruskie.webp'],
-  ['kapusta', 'pierogi-z-kapusta-i-grzybami-16', 'assets/offer-kapusta.webp'],
+  ['sandacz', 'pierogi-z-sandaczem-6', 'assets/offer-boiled-sandacz.webp', 'assets/pierog-boiled-whole.webp'],
+  ['kaczka', 'pierogi-z-kaczka-17', 'assets/offer-boiled-kaczka.webp', 'assets/pierog-boiled-whole.webp'],
+  ['ruskie', 'pierogi-ruskie-12', 'assets/offer-boiled-ruskie.webp', 'assets/pierog-boiled-whole.webp'],
+  ['kapusta', 'pierogi-z-kapusta-i-grzybami-16', 'assets/offer-boiled-kapusta.webp', 'assets/pierog-boiled-whole.webp'],
   ['mietus', 'pierogi-z-mietusem-8', 'assets/process-pierog-split.webp'],
   ['szczupak', 'pierogi-ze-szczupakiem-19', 'assets/process-pierog-split.webp'],
   ['mieso', 'pierogi-z-miesem-13', 'assets/offer-mieso.webp'],
   ['twarog', 'pierogi-z-twarogiem-11', 'assets/offer-twarog.webp']
 ];
+export const offerDishes = [
+  ...offerFlavours.map(([kind, slug, image, whole = 'assets/process-pierog-whole.webp']) => ({kind, slug, image, whole, type:'pierog'})),
+  {kind:'uszka', slug:'uszka-z-grzybami-18', image:'assets/offer-uszka.webp', type:'dish'},
+  {kind:'pasztet', slug:'pasztet-15', image:'assets/offer-pasztet.webp', type:'dish'},
+  {kind:'smalec', slug:'smalec-14', image:'assets/offer-smalec.webp', type:'dish'}
+];
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-/** Shared with the static build: all eight links and fillings exist without JavaScript. */
+/** Shared with the static build: all eleven food links exist without JavaScript. */
 export function offerMarkup(products, copy) {
   return `<div class="offer-heading"><p class="offer-kicker" data-offer-copy="intro">${escape(copy.intro)}</p><h2 id="offer-title" data-offer-copy="title">${escape(copy.title)}</h2><p class="offer-hint" data-offer-copy="hint">${escape(copy.hint)}</p></div>
-  <div class="offer-grid">${offerFlavours.map(([kind, slug, image]) => {
+  <div class="offer-grid">${offerDishes.map(({kind, slug, image, whole, type}) => {
     const product = products.find(p => p.slug === slug);
     if (!product) throw new Error('Missing offer product: ' + slug);
-    return `<article class="offer-flavour" data-flavour="${kind}" data-open="false">
-      <a class="offer-visual" href="${slug}.html" aria-label="${escape(product.name)}"><span aria-hidden="true">
-        <img class="offer-whole" src="assets/process-pierog-whole.webp" width="1200" height="675" alt="" loading="lazy" decoding="async">
+    const visual = type === 'pierog' ? `<img class="offer-whole" src="${whole}" width="1200" height="675" alt="" loading="lazy" decoding="async">
         <span class="offer-half offer-half-left"><img src="${image}" width="840" height="473" alt="" loading="lazy" decoding="async"></span>
-        <span class="offer-half offer-half-right"><img src="${image}" width="840" height="473" alt="" loading="lazy" decoding="async"></span>
+        <span class="offer-half offer-half-right"><img src="${image}" width="840" height="473" alt="" loading="lazy" decoding="async"></span>`
+      : `<img class="offer-dish-image" src="${image}" width="1000" height="750" alt="" loading="lazy" decoding="async">`;
+    return `<article class="offer-flavour${type === 'dish' ? ' offer-dish' : ''}" data-flavour="${kind}" data-offer-type="${type}"${type === 'pierog' ? ' data-open="false"' : ''}>
+      <span class="offer-flour" aria-hidden="true"></span>
+      <a class="offer-visual" href="${slug}.html" aria-label="${escape(product.name)}"><span aria-hidden="true">
+        ${visual}
       </span></a>
-      <div class="offer-caption"><h3><a href="${slug}.html">${escape(product.name)}</a></h3><p data-offer-kind="${kind}">${escape(copy.kinds[kind])}</p><a class="offer-detail" href="${slug}.html"><span data-offer-copy="detail">${escape(copy.detail)}</span> <span aria-hidden="true">↗</span></a></div>
+      <div class="offer-caption"><h3><a href="${slug}.html">${escape(product.name)}</a></h3><p data-offer-kind="${kind}">${escape(copy.kinds[kind])}</p></div>
     </article>`;
   }).join('')}</div>
-  <a class="offer-uszka" href="uszka-z-grzybami-18.html"><img src="assets/uszka-z-grzybami-18.webp" width="640" height="600" loading="lazy" decoding="async" alt="Uszka z grzybami"><span data-offer-copy="uszka">${escape(copy.uszka)}</span><span aria-hidden="true">↗</span></a>
-  <div class="offer-finale"><p data-offer-copy="availability">${escape(copy.availability)}</p><a href="sklep.html" class="button button-cream"><span data-offer-copy="cta">${escape(copy.cta)}</span><span aria-hidden="true">↗</span></a><small data-offer-copy="illustration">${escape(copy.illustration)}</small></div>`;
+  <div class="offer-finale"><p data-offer-copy="availability">${escape(copy.availability)}</p><a href="sklep.html" class="button button-cream"><span data-offer-copy="cta">${escape(copy.cta)}</span><span aria-hidden="true">↗</span></a></div>`;
 }
 
 export async function initPierogiOffer() {
   const section = document.querySelector('#nasze-pierogi');
   if (!section) return;
   try {
-    const response = await fetch('data/offer-copy.json');
+    const response = await fetch('data/offer-copy.json?v=20261023-culinary');
     if (!response.ok) throw new Error(`Offer translations: HTTP ${response.status}`);
     const copy = await response.json();
     const translateOffer = () => {
@@ -60,13 +68,20 @@ export async function initPierogiOffer() {
       const visual = card.querySelector('.offer-visual');
       const rect = visual.getBoundingClientRect();
       const progress = reduced.matches ? 1 : Math.max(0, Math.min(1, (innerHeight * .87 - rect.top) / Math.max(180, innerHeight * .38)));
-      const ready = [...card.querySelectorAll('.offer-half img')].every(img => img.complete && img.naturalWidth > 0);
-      const open = (progress > .12 || card.matches(':focus-within')) && ready;
-      card.dataset.open = String(open);
+      const isPierog = card.dataset.offerType === 'pierog';
+      const ready = [...card.querySelectorAll(isPierog ? '.offer-half img' : '.offer-dish-image')].every(img => img.complete && img.naturalWidth > 0);
       const amount = Math.max(0, (progress - .12) / .88);
       const ease = amount * amount * (3 - 2 * amount);
-      visual.style.setProperty('--open-x', `${3.4 - ease * 7.4}%`);
-      visual.style.setProperty('--open-turn', `${ease * -3}deg`);
+      if (isPierog) {
+        card.dataset.open = String((progress > .12 || card.matches(':focus-within')) && ready);
+        visual.style.setProperty('--open-x', `${3.4 - ease * 7.4}%`);
+        visual.style.setProperty('--open-turn', `${ease * -3}deg`);
+      } else {
+        visual.style.setProperty('--dish-y', reduced.matches ? '0px' : `${20 - ease * 28}px`);
+        visual.style.setProperty('--dish-opacity', reduced.matches ? '1' : String(.65 + ease * .35));
+      }
+      card.style.setProperty('--flour-opacity', ready ? String(reduced.matches ? .1 : .08 + ease * .16) : '0');
+      card.style.setProperty('--flour-y', reduced.matches ? '0px' : `${(1 - ease) * 16}px`);
     }
   }
   const schedule = () => { if (!frame) frame = requestAnimationFrame(render); };

@@ -1,9 +1,28 @@
-/* The kitchen image and adjacent footer share one black background. */
-.footer-kitchen-art{position:relative;overflow:hidden;background:#000;color:#f7f1e7;padding:0 var(--gutter)}
-.footer-kitchen-figure{position:relative;max-width:1100px;margin:0 auto;isolation:isolate}
-.footer-kitchen-figure:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#000,transparent 9%,transparent 91%,#000),linear-gradient(0deg,#000,transparent 20%,transparent 90%,#000)}
-.footer-kitchen-figure img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain}
-.footer-kitchen-figure figcaption{position:absolute;z-index:1;bottom:14px;left:4%;right:4%;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:12px;line-height:1.5;letter-spacing:.03em}
-.footer-kitchen-figure small{font-size:10px;color:#c0d0d5}
-.footer-kitchen-art+.footer{background:#000;border-top:0;padding-top:34px}
-@media(max-width:760px){.footer-kitchen-art{padding:0}.footer-kitchen-figure img{aspect-ratio:1.46;object-fit:cover;object-position:50% 50%}.footer-kitchen-figure:after{background:linear-gradient(0deg,#000,transparent 28%,transparent 90%,#000)}.footer-kitchen-figure figcaption{left:var(--gutter);right:var(--gutter);bottom:10px;font-size:11px}.footer-kitchen-figure small{font-size:9px}.footer-kitchen-art+.footer{padding-top:28px}}
+/* A small central kitchen scene leads into the invitation and contact details. */
+.footer{--footer-surface:#f8f7f2;--footer-ink:#123642;--footer-muted:#52666b;--footer-line:#12364224;background:var(--footer-surface);color:var(--footer-ink);border-top:0;padding:32px var(--gutter) 18px}
+html[data-theme="dark"] .footer{--footer-surface:#111110;--footer-ink:#f3f0e7;--footer-muted:#b9c0bb;--footer-line:#f3f0e726}
+.footer .footer-top{display:flex;flex-direction:column;align-items:center;gap:22px;max-width:1360px;margin:0 auto;padding-bottom:26px;text-align:center}
+.footer-summary{width:100%;min-width:0;max-width:800px}
+.footer-message{min-width:0}
+.footer .footer-slogan{margin:0 0 17px;font-family:var(--serif);font-size:clamp(26px,2.7vw,36px);font-weight:400;line-height:1.25;letter-spacing:-.018em;text-wrap:balance}
+.footer .footer-slogan em{display:block;margin-top:8px;font-family:var(--sans);font-size:16px;line-height:1.5;letter-spacing:0;color:var(--footer-muted);font-style:normal}
+.footer .footer-contact{display:flex;flex-wrap:wrap;flex-direction:row;justify-content:center;align-items:center;gap:0 25px;width:auto;margin:0;font-family:var(--sans);font-size:13px;line-height:1.5;color:var(--footer-ink)}
+.footer .footer-contact a{display:inline-flex;align-items:center;min-height:44px;max-width:100%;overflow-wrap:anywhere;color:inherit}
+.footer .footer-contact .footer-phone{gap:10px;margin:0;font-family:var(--serif);font-size:19px;line-height:1.25;letter-spacing:.01em;white-space:nowrap}
+.footer .footer-phone span{margin-left:0;font-family:var(--sans);font-size:16px;color:var(--footer-muted)}
+.footer .footer-contact>span{font-size:13px;line-height:1.5;color:var(--footer-muted)}
+.footer .footer-contact a:hover{text-decoration:underline;text-underline-offset:4px}
+.footer .footer-contact a:focus-visible,.footer .footer-links a:focus-visible,.footer .footer-links button:focus-visible,.footer .footer-brand:focus-visible{outline:2px solid currentColor;outline-offset:4px;border-radius:2px}
+.footer .footer-kitchen-art{position:relative;min-width:0;width:100%;max-width:640px;margin:0 auto;overflow:hidden;background:transparent;color:inherit;padding:0}
+.footer-kitchen-figure{position:relative;width:100%;margin:0;isolation:isolate}
+.footer-kitchen-figure>img{display:block;width:100%;height:auto;aspect-ratio:1200/676;object-fit:contain;filter:url(#footer-knead-filter);mask-image:linear-gradient(0deg,transparent,#000 7%,#000 96%,transparent);-webkit-mask-image:linear-gradient(0deg,transparent,#000 7%,#000 96%,transparent)}
+.footer-flour-filter{position:absolute;pointer-events:none}
+.footer .footer-flour-logo{position:absolute;z-index:1;left:var(--flour-x,48.5%);top:var(--flour-y,47.3%);display:block;width:25%;aspect-ratio:450/357.6;transform:translate(-50%,-50%);pointer-events:none}
+.footer .footer-flour-logo img{display:block;position:absolute;left:0;width:100%;height:auto;max-width:none;aspect-ratio:auto;object-fit:contain;filter:url(#footer-flour-grain);mask-image:none;-webkit-mask-image:none;pointer-events:none}
+.footer-kitchen-figure:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,var(--footer-surface),transparent 4%,transparent 96%,var(--footer-surface))}
+.footer .footer-links{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 24px;max-width:1360px;margin:0 auto;padding-top:12px;border-top:1px solid var(--footer-line);font-family:var(--sans);font-size:11px;line-height:1.5;color:var(--footer-muted)}
+.footer .footer-links nav{display:flex;flex-wrap:wrap;align-items:center;gap:0 20px}
+.footer .footer-links a,.footer .footer-links button{display:inline-flex;align-items:center;min-height:44px;color:inherit;font-size:11px}
+.footer .footer-links a:hover,.footer .footer-links button:hover{color:var(--footer-ink)}
+@media(max-width:760px){.footer{padding:26px var(--gutter) 16px}.footer .footer-top{gap:20px;padding-bottom:22px}.footer .footer-slogan{max-width:24ch;margin:0 auto 16px;font-size:28px}.footer .footer-slogan em{font-size:15px}.footer .footer-contact{flex-direction:column;gap:0;width:auto}.footer .footer-contact .footer-phone{font-size:19px}.footer .footer-links{gap:6px 18px;padding-top:12px}.footer .footer-links nav{order:3;width:100%;justify-content:center;gap:0 18px}.footer .footer-links>a{margin-left:auto}}
+@media(prefers-reduced-motion:reduce){.footer-kitchen-figure,.footer-kitchen-figure img{animation:none;transition:none}.footer-kitchen-figure>img{filter:none}}

@@ -1,100 +1,142 @@
 {
   "pl": {
-    "title": "Nasze pierogi",
-    "intro": "Co kryją w środku?",
-    "hint": "Przewiń i poznaj farsze.",
+    "title": "Z naszej kuchni",
+    "intro": "Pierogi, uszka i coś do chleba.",
+    "hint": "Przewiń i znajdź swój smak.",
     "cta": "Przejdź do sklepu",
-    "detail": "Poznaj ten smak",
-    "illustration": "Ilustracje farszów. Zdjęcia produktów znajdziesz w sklepie.",
     "availability": "Pierogi i uszka od 5 listopada",
-    "uszka": "A do barszczu — uszka z grzybami.",
     "kinds": {
-      "sandacz": "Sandacz", "kaczka": "Kaczka", "ruskie": "Ziemniaki i twaróg", "kapusta": "Kapusta i grzyby",
-      "mietus": "Miętus", "szczupak": "Szczupak", "mieso": "Mięso", "twarog": "Twaróg na słodko"
+      "sandacz": "Sandacz",
+      "kaczka": "Kaczka",
+      "ruskie": "Ziemniaki i twaróg",
+      "kapusta": "Kapusta i grzyby",
+      "mietus": "Miętus",
+      "szczupak": "Szczupak",
+      "mieso": "Mięso",
+      "twarog": "Twaróg na słodko",
+      "uszka": "Grzybowy farsz",
+      "pasztet": "Z dodatkiem drobiu",
+      "smalec": "Do chleba"
     }
   },
   "en": {
-    "title": "Our pierogi",
-    "intro": "What’s inside?",
-    "hint": "Scroll to discover the fillings.",
+    "title": "From our kitchen",
+    "intro": "Pierogi, uszka and something for your bread.",
+    "hint": "Scroll to find your favourite.",
     "cta": "Visit the shop",
-    "detail": "Discover this flavour",
-    "illustration": "Filling illustrations. Product photos are in the shop.",
     "availability": "Pierogi and uszka from 5 November",
-    "uszka": "And for borscht — mushroom uszka.",
     "kinds": {
-      "sandacz": "Zander", "kaczka": "Duck", "ruskie": "Potato and curd cheese", "kapusta": "Cabbage and mushrooms",
-      "mietus": "Burbot", "szczupak": "Pike", "mieso": "Meat", "twarog": "Sweet curd cheese"
+      "sandacz": "Zander",
+      "kaczka": "Duck",
+      "ruskie": "Potato and curd cheese",
+      "kapusta": "Cabbage and mushrooms",
+      "mietus": "Burbot",
+      "szczupak": "Pike",
+      "mieso": "Meat",
+      "twarog": "Sweet curd cheese",
+      "uszka": "Mushroom filling",
+      "pasztet": "With poultry",
+      "smalec": "For your bread"
     }
   },
   "de": {
-    "title": "Unsere Pierogi",
-    "intro": "Was steckt drin?",
-    "hint": "Scrolle weiter und entdecke die Füllungen.",
+    "title": "Aus unserer Küche",
+    "intro": "Pierogi, Uszka und etwas fürs Brot.",
+    "hint": "Scrolle weiter und finde deinen Favoriten.",
     "cta": "Zum Shop",
-    "detail": "Diesen Geschmack entdecken",
-    "illustration": "Illustrationen der Füllungen. Produktfotos findest du im Shop.",
     "availability": "Pierogi und Uszka ab 5. November",
-    "uszka": "Und zum Borschtsch — Uszka mit Pilzen.",
     "kinds": {
-      "sandacz": "Zander", "kaczka": "Ente", "ruskie": "Kartoffeln und Quark", "kapusta": "Kohl und Pilze",
-      "mietus": "Quappe", "szczupak": "Hecht", "mieso": "Fleisch", "twarog": "Süßer Quark"
+      "sandacz": "Zander",
+      "kaczka": "Ente",
+      "ruskie": "Kartoffeln und Quark",
+      "kapusta": "Kohl und Pilze",
+      "mietus": "Quappe",
+      "szczupak": "Hecht",
+      "mieso": "Fleisch",
+      "twarog": "Süßer Quark",
+      "uszka": "Pilzfüllung",
+      "pasztet": "Mit Geflügel",
+      "smalec": "Zum Brot"
     }
   },
   "lt": {
-    "title": "Mūsų virtiniai",
-    "intro": "Kas slypi viduje?",
-    "hint": "Slinkite ir susipažinkite su įdarais.",
+    "title": "Iš mūsų virtuvės",
+    "intro": "Virtiniai, auselės ir šis tas prie duonos.",
+    "hint": "Slinkite ir atraskite savo skonį.",
     "cta": "Į parduotuvę",
-    "detail": "Atraskite šį skonį",
-    "illustration": "Įdarų iliustracijos. Produktų nuotraukas rasite parduotuvėje.",
     "availability": "Virtiniai ir auselės nuo lapkričio 5 d.",
-    "uszka": "O prie barščių — auselės su grybais.",
     "kinds": {
-      "sandacz": "Sterkas", "kaczka": "Antis", "ruskie": "Bulvės ir varškė", "kapusta": "Kopūstai ir grybai",
-      "mietus": "Vėgėlė", "szczupak": "Lydeka", "mieso": "Mėsa", "twarog": "Saldi varškė"
+      "sandacz": "Sterkas",
+      "kaczka": "Antis",
+      "ruskie": "Bulvės ir varškė",
+      "kapusta": "Kopūstai ir grybai",
+      "mietus": "Vėgėlė",
+      "szczupak": "Lydeka",
+      "mieso": "Mėsa",
+      "twarog": "Saldi varškė",
+      "uszka": "Grybų įdaras",
+      "pasztet": "Su paukštiena",
+      "smalec": "Prie duonos"
     }
   },
   "hu": {
-    "title": "Pierogijaink",
-    "intro": "Mi van bennük?",
-    "hint": "Görgess tovább, és ismerd meg a töltelékeket.",
+    "title": "A konyhánkból",
+    "intro": "Pierogi, uszka és néhány falat a kenyér mellé.",
+    "hint": "Görgess tovább, és találd meg a kedvenced.",
     "cta": "Irány a bolt",
-    "detail": "Fedezd fel ezt az ízt",
-    "illustration": "A töltelékek illusztrációi. A termékfotókat a boltban találod.",
     "availability": "Pierogi és uszka november 5-től",
-    "uszka": "A borscshoz pedig — gombás uszka.",
     "kinds": {
-      "sandacz": "Süllő", "kaczka": "Kacsa", "ruskie": "Burgonya és túró", "kapusta": "Káposzta és gomba",
-      "mietus": "Menyhal", "szczupak": "Csuka", "mieso": "Hús", "twarog": "Édes túró"
+      "sandacz": "Süllő",
+      "kaczka": "Kacsa",
+      "ruskie": "Burgonya és túró",
+      "kapusta": "Káposzta és gomba",
+      "mietus": "Menyhal",
+      "szczupak": "Csuka",
+      "mieso": "Hús",
+      "twarog": "Édes túró",
+      "uszka": "Gombás töltelék",
+      "pasztet": "Baromfihússal",
+      "smalec": "Kenyérhez"
     }
   },
   "cs": {
-    "title": "Naše pirohy",
-    "intro": "Co se skrývá uvnitř?",
-    "hint": "Posuňte stránku a poznejte náplně.",
+    "title": "Z naší kuchyně",
+    "intro": "Pirohy, ouška a něco na chleba.",
+    "hint": "Posuňte stránku a najděte svou oblíbenou chuť.",
     "cta": "Přejít do obchodu",
-    "detail": "Poznejte tuto chuť",
-    "illustration": "Ilustrace náplní. Fotografie produktů najdete v obchodě.",
     "availability": "Pirohy a ouška od 5. listopadu",
-    "uszka": "A k boršči — ouška s houbami.",
     "kinds": {
-      "sandacz": "Candát", "kaczka": "Kachna", "ruskie": "Brambory a tvaroh", "kapusta": "Zelí a houby",
-      "mietus": "Mník", "szczupak": "Štika", "mieso": "Maso", "twarog": "Sladký tvaroh"
+      "sandacz": "Candát",
+      "kaczka": "Kachna",
+      "ruskie": "Brambory a tvaroh",
+      "kapusta": "Zelí a houby",
+      "mietus": "Mník",
+      "szczupak": "Štika",
+      "mieso": "Maso",
+      "twarog": "Sladký tvaroh",
+      "uszka": "Houbová náplň",
+      "pasztet": "S drůbežím masem",
+      "smalec": "Na chleba"
     }
   },
   "sk": {
-    "title": "Naše pirohy",
-    "intro": "Čo sa skrýva vnútri?",
-    "hint": "Posuňte stránku a spoznajte náplne.",
+    "title": "Z našej kuchyne",
+    "intro": "Pirohy, ušká a niečo na chlieb.",
+    "hint": "Posuňte stránku a nájdite svoju obľúbenú chuť.",
     "cta": "Prejsť do obchodu",
-    "detail": "Spoznajte túto chuť",
-    "illustration": "Ilustrácie náplní. Fotografie produktov nájdete v obchode.",
     "availability": "Pirohy a ušká od 5. novembra",
-    "uszka": "A k boršču — ušká s hubami.",
     "kinds": {
-      "sandacz": "Zubáč", "kaczka": "Kačica", "ruskie": "Zemiaky a tvaroh", "kapusta": "Kapusta a huby",
-      "mietus": "Mieň", "szczupak": "Šťuka", "mieso": "Mäso", "twarog": "Sladký tvaroh"
+      "sandacz": "Zubáč",
+      "kaczka": "Kačica",
+      "ruskie": "Zemiaky a tvaroh",
+      "kapusta": "Kapusta a huby",
+      "mietus": "Mieň",
+      "szczupak": "Šťuka",
+      "mieso": "Mäso",
+      "twarog": "Sladký tvaroh",
+      "uszka": "Hubová náplň",
+      "pasztet": "S hydinovým mäsom",
+      "smalec": "Na chlieb"
     }
   }
 }

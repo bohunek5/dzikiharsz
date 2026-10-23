@@ -6,6 +6,7 @@ export function initCinema(){
   setupFilm($('#place-film'),$('#place-film-control'),$('#place-film-symbol'),$('#place-film-label'));
   let requested=false,last=-1;
   const section=$('#w-srodku');
+  if(section)new IntersectionObserver(([entry])=>section.classList.toggle('is-visible',entry.isIntersecting),{threshold:0}).observe(section);
   const photos=section?[...section.querySelectorAll('.process-photo')]:[];
   const captions=section?[...section.querySelectorAll('.process-caption')]:[];
   const progress=section?.querySelector('#scene-progress');

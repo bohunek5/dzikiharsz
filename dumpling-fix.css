@@ -21,7 +21,7 @@
 }
 
 .process-half {
-  background-image: url('assets/process-pierog-split.webp');
+  background-image: url('assets/offer-boiled-sandacz.webp');
   visibility: hidden;
 }
 
@@ -92,3 +92,19 @@
   .process-whole { transform: none; }
   .is-cracking .cookie-half { animation: none; }
 }
+
+/* Three narrow wisps above the hot dumpling, never a haze over the food. */
+.pierog-steam { position: absolute; left: 30%; top: 1%; width: 40%; height: 38%; pointer-events: none; opacity: 0; }
+.process-scroll[data-scene='4'] .pierog-steam,
+.process-scroll[data-scene='5'] .pierog-steam { opacity: 1; }
+.pierog-steam i { position: absolute; bottom: 0; left: 20%; width: 14%; height: 90%; border-radius: 50%; background: radial-gradient(ellipse, #fff8e02e, transparent 65%); filter: blur(6px); animation: pierog-steam-rise 4s ease-out infinite; animation-play-state: paused; }
+.pierog-steam i:nth-child(2) { left: 46%; animation-delay: -1.4s; }
+.pierog-steam i:nth-child(3) { left: 70%; animation-delay: -2.8s; }
+.process-scroll.is-visible[data-scene='4'] .pierog-steam i,
+.process-scroll.is-visible[data-scene='5'] .pierog-steam i { animation-play-state: running; }
+@keyframes pierog-steam-rise {
+  0% { transform: translateY(20%) scale(.65); opacity: 0; }
+  25% { opacity: .75; }
+  100% { transform: translate(14%, -70%) scale(1.25); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .pierog-steam { display: none; } }

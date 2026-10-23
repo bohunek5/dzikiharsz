@@ -43,7 +43,7 @@ Pierogi i uszka (9 pozycji katalogu) są oznaczone jako dostępne od 5 listopada
 
 ## Informacje o treści
 
-Polska wersja jest podstawową wersją dokumentów. Przełącznik języków zmienia treść w przeglądarce i nie tworzy osobnych adresów. Zdjęcia produktów pochodzą z materiałów Dziki Harsz; sekwencje przygotowania i rozłamywania pieroga oznaczone na stronie są ilustracjami AI, a nie dokumentacją rzeczywistej kuchni. Film otwierający jest animowanym montażem zdjęć dań.
+Polska wersja jest podstawową wersją dokumentów. Przełącznik języków zmienia treść w przeglądarce i nie tworzy osobnych adresów.
 
 - [Mapa strony](https://bohunek5.github.io/dzikiharsz/sitemap.xml): publiczne adresy przeznaczone do indeksowania.
 
