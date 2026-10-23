@@ -19,7 +19,7 @@ export function initFooterFilm() {
   section.className = 'footer-film footer-kitchen-art';
   section.dataset.noTranslate = '';
   section.dataset.visual = 'keyframe';
-  section.innerHTML = '<figure class="footer-kitchen-figure"><img src="assets/footer-kitchen-art.webp" width="1672" height="941" loading="lazy" decoding="async" alt=""><figcaption><span></span><small></small></figcaption></figure>';
+  section.innerHTML = '<figure class="footer-kitchen-figure"><img src="assets/footer-kitchen-art.webp?v=20261023-black-footer" width="1672" height="941" loading="lazy" decoding="async" alt=""><figcaption><span></span><small></small></figcaption></figure>';
   footer.before(section);
   function labels() {
     const [title, kind, alt] = COPY[getLanguage()] || COPY.pl;

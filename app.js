@@ -3,7 +3,7 @@ import { initStorefront } from './js/storefront.js';
 import { initCinema } from './js/cinema.js';
 import { initI18n } from './js/i18n.js';
 import { initJourney } from './js/journey.js';
-import { initFooterFilm } from './js/footer-film.js';
+import { initFooterFilm } from './js/footer-film.js?v=20261023-black-footer';
 import { initAvailability } from './js/availability.js';
 import { initPierogiOffer } from './js/pierogi-offer.js';
 
