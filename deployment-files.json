@@ -1,9 +1,9 @@
 {
   "format_version": 1,
-  "generated_at": "2026-10-23T18:50:10.229083+00:00",
+  "generated_at": "2026-10-23T19:08:12.301534+00:00",
   "site_url": "https://bohunek5.github.io/dzikiharsz/",
-  "payload_file_count": 116,
-  "payload_bytes": 11996397,
+  "payload_file_count": 124,
+  "payload_bytes": 12083825,
   "manifest_filename": "deployment-files.json",
   "manifest_note": "This manifest is not self-hashed. All payload files, including .nojekyll, are hashed.",
   "text_normalization": {
@@ -176,6 +176,15 @@
       ]
     },
     {
+      "path": "assets/fonts/Bree-Serif-OFL.txt",
+      "bytes": 4411,
+      "sha256": "fbe0442a6b1ce162c95e241df76cab5ef2daf6a5ac84ae1a7a6749f32c051098",
+      "included_by": [
+        "index.html: font license for assets/fonts/bree-serif-400-latin-ext.woff2",
+        "index.html: font license for assets/fonts/bree-serif-400-latin.woff2"
+      ]
+    },
+    {
       "path": "assets/fonts/DM-Sans-OFL.txt",
       "bytes": 4389,
       "sha256": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
@@ -194,11 +203,38 @@
       ]
     },
     {
+      "path": "assets/fonts/Lato-OFL.txt",
+      "bytes": 4407,
+      "sha256": "74ba064d03f1f1c4a952da936c3eb71866c34404916734de3cae73b34357e59e",
+      "included_by": [
+        "index.html: font license for assets/fonts/lato-400-latin-ext.woff2",
+        "index.html: font license for assets/fonts/lato-400-latin.woff2",
+        "index.html: font license for assets/fonts/lato-700-latin-ext.woff2",
+        "index.html: font license for assets/fonts/lato-700-latin.woff2"
+      ]
+    },
+    {
       "path": "assets/fonts/barlow-condensed-bold.ttf",
       "bytes": 87120,
       "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7",
       "included_by": [
         "refinements.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/fonts/bree-serif-400-latin-ext.woff2",
+      "bytes": 6548,
+      "sha256": "a5e11496ab839fb59550296c5b07ae8218982b968637e16efdbbfd2c255ba655",
+      "included_by": [
+        "cuisine-type.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/fonts/bree-serif-400-latin.woff2",
+      "bytes": 10348,
+      "sha256": "ca092b4130ee50797d9ba9790e5504ff66649cd7a144f2efe54147e313299e48",
+      "included_by": [
+        "cuisine-type.css: CSS url()"
       ]
     },
     {
@@ -231,6 +267,38 @@
       "sha256": "7234ed860a9cc83045413c4faee63c960a8f2d1917adcf728119307d56e0d783",
       "included_by": [
         "styles.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/fonts/lato-400-latin-ext.woff2",
+      "bytes": 5612,
+      "sha256": "8b9fc9737043f88c1a9a7195c27a239bd329cc33d928ffb67736c61ae7a1dbbd",
+      "included_by": [
+        "cuisine-type.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/fonts/lato-400-latin.woff2",
+      "bytes": 23580,
+      "sha256": "918b7dc3e2e2d015c16ce08b57bcb64d2253bafc1707658f361e72865498e537",
+      "included_by": [
+        "cuisine-type.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/fonts/lato-700-latin-ext.woff2",
+      "bytes": 5552,
+      "sha256": "3a5797f440bc67b59830cad81e59a71011e35cb45ed7f747b61a69b0a9b0d6ae",
+      "included_by": [
+        "cuisine-type.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/fonts/lato-700-latin.woff2",
+      "bytes": 23040,
+      "sha256": "c447dd7677b419db7b21dbdfc6277c7816a913ffda76fd2e52702df538de0e49",
+      "included_by": [
+        "cuisine-type.css: CSS url()"
       ]
     },
     {
@@ -899,16 +967,16 @@
     },
     {
       "path": "cinematic-flow.css",
-      "bytes": 3709,
-      "sha256": "12a1db5779e32c4ba4d5c44996d04fd62a92d9e02778f667fb7fbaad67679840",
+      "bytes": 3647,
+      "sha256": "e8f18969e636783933def1b5c54721494426b7e7368929f6012b9e97981cf98b",
       "included_by": [
         "index.html: link[href]"
       ]
     },
     {
       "path": "cookies.html",
-      "bytes": 11184,
-      "sha256": "33dde4d1b1bc248bf4435001568dedaa7e96acc3d817ec0cb3becba758673ad0",
+      "bytes": 11206,
+      "sha256": "0ea3d98a5a119b2ecef9c9d3e4047427675208156bdb3d8f40a1817f5813940b",
       "included_by": [
         "cookies.html: JSON-LD local URL",
         "cookies.html: a[href]",
@@ -923,8 +991,8 @@
     },
     {
       "path": "cuisine-type.css",
-      "bytes": 7806,
-      "sha256": "06691cda8f8378fa4eddf4733dd9ef4c11857cc1a7a24245d75e33cace5e1fc8",
+      "bytes": 11356,
+      "sha256": "93e548284e4dc331f2fb4ad02767ecc5ef2b0bf07c201e8fa4ad2e72ea2ffe01",
       "included_by": [
         "cookies.html: link[href]",
         "index.html: link[href]",
@@ -1118,8 +1186,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 45340,
-      "sha256": "edb4fb57de341a7033164e6d99aba46a7ccb15771edd310f4de5fe49e45e6c12",
+      "bytes": 45406,
+      "sha256": "3dbe0301cb098f9e56f0038b19dd0811f69e6b1c8becf94d68baef7dc150a1cf",
       "included_by": [
         "cookies.html: JSON-LD local URL",
         "cookies.html: a[href]",
@@ -1241,8 +1309,8 @@
     },
     {
       "path": "kaczka-harszowa-20.html",
-      "bytes": 8696,
-      "sha256": "2f981c27293c18c1c7b76e1e3572cb82cdae2054b252324bdf154be5dfc76ea3",
+      "bytes": 8718,
+      "sha256": "5346b9b0b2522203b2a65e6fcdc848b19fbec94556cf9432320412874fec21ce",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1256,8 +1324,8 @@
     },
     {
       "path": "kontakt.html",
-      "bytes": 6868,
-      "sha256": "9bf763a209a371147abb20522960ef468e3b2be1d7e0f1141c1b4993ef6a6b47",
+      "bytes": 6890,
+      "sha256": "6550e95105b66f73aa7d03a9c6db413554f01f19dbc66a6c2bc3def28920b176",
       "included_by": [
         "cookies.html: a[href]",
         "index.html: a[href]",
@@ -1352,8 +1420,8 @@
     },
     {
       "path": "o-nas.html",
-      "bytes": 7797,
-      "sha256": "e77a74ba1209c640ac23bb15905429586c9c4425c63b1a4bacc9eb1281736c5d",
+      "bytes": 7819,
+      "sha256": "2591ddd6aa78f0e747d9b2d64134838f66cc15272e4a8ab75e43230119a90d84",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1365,8 +1433,8 @@
     },
     {
       "path": "pasztet-15.html",
-      "bytes": 8531,
-      "sha256": "a5cb67d4c992e0747372c3092061dbb1d53bbe753ebc8213cfd7622aa45c1e2a",
+      "bytes": 8553,
+      "sha256": "ebba6a856e20310fdae951205fbc7383d8135e4035ba1f87ddbb8125b5e49316",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1379,16 +1447,16 @@
     },
     {
       "path": "pierogi-offer.css",
-      "bytes": 4051,
-      "sha256": "64f904aa60b90ae2cfbcf726af6209dee4b411faeeea6e6313aa948ba2fc9726",
+      "bytes": 3943,
+      "sha256": "a4d882374b8985fdc99e73ebd6157b36830a0b779454edf6809ba6cefbc8cfbf",
       "included_by": [
         "index.html: link[href]"
       ]
     },
     {
       "path": "pierogi-ruskie-12.html",
-      "bytes": 8900,
-      "sha256": "9f7f1cf61495bbd2e4b14bf376c70056c3ae255fbb913092b864d5e941ce2769",
+      "bytes": 8922,
+      "sha256": "602bc34b69fbd0e89967383c83d92f9c197e275118a023f7b273b25698b503cb",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1408,8 +1476,8 @@
     },
     {
       "path": "pierogi-z-kaczka-17.html",
-      "bytes": 9070,
-      "sha256": "b2c04113ebdfca5ea6e55494a1552aaea8f988efa719648fdb66b14dfbf3af2e",
+      "bytes": 9092,
+      "sha256": "648a610b75830410805062b037e19473d50a61ca7349ce536410dec3c5534695",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1431,8 +1499,8 @@
     },
     {
       "path": "pierogi-z-kapusta-i-grzybami-16.html",
-      "bytes": 9453,
-      "sha256": "3f71b877ad3ad0662d80f35a136f7d6299a449480d1639076550b09ea4aa797a",
+      "bytes": 9475,
+      "sha256": "68f2cb256297da790a86fcb60bc49aecb587451791927d0bc898c0afc589aaf6",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1447,8 +1515,8 @@
     },
     {
       "path": "pierogi-z-miesem-13.html",
-      "bytes": 8956,
-      "sha256": "459afa05129f0050062ecb918dc38d2201363aa5cd78b06d86d56df983ffdbc6",
+      "bytes": 8978,
+      "sha256": "580da3faa0db625cb85cec79857d2b4e1b168a81e8fc9c29617bcb7dd16c352c",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1460,8 +1528,8 @@
     },
     {
       "path": "pierogi-z-mietusem-8.html",
-      "bytes": 8990,
-      "sha256": "4c8bb3fd5f2e811af552633f0a307eb97bb2e72d9ce41ce53d4d252c0b5ef8f4",
+      "bytes": 9012,
+      "sha256": "6260b474dac740dff918b7bd84162ecef36db187d90e943a1c8af2d4ac518a55",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1473,8 +1541,8 @@
     },
     {
       "path": "pierogi-z-sandaczem-6.html",
-      "bytes": 9162,
-      "sha256": "c1b5988c8defca7dae60be217d72cb81e2481010f98dba3bba9c22f210cc5c19",
+      "bytes": 9184,
+      "sha256": "04b5b5fe2388f019bedc43d292eac7ff5f1070c064fded2747f5fb38b4243457",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1499,8 +1567,8 @@
     },
     {
       "path": "pierogi-z-twarogiem-11.html",
-      "bytes": 9043,
-      "sha256": "c9a59a3d6211993f8fb289683ba7e05d9877e518046e4a4dab5400b0fbd908e4",
+      "bytes": 9065,
+      "sha256": "78b031b6e56429443aab5a61428d4aba0a70ecdc361cac665c47866930b1612a",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1512,8 +1580,8 @@
     },
     {
       "path": "pierogi-ze-szczupakiem-19.html",
-      "bytes": 9409,
-      "sha256": "b82f518450dba3d2039cdf5e2e62020dbdb6e2256c106134b4cd782a90a07ac3",
+      "bytes": 9431,
+      "sha256": "6024ef7c3f16b68f8ddb91dd6388a1a4045108171a3264dcf639b797925843db",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1525,8 +1593,8 @@
     },
     {
       "path": "polityka-prywatnosci.html",
-      "bytes": 18362,
-      "sha256": "4ff72224a75a84cacd1514cbcbc72546e1ac96e22eba697537417d5a0725dd9b",
+      "bytes": 18384,
+      "sha256": "0d9437fb867620fcd6fa7a5ee4e09306b390c63a05b423407e0feb3e29d81876",
       "included_by": [
         "cookies.html: a[href]",
         "index.html: a[href]",
@@ -1556,8 +1624,8 @@
     },
     {
       "path": "produkt.html",
-      "bytes": 2618,
-      "sha256": "152b984eac8e2d274f7a30dc901219f0ed9b25ffbfe81cb987a7ed4ae53c4d92",
+      "bytes": 2640,
+      "sha256": "2452e82bc51590be8b93f428ae9f54a3f77a168db3c509cb8a00c5d67b35b052",
       "included_by": [
         "index.html: public HTML entrypoint",
         "index.html: required public page"
@@ -1595,8 +1663,8 @@
     },
     {
       "path": "regulamin.html",
-      "bytes": 25733,
-      "sha256": "fdfda1d6be3aee851cdeb21feb97edf4298a29f3f9a6bd2cca5b163f3de72e76",
+      "bytes": 25755,
+      "sha256": "4117d74a17fd7bc3216c68613b07af97680d97a9a546da76d403afb98d5423a1",
       "included_by": [
         "cookies.html: a[href]",
         "index.html: a[href]",
@@ -1649,8 +1717,8 @@
     },
     {
       "path": "sklep.html",
-      "bytes": 21863,
-      "sha256": "91378490a03f1369b7b8b9b2d59580df13a1f5d085529dfcbc5024cdd5f1bebe",
+      "bytes": 21885,
+      "sha256": "88840b9b59b01898c080e1bb7ce352784a2a198a44f7e36d8dad8b3426bfbadb",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1692,8 +1760,8 @@
     },
     {
       "path": "smalec-14.html",
-      "bytes": 8439,
-      "sha256": "f6d15d4e80ac850c488a936da3de5be83e047e403f1588b9c76c25b3fc283459",
+      "bytes": 8461,
+      "sha256": "f27080ff582d468814c091f3406247a4514517f94abb558e368fa63a427b731a",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1736,8 +1804,8 @@
     },
     {
       "path": "torba-harszowa-10.html",
-      "bytes": 8065,
-      "sha256": "fcc5ef1b620e4bdc22235dc18de8e498946428236456ed1e4bd3de316e1b2908",
+      "bytes": 8087,
+      "sha256": "ff16a6b4cdcc47c3bb3c8b6cdac8fb0e28e00c6c5f1c029d573731dec9901e00",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1751,8 +1819,8 @@
     },
     {
       "path": "uszka-z-grzybami-18.html",
-      "bytes": 9050,
-      "sha256": "ee39513af3700980b49c94ad3798afdd88a80b2077b0168e9183a111f8ef9441",
+      "bytes": 9072,
+      "sha256": "e71d567b6bb870ada9d66f99ef403ca2f905beed477f643ae8dad13d61c801e1",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1764,8 +1832,8 @@
     },
     {
       "path": "voucher-portowy-9.html",
-      "bytes": 8391,
-      "sha256": "dea83b7a4dd5d5f680cfaa20147a0797737f80108bb58b82e774e74b0a387500",
+      "bytes": 8413,
+      "sha256": "59177091f8183aee4928fb1356f908a0367baa315acc021c70fedcc3c27b3f87",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1779,8 +1847,8 @@
     },
     {
       "path": "zamowienie.html",
-      "bytes": 5379,
-      "sha256": "d6888d2ad16ba55b977a6b374b369c369263e677263e63b997acf9eada913a8c",
+      "bytes": 5401,
+      "sha256": "0aeb999aa764f439548f7bb4b521a9bdf5c05a9645d25ec5bdb3424eea5491c9",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",

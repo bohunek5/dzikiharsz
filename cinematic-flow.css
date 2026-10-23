@@ -1,4 +1,4 @@
-/* One navy background carries the opening film into the kitchen sequence. */
+/* Marine opening fades into a black kitchen and dumpling stage. */
 .hero {
   background-color: #071f2d;
 }
@@ -21,7 +21,7 @@
   position: relative;
   isolation: isolate;
   background:
-    linear-gradient(0deg, #071f2d, transparent 32% 68%, #071f2d),
+    linear-gradient(0deg, #000, transparent 32% 68%, #071f2d),
     radial-gradient(ellipse at 28% 46%, #163d4d, #071f2d 72%);
   color: #f6efe2;
   border: 0;
@@ -47,19 +47,19 @@
   border-color: #efd4aa66;
 }
 .process-scroll {
-  background: #071f2d;
+  background: #000;
   color: #f6efe2;
   border: 0;
 }
 .process-stage {
   min-height: min(650px, 100svh);
-  background: #071f2d;
+  background: #000;
 }
 .process-shade {
   background:
-    linear-gradient(180deg, #071f2d 0%, #071f2db3 13%, transparent 38%),
-    linear-gradient(0deg, #071f2d 0%, #071f2de6 12%, #071f2d52 50%, transparent 78%),
-    linear-gradient(90deg, #071f2d7a, transparent 76%);
+    linear-gradient(180deg, #000 0%, #000b 13%, transparent 38%),
+    linear-gradient(0deg, #000 0%, #000e 12%, #0005 50%, transparent 78%),
+    linear-gradient(90deg, #0008, transparent 76%);
 }
 .process-top .eyebrow {
   color: #d8e5e8;
@@ -88,7 +88,7 @@
 @media (max-width: 760px) {
   .intro {
     background:
-      linear-gradient(0deg, #071f2d, transparent 30% 70%, #071f2d),
+      linear-gradient(0deg, #000, transparent 30% 70%, #071f2d),
       radial-gradient(ellipse at 15% 40%, #153b4b, #071f2d 75%);
   }
   .process-stage { min-height: min(640px, 100svh); }
@@ -97,8 +97,8 @@
   .process-pierog { top: 40%; }
   .process-shade {
     background:
-      linear-gradient(180deg, #071f2d, #071f2da8 15%, transparent 36%),
-      linear-gradient(0deg, #071f2d 0%, #071f2df2 20%, #071f2d73 46%, transparent 75%);
+      linear-gradient(180deg, #000, #000a 15%, transparent 36%),
+      linear-gradient(0deg, #000 0%, #000f 20%, #0007 46%, transparent 75%);
   }
 }
 @media (max-width: 760px) and (max-height: 700px) {

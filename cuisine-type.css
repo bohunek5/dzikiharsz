@@ -1,5 +1,24 @@
-/* A warm menu voice, using the existing locally hosted Fraunces and DM Sans.
-   Load last. Deliberately no body, root, header, .hero or .shop-hero overrides. */
+/* A warm, substantial kitchen voice. Self-hosted Google Fonts, SIL OFL 1.1.
+   Bree Serif: headings and menu names. Lato: reading and shop controls.
+   The main .hero keeps its original fonts and typography unchanged. */
+@font-face{font-family:'Bree Serif';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/bree-serif-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Bree Serif';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/bree-serif-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/lato-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/lato-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/lato-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/lato-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+body{--sans:'Lato',Arial,sans-serif;--serif:'Bree Serif',Georgia,serif;--display:'Bree Serif',Georgia,serif;font-family:var(--sans)}
+.hero{--sans:'DM Sans',Arial,sans-serif;--serif:'Fraunces',Georgia,serif;--display:'Barlow Condensed',Impact,sans-serif;font-family:var(--sans)}
+button,input,select,textarea{font-family:var(--sans)}
+body :is(h1,h2,h3,h4,h5,h6):not(.hero *){font-family:var(--serif);font-weight:400;font-style:normal;letter-spacing:-.018em;text-transform:none}
+body em:not(.hero *){font-style:normal}
+.main-nav>a,.language-control select,.bag-button,.cookie-actions button,.footer-links,.footer-phone{font-family:var(--sans)}
+.main-nav>a{font-weight:700;letter-spacing:0;text-transform:none}
+.cookie-copy h2{font-size:31px;line-height:1.15;letter-spacing:-.015em}
+.cookie-copy p,.cookie-copy>a,.cookie-essential{font-weight:400;letter-spacing:0}
+.shop-hero h1{font-family:var(--serif);font-size:clamp(43px,4.4vw,64px);font-weight:400;font-style:normal;letter-spacing:-.025em;line-height:1.08;text-transform:none;text-wrap:balance}
+.shop-hero p{font-family:var(--sans);font-weight:400;letter-spacing:0;line-height:1.6}
 
 .page-heading h1,
 .product-page .detail-content h1,
@@ -18,10 +37,10 @@
 .bag-heading h2,
 .footer-film h2{
   font-family:var(--serif);
-  font-weight:480;
+  font-weight:400;
   font-style:normal;
   text-transform:none;
-  letter-spacing:-.035em;
+  letter-spacing:-.02em;
   line-height:1.12;
   text-wrap:balance;
 }
@@ -35,10 +54,10 @@
 .shop-page .product-card h3{
   font-family:var(--serif);
   font-size:clamp(24px,2vw,31px);
-  font-weight:520;
+  font-weight:400;
   font-style:normal;
   line-height:1.2;
-  letter-spacing:-.025em;
+  letter-spacing:-.018em;
   text-transform:none;
   min-height:0;
   overflow-wrap:break-word;
@@ -50,7 +69,7 @@
 .related-products h2{
   font-family:var(--serif);
   font-size:clamp(29px,3vw,40px);
-  font-weight:480;
+  font-weight:400;
   letter-spacing:-.025em;
   line-height:1.2;
   text-transform:none;
@@ -61,7 +80,7 @@
 .legal-content h3{
   font-family:var(--serif);
   font-size:clamp(23px,2.3vw,30px);
-  font-weight:500;
+  font-weight:400;
   line-height:1.25;
   letter-spacing:-.015em;
   text-transform:none;
@@ -70,12 +89,13 @@
 .bag-item h3{
   font-family:var(--serif);
   font-size:21px;
-  font-weight:500;
+  font-weight:400;
   line-height:1.24;
   letter-spacing:-.015em;
   text-transform:none;
 }
-.process-caption h3{font-family:var(--serif);font-weight:480;font-style:normal;line-height:1.1;letter-spacing:-.025em}
+.process-caption h3{font-family:var(--serif);font-weight:400;font-style:normal;line-height:1.1;letter-spacing:-.02em}
+.offer-heading h2,.offer-caption h3,.filling-label strong{font-family:var(--serif);font-weight:400;font-style:normal;letter-spacing:-.02em}
 
 /* Descriptions and practical details stay in the quieter, highly legible face. */
 .product-description,
@@ -112,7 +132,7 @@
 .order-costs strong,
 .related-card>p{
   font-family:var(--serif);
-  font-weight:500;
+  font-weight:400;
   font-style:normal;
   font-variant-numeric:lining-nums tabular-nums;
   letter-spacing:-.025em;
@@ -129,12 +149,12 @@
 .shop-page .category-tabs button{
   font-family:var(--serif);
   font-size:18px;
-  font-weight:450;
+  font-weight:400;
   letter-spacing:-.01em;
   line-height:1.35;
   text-transform:none;
 }
-.category-tabs button[aria-pressed=true]{font-weight:550}
+.category-tabs button[aria-pressed=true]{font-weight:400}
 .category-tabs sup,.shop-page .category-tabs sup{font-family:var(--sans);font-size:10px;font-weight:400;letter-spacing:0}
 .sort-label select,
 .shop-page .sort-label select,
@@ -143,25 +163,26 @@
 .search-row button,
 .shop-page .search-row button{font-family:var(--sans);font-size:13px;font-weight:400;letter-spacing:0;text-transform:none}
 .result-count,.shop-page .result-count{font-family:var(--sans);font-size:12px;line-height:1.5;letter-spacing:0}
-.shop .button,.detail-content .button,.order-layout .button,.page-cta .button{font-family:var(--sans);font-weight:550;letter-spacing:0;text-transform:none}
+.shop .button,.detail-content .button,.order-layout .button,.page-cta .button{font-family:var(--sans);font-weight:700;letter-spacing:0;text-transform:none}
 
 .shop-availability>strong{
   font-family:var(--serif);
   font-size:20px;
-  font-weight:500;
+  font-weight:400;
   line-height:1.25;
   letter-spacing:-.015em;
 }
 .shop-availability>p{font-family:var(--sans);font-size:12px;line-height:1.6}
 .card-availability,
-.related-card .card-availability{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:0;line-height:1.5}
-.product-availability strong{font-family:var(--serif);font-size:19px;font-weight:500;line-height:1.3;letter-spacing:-.01em}
+.related-card .card-availability{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:0;line-height:1.5}
+.product-availability strong{font-family:var(--serif);font-size:19px;font-weight:400;line-height:1.3;letter-spacing:-.01em}
 .product-availability p{font-family:var(--sans);font-size:12px;line-height:1.65}
 .detail-facts,.detail-quantity,.catalog-footnote{font-family:var(--sans);font-weight:400;letter-spacing:0;line-height:1.7}
 
-.faq-list summary{font-family:var(--serif);font-size:22px;font-weight:450;line-height:1.35;letter-spacing:-.015em}
-.intro .eyebrow,.section-heading .eyebrow,.page-heading>.eyebrow,.story-copy .eyebrow,.delivery .eyebrow,.place .eyebrow,.footer-film .eyebrow{font-family:var(--sans);font-weight:500;letter-spacing:.12em}
-.footer-top>p{font-weight:450;line-height:1.25;letter-spacing:-.025em}
+.faq-list summary{font-family:var(--serif);font-size:22px;font-weight:400;line-height:1.35;letter-spacing:-.015em}
+.intro .eyebrow,.section-heading .eyebrow,.page-heading>.eyebrow,.story-copy .eyebrow,.delivery .eyebrow,.place .eyebrow,.footer-film .eyebrow{font-family:var(--sans);font-weight:700;letter-spacing:.1em}
+.footer-top>p{font-family:var(--serif);font-weight:400;line-height:1.3;letter-spacing:-.018em}
+.footer-top>p em{font-style:normal}
 
 @media(max-width:1100px){
   .product-card h3,.shop-page .product-card h3{font-size:27px}
@@ -169,6 +190,8 @@
   .shop-availability{flex-wrap:wrap;gap:5px 22px}
 }
 @media(max-width:760px){
+  .shop-hero h1{font-size:clamp(38px,10.6vw,59px);line-height:1.1}
+  .main-nav>a{font-size:22px;line-height:1.3}
   .page-heading h1{font-size:45px}
   .product-page .detail-content h1{font-size:40px}
   .detail-content h2{font-size:34px}
@@ -193,6 +216,8 @@
   .faq-list summary{font-size:20px}
 }
 @media(max-width:380px){
+  .shop-hero h1{font-size:36px}
+  .cookie-copy h2{font-size:28px}
   .page-heading h1{font-size:39px}
   .product-page .detail-content h1{font-size:35px}
   .product-card h3,.shop-page .product-card h3{font-size:21px;line-height:1.23}
