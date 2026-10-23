@@ -5,7 +5,17 @@ const icons = {
   moon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14a9 9 0 0 1-10.7-11 9 9 0 1 0 10.7 11Z"/></svg>'
 };
 const languages = [['pl','Polski'],['de','Deutsch'],['en','English'],['lt','Lietuvių'],['hu','Magyar'],['cs','Čeština'],['sk','Slovenčina']];
-const languageOptions = languages.map(([code, name]) => `<option value="${code}" data-no-translate>${name}</option>`).join('');
+const languageOptions = languages.map(([code, name]) => `<option value="${code}" data-no-translate>${name} · ${code.toUpperCase()}</option>`).join('');
+const flagShapes = {
+  pl: '<path fill="#fff" d="M0 0h30v10H0z"/><path fill="#dc143c" d="M0 10h30v10H0z"/>',
+  de: '<path fill="#161616" d="M0 0h30v7H0z"/><path fill="#d6262f" d="M0 7h30v6H0z"/><path fill="#f6c343" d="M0 13h30v7H0z"/>',
+  en: '<path fill="#153b73" d="M0 0h30v20H0z"/><path stroke="#fff" stroke-width="4" d="m0 0 30 20M30 0 0 20"/><path stroke="#c9233e" stroke-width="1.5" d="m0 0 30 20M30 0 0 20"/><path stroke="#fff" stroke-width="7" d="M15 0v20M0 10h30"/><path stroke="#c9233e" stroke-width="4" d="M15 0v20M0 10h30"/>',
+  lt: '<path fill="#fdb913" d="M0 0h30v7H0z"/><path fill="#006a44" d="M0 7h30v6H0z"/><path fill="#c1272d" d="M0 13h30v7H0z"/>',
+  hu: '<path fill="#ce2939" d="M0 0h30v7H0z"/><path fill="#fff" d="M0 7h30v6H0z"/><path fill="#477050" d="M0 13h30v7H0z"/>',
+  cs: '<path fill="#fff" d="M0 0h30v10H0z"/><path fill="#d7141a" d="M0 10h30v10H0z"/><path fill="#11457e" d="m0 0 15 10L0 20Z"/>',
+  sk: '<path fill="#fff" d="M0 0h30v7H0z"/><path fill="#0b4ea2" d="M0 7h30v6H0z"/><path fill="#ee1c25" d="M0 13h30v7H0z"/><path fill="#ee1c25" stroke="#fff" stroke-width=".8" d="M6 5h8v7q0 3-4 5-4-2-4-5Z"/><path stroke="#fff" stroke-width="1.3" d="M10 6v8M8 8h4M7.5 10h5"/><path fill="#0b4ea2" d="M6.5 13q1-2 2 0 1.5-3 3 0 1-2 2 0-1 2-3.5 3-2.5-1-3.5-3Z"/>'
+};
+const languageIndicator = `<span class="language-current" data-no-translate aria-hidden="true"><span class="language-flag"></span><span class="language-code">PL</span><svg class="language-chevron" viewBox="0 0 10 6"><path d="m1 1 4 4 4-4"/></svg></span>`;
 const logo = `<span class="logo-sigil" aria-hidden="true"><span class="logo-wheel-window"><img class="logo-wheel" src="assets/logo-wheel.svg" width="450" height="436" alt=""></span><img class="logo-wordmark" src="assets/logo-wordmark.svg" width="450" height="140" alt=""></span>`;
 
 export function initShell() {
@@ -18,9 +28,10 @@ export function initShell() {
   header.innerHTML = `<a class="brand" href="index.html" aria-label="Dziki Harsz — strona główna">${logo}</a>
     <nav class="main-nav" id="navigation" aria-label="Główna nawigacja">
       ${[['index.html','Strona główna'],['sklep.html','Sklep'],['o-nas.html','O nas'],['kontakt.html','Kontakt']].map(([url,label])=>`<a href="${url}" ${page===url?'aria-current="page"':''}>${label}</a>`).join('')}
-      <div class="mobile-menu-settings"><span>Po Twojemu</span><label for="mobile-language-select">Język</label><select id="mobile-language-select" aria-label="Wybierz język">${languageOptions}</select><button class="theme-switch mobile-theme" aria-label="Zmień tryb dzień/noc">${icons.moon}<span class="theme-label">Tryb nocny</span></button><a class="menu-contact" href="tel:+48722277527">722 277 527</a></div>
+      <div class="mobile-menu-settings"><span>Po Twojemu</span><label for="mobile-language-select">Język</label><select id="mobile-language-select" aria-label="Wybierz język">${languageOptions}</select><button class="theme-switch mobile-theme" aria-label="Zmień tryb dzień/noc">${icons.moon}<span class="theme-label">Tryb nocny</span></button><a class="menu-search" href="sklep.html?szukaj=1">${icons.search}<span>Szukaj w sklepie</span></a><a class="menu-contact" href="tel:+48722277527">722 277 527</a></div>
     </nav>
-    <div class="header-actions"><div class="desktop-settings"><button class="icon-button theme-switch" aria-label="Zmień tryb dzień/noc" title="Tryb nocny">${icons.moon}</button><label class="language-control"><span class="sr-only">Język</span><select id="language-select" aria-label="Wybierz język">${languageOptions}</select></label></div><button class="icon-button search-toggle" aria-label="Szukaj w sklepie">${icons.search}</button><button class="bag-button" id="open-bag" aria-haspopup="dialog">${icons.bag}<span class="bag-label">Twoja paczka</span><span id="bag-count">0</span></button><button class="icon-button menu-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg></button></div>`;
+    <div class="header-end"><div class="desktop-settings"><button class="icon-button theme-switch" aria-label="Zmień tryb dzień/noc" title="Tryb nocny">${icons.moon}</button><label class="language-control"><span class="sr-only">Język</span>${languageIndicator}<select id="language-select" aria-label="Wybierz język">${languageOptions}</select></label></div><div class="header-actions"><button class="icon-button search-toggle" aria-label="Szukaj w sklepie">${icons.search}</button><button class="bag-button" id="open-bag" aria-haspopup="dialog">${icons.bag}<span class="bag-label">Twoja paczka</span><span id="bag-count">0</span></button><button class="icon-button menu-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg></button></div></div>`;
+  initHeaderLanguages(header);
   const footer = document.querySelector('.footer') || document.body.appendChild(document.createElement('footer'));
   footer.className = 'footer';
   footer.innerHTML = `<div class="footer-top"><div class="footer-summary"><div class="footer-message"><p class="footer-slogan" data-no-translate><span data-footer-slogan>Najlepiej smakuje na miejscu.</span><em data-footer-invitation>Wpadnij nad Dargin.</em></p><div class="footer-contact"><a class="footer-phone" href="tel:+48722277527">722 277 527</a><span>Nowy Harsz 84 · 11-610 Pozezdrze</span><a class="footer-email" href="mailto:sklep@dzikiharsz.pl">sklep@dzikiharsz.pl</a></div></div></div></div><div class="footer-links"><span>© 2026 Dziki Harsz</span><nav aria-label="Informacje sklepu"><a href="regulamin.html">Regulamin</a><a href="polityka-prywatnosci.html">Prywatność</a><a href="cookies.html">Cookies</a><button class="footer-cookie-settings" data-cookie-settings>Ustawienia cookies</button><a href="kontakt.html">Kontakt</a><a href="https://www.facebook.com/DzikiHarsz" target="_blank" rel="noopener">Facebook</a></nav><a href="#">Do góry</a></div>`;
@@ -33,6 +44,16 @@ export function initShell() {
 }
 
 function safeRead(key) { try { return localStorage.getItem(key); } catch { return null; } }
+function initHeaderLanguages(header) {
+  const update = () => {
+    const code = document.documentElement.lang?.slice(0, 2) || 'pl';
+    const current = flagShapes[code] ? code : 'pl';
+    header.querySelector('.language-flag').innerHTML = `<svg viewBox="0 0 30 20" aria-hidden="true" focusable="false">${flagShapes[current]}</svg>`;
+    header.querySelector('.language-code').textContent = current.toUpperCase();
+  };
+  window.addEventListener('languagechange', update);
+  update();
+}
 function safeWrite(key, value) { try { localStorage.setItem(key, value); } catch { /* UI still works for this visit. */ } }
 function initTheme() {
   const apply = (theme) => {

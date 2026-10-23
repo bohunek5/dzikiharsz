@@ -1,4 +1,4 @@
-import {t} from './i18n.js?v=20261023-marine';
+import {t} from './i18n.js?v=20261023-menu';
 
 const $ = s => document.querySelector(s);
 const filmIcons = {
@@ -18,7 +18,13 @@ export function initCinema(){
   const progress=section?.querySelector('#scene-progress');
   const render=()=>{
     requested=false;
-    $('#header')?.classList.toggle('is-scrolled',scrollY>40||document.body.classList.contains('inner-page'));
+    const header=$('#header');
+    if(header){
+      header.classList.toggle('is-scrolled',scrollY>40||document.body.classList.contains('inner-page'));
+      // Separate the visual bar from the reserved page spacing; hysteresis avoids flicker.
+      if(scrollY>72)header.classList.add('is-compact');
+      else if(scrollY<24)header.classList.remove('is-compact');
+    }
     if(!section)return;
     const rect=section.getBoundingClientRect();
     if(!reduced.matches&&(rect.bottom<0||rect.top>innerHeight))return;

@@ -9,6 +9,15 @@
 .journey-toggle{color:var(--journey-ink,var(--ink));background:transparent;border:0;border-radius:50%;opacity:.78}
 .journey-toggle:hover{background:color-mix(in srgb,var(--journey-ink,var(--ink)) 8%,transparent);opacity:1}
 .journey-toggle:focus-visible{outline-color:var(--journey-ink,var(--ink));opacity:1}
+.journey-transit{display:block;margin-top:4px;font-size:12px;line-height:1.2;font-weight:700;color:var(--journey-ink,var(--ink));white-space:nowrap}
+.shipping-journey .journey-icon{transform:translate3d(0,0,0);transform-origin:50% 75%}
+.shipping-journey .journey-step .journey-icon img{animation:none}
+.shipping-journey .journey-vehicle img{transform:scaleX(-1)}
+.shipping-journey .journey-step.is-current .journey-icon{animation:journey-icon-breathe 2.6s ease-in-out infinite}
+.shipping-journey .journey-step.is-current .journey-vehicle{animation-name:journey-vehicle-drive}
+.shipping-journey.journey-still .journey-step.is-current .journey-icon{animation-play-state:paused}
+@keyframes journey-icon-breathe{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(0,-1.5px,0) scale(1.015)}}
+@keyframes journey-vehicle-drive{0%,100%{transform:translate3d(0,0,0)}65%{transform:translate3d(4px,0,0)}}
 
 @media(max-width:1100px){
   .hero{
@@ -32,7 +41,7 @@
   .journey-heading{margin-bottom:14px;gap:12px}
   .journey-heading .eyebrow{font-size:10px;letter-spacing:.08em;max-width:185px;line-height:1.45}
   .journey-heading a{font-size:11px;line-height:1.4;min-height:40px;max-width:110px}
-  .journey-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--journey-gap);align-items:start}
+  .journey-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--journey-gap);align-items:stretch}
   .journey-step{padding:0 0 9px;text-align:center;min-width:0}
   .journey-number{display:none}
   .journey-icon,.journey-destinations{
@@ -45,14 +54,16 @@
   .journey-step strong{
     position:relative;
     margin:0;
-    min-height:0;
+    min-height:4.05em;
     max-width:none;
     color:var(--journey-muted,var(--muted));
     font-size:clamp(12px,2.9vw,14px);
     line-height:1.35;
     letter-spacing:0;
     font-weight:600;
-    white-space:nowrap;
+    white-space:normal;
+    overflow-wrap:anywhere;
+    text-wrap:balance;
   }
   .journey-step strong::after{content:"";position:absolute;bottom:-7px;left:calc(50% - 9px);width:18px;height:2px;border-radius:2px;background:var(--journey-ink,var(--ink));transform:scaleX(0);transition:transform .2s ease}
   .journey-step.is-current strong{color:var(--journey-ink,var(--ink))}
@@ -75,4 +86,5 @@
 }
 @media(prefers-reduced-motion:reduce){
   .journey-step strong::after{transition:none}
+  .shipping-journey .journey-step.is-current .journey-icon{animation:none;transform:none}
 }

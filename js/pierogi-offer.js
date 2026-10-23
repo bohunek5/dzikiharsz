@@ -1,4 +1,4 @@
-import {getLanguage} from './i18n.js?v=20261023-marine';
+import {getLanguage} from './i18n.js?v=20261023-menu';
 
 export const offerFlavours = [
   ['sandacz', 'pierogi-z-sandaczem-6', 'assets/offer-boiled-sandacz.webp', 'assets/pierog-boiled-whole.webp'],
@@ -43,7 +43,7 @@ export async function initPierogiOffer() {
   const section = document.querySelector('#nasze-pierogi');
   if (!section) return;
   try {
-    const response = await fetch('data/offer-copy.json?v=20261023-marine');
+    const response = await fetch('data/offer-copy.json?v=20261023-menu');
     if (!response.ok) throw new Error(`Offer translations: HTTP ${response.status}`);
     const copy = await response.json();
     const translateOffer = () => {
