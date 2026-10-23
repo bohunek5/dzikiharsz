@@ -1,0 +1,180 @@
+/* Shared day/night palette. Components below consume the same semantic colors. */
+:root,
+html[data-theme='light'],
+html[data-theme='light'] .shop-page {
+  --paper: #faf8f2;
+  --cream: #f0ece2;
+  --surface: #f0ece2;
+  --ink: #16343f;
+  --muted: #596c70;
+  --line: #d8ded9;
+  --accent: #805b2e;
+  --action-bg: #163e4b;
+  --action-ink: #fffaf0;
+  --action-hover: #245565;
+  --surface-rgb: 250 248 242;
+  --photo-mat: #f0ece2;
+  --photo-edge: #a58b5b55;
+  --photo-inner: #fffaf080;
+  --journey-ink: var(--ink);
+  --journey-muted: var(--muted);
+  color-scheme: light;
+}
+html[data-theme='dark'],
+html[data-theme='dark'] .shop-page {
+  --paper: #07191f;
+  --cream: #0b2028;
+  --surface: #102a33;
+  --ink: #f4eee2;
+  --muted: #b4c6ca;
+  --line: #2c434b;
+  --accent: #ddbc83;
+  --action-bg: #ddbc83;
+  --action-ink: #07191f;
+  --action-hover: #ead1a7;
+  --surface-rgb: 7 25 31;
+  --photo-mat: #0b2028;
+  --photo-edge: #c2a16d60;
+  --photo-inner: #e3cfa34d;
+  color-scheme: dark;
+}
+html[data-theme], html[data-theme] body { background: var(--paper); color: var(--ink); }
+
+/* Navigation and overlays must change with the page, including the opening view. */
+html[data-theme] .site-header,
+html[data-theme] .site-header.is-scrolled,
+html[data-theme] .site-header.menu-open,
+html[data-theme] body:not(.inner-page) .site-header:not(.is-scrolled):not(.menu-open) {
+  background: var(--paper); color: var(--ink); border-bottom-color: var(--line); box-shadow: none;
+}
+html[data-theme='light'] .site-header .brand { --logo-filter: none; }
+html[data-theme='dark'] .site-header .brand { --logo-filter: brightness(0) invert(1); }
+html[data-theme] .menu-open .main-nav { background: var(--paper); color: var(--ink); border-color: var(--line); }
+html[data-theme] :is(dialog, .cookie-banner, .dialog-close) { background: var(--paper); color: var(--ink); border-color: var(--line); }
+html[data-theme] :is(.bag-button, .menu-toggle, .mobile-theme) { border-color: var(--line); }
+html[data-theme] :is(.language-control select, .mobile-menu-settings select, .sort-label select) { background-color: transparent; color: var(--ink); border-color: var(--line); }
+html[data-theme] select option { background: var(--paper); color: var(--ink); }
+html[data-theme] :is(.search-row input, .field input, .field textarea, .detail-quantity input) { background: var(--paper); color: var(--ink); border-color: var(--line); }
+html[data-theme] input::placeholder, html[data-theme] textarea::placeholder { color: var(--muted); opacity: 1; }
+html[data-theme] :is(.toast, .dialog-status) { background: var(--ink) !important; color: var(--paper) !important; }
+html[data-theme] :is(.product-serving, .product-highlights li, .detail-visual, .order-summary) { background: var(--surface); color: var(--ink); border-color: var(--line); }
+
+/* One button treatment, quiet text links and no decorative controls on photos. */
+html[data-theme] :is(.button-dark, .button-cream),
+html[data-theme] .hero-content > .button,
+html[data-theme] .offer-finale .button,
+html[data-theme] .shop-page .add-button {
+  background: var(--action-bg); color: var(--action-ink); border-color: transparent;
+  border-radius: 3px; box-shadow: none; justify-content: center; gap: 12px;
+}
+html[data-theme] :is(.button-dark, .button-cream):hover,
+html[data-theme] .hero-content > .button:hover,
+html[data-theme] .offer-finale .button:hover,
+html[data-theme] .shop-page .add-button:hover { background: var(--action-hover); transform: none; }
+html[data-theme] .text-link { color: var(--ink); border-color: var(--line); gap: 12px; }
+html[data-theme] .text-link:hover { color: var(--accent); border-color: currentColor; }
+html[data-theme] :is(.product-photo, .delivery-photo, .detail-visual)::before { content: none; }
+html[data-theme] .product-photo { background: var(--surface); }
+html[data-theme] .product-photo::after,
+html[data-theme] .delivery-photo::after { border-color: var(--photo-inner); }
+html[data-theme] .product-badge { background: var(--paper); color: var(--ink); }
+html[data-theme] .category-tabs button { color: var(--muted); }
+html[data-theme] .category-tabs button[aria-pressed='true'] { color: var(--ink); }
+
+/* Food remains bright. The edges lead into the active page surface. */
+html[data-theme] .hero { background: var(--paper); }
+html[data-theme] .hero .hero-shade {
+  background: linear-gradient(180deg, rgb(var(--surface-rgb) / .18), transparent 34%),
+    linear-gradient(90deg, #0005, #0000 78%);
+}
+html[data-theme] .hero-content h1 { text-shadow: 0 2px 5px #0006, 0 5px 20px #0005; }
+html[data-theme] .hero-content > p,
+html[data-theme] .hero-content > .eyebrow { text-shadow: 0 2px 7px #000b; }
+html[data-theme] .shipping-journey { color: var(--ink); text-shadow: none; isolation: isolate; z-index: 1; }
+html[data-theme] .shipping-journey::before {
+  content: ''; position: absolute; z-index: -1; pointer-events: none;
+  inset: -100px calc(-1 * var(--gutter)) -45px;
+  background: linear-gradient(180deg, transparent, var(--paper) 100px);
+}
+html[data-theme] .journey-number { color: var(--muted); border-color: var(--line); }
+html[data-theme] .journey-step.is-current .journey-number { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+html[data-theme] .journey-connector { background: var(--line); }
+html[data-theme] .journey-connector > span { background: var(--ink); }
+html[data-theme] .journey-toggle { color: var(--ink); border-color: var(--line); background: transparent; }
+html[data-theme] .journey-toggle:hover { background: var(--surface); }
+html[data-theme] .journey-step small,
+html[data-theme] .journey-footnote { color: var(--muted); opacity: 1; }
+html[data-theme] .notice-strip { background: var(--paper); color: var(--muted); padding-top: 14px; padding-bottom: 14px; }
+html[data-theme] .notice-strip strong { color: var(--ink); }
+html[data-theme] .notice-strip a { color: var(--ink); }
+html[data-theme] .status-dot { background: var(--accent); }
+
+/* The cinematic sequence also follows the global theme. */
+html[data-theme] .intro,
+html[data-theme] .process-scroll,
+html[data-theme] .process-stage,
+html[data-theme] .pierogi-offer { background: var(--paper); color: var(--ink); }
+html[data-theme] :is(.intro-heading h2, .intro-heading h2 em, .process-caption h3, .offer-heading h2, .offer-caption h3) { color: var(--ink); }
+html[data-theme] .intro .intro-copy,
+html[data-theme] .process-caption p,
+html[data-theme] .offer-hint { color: var(--muted); }
+html[data-theme] .intro .intro-copy p:first-child { color: var(--ink); }
+html[data-theme] .intro-heading .eyebrow,
+html[data-theme] .process-caption .eyebrow,
+html[data-theme] .offer-kicker,
+html[data-theme] .offer-caption p,
+html[data-theme] .offer-finale > p { color: var(--accent); }
+html[data-theme] .intro .intro-copy .text-link { color: var(--ink); border-color: var(--line); }
+html[data-theme] :is(.process-top, .process-top .eyebrow, .process-bottom) { color: var(--muted); }
+html[data-theme] .process-shade {
+  background: linear-gradient(180deg, var(--paper) 0%, rgb(var(--surface-rgb) / .66) 12%, transparent 38%),
+    linear-gradient(0deg, var(--paper) 0%, rgb(var(--surface-rgb) / .94) 15%, rgb(var(--surface-rgb) / .25) 49%, transparent 72%);
+}
+html[data-theme] .process-bottom .scene-track { background: var(--line); }
+html[data-theme] .process-bottom .scene-track > span { background: var(--accent); }
+html[data-theme] .pierogi-offer + .place .place-shade {
+  background: linear-gradient(180deg, var(--paper), rgb(var(--surface-rgb) / .5) 9%, transparent 25%), linear-gradient(90deg, #0008, #0001 85%), linear-gradient(0deg, rgb(var(--surface-rgb) / .5), transparent 45%);
+}
+html[data-theme] .place .button-outline { color: #fffaf0; border-color: #fffaf080; border-radius: 3px; }
+html[data-theme] .place .button-outline:hover { background: #fffaf01a; transform: none; }
+
+/* Every subpage, product card and information block uses the same surfaces. */
+html[data-theme] :is(.shop, .shop-hero, .story-row, .contact-channels, .contact-visit, .page-cta, .faq, .legal-layout, .order-layout) { background: var(--paper); color: var(--ink); }
+html[data-theme] :is(.page-heading, .story-row.reverse, .place-cards, .contact-notes, .delivery) { background: var(--cream); color: var(--ink); }
+html[data-theme] .inner-page .page-heading { background: var(--cream); color: var(--ink); }
+html[data-theme] .shop-hero-photo::after { background: linear-gradient(90deg, var(--paper), transparent 36%); }
+html[data-theme] .shop-hero h1 { color: var(--ink); text-shadow: none; }
+html[data-theme] :is(.shop-hero p, .shop-hero .breadcrumbs, .story-copy p, .contact-channels p, .contact-visit p, .contact-notes p, .delivery-content > p, .delivery-steps p, .delivery-steps li > span) { color: var(--muted); }
+html[data-theme] .delivery-steps li { border-color: var(--line); }
+html[data-theme] .shop-availability {
+  background: transparent; color: var(--ink); border: 0; border-bottom: 1px solid var(--line);
+  padding: 18px 0; gap: 10px 24px; margin-bottom: 5px;
+}
+html[data-theme] .shop-availability > strong { font-size: 16px; }
+html[data-theme] .shop-availability > p { font-size: 12px; color: var(--muted); }
+html[data-theme] .product-availability { background: transparent; border: 0; padding: 0; }
+html[data-theme] .card-availability { color: var(--muted); }
+html[data-theme] .contact-map-panel { background: var(--surface); border-color: var(--line); }
+html[data-theme] .contact-map-panel::before { border-color: var(--photo-inner); }
+html[data-theme] .footer {
+  --footer-surface: var(--paper);
+  --footer-ink: var(--ink);
+  --footer-muted: var(--muted);
+  --footer-line: var(--line);
+  background: var(--footer-surface); color: var(--footer-ink);
+}
+html[data-theme] .footer-links a:hover,
+html[data-theme] .footer-cookie-settings:hover { color: var(--accent); }
+
+@media (max-width: 1100px) {
+  html[data-theme] .shipping-journey::before {
+    inset: -38px calc(-1 * var(--gutter)) -35px;
+    background: linear-gradient(180deg, transparent, var(--paper) 38px);
+  }
+}
+@media (max-width: 760px) {
+  html[data-theme] .shop-hero-photo::after { background: linear-gradient(90deg, var(--paper), rgb(var(--surface-rgb) / .45) 90%), linear-gradient(0deg, var(--paper), transparent 85%); }
+  html[data-theme] .process-shade { background: linear-gradient(180deg, var(--paper), rgb(var(--surface-rgb) / .7) 14%, transparent 38%), linear-gradient(0deg, var(--paper) 0%, rgb(var(--surface-rgb) / .98) 20%, rgb(var(--surface-rgb) / .3) 46%, transparent 75%); }
+  html[data-theme] .shop-availability > strong { font-size: 15px; }
+  html[data-theme] .shop-availability > p { font-size: 12px; margin-top: 5px; }
+}

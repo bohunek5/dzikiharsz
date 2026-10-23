@@ -1,4 +1,10 @@
+import {t} from './i18n.js?v=20261023-marine';
+
 const $ = s => document.querySelector(s);
+const filmIcons = {
+  play: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="m9 5 10 7-10 7Z" fill="currentColor"/></svg>',
+  pause: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M8 6v12m8-12v12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+};
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const clamp = n => Math.max(0,Math.min(1,n));
 export function initCinema(){
@@ -51,7 +57,8 @@ export function initCinema(){
 function setupFilm(video,button,symbol,label){
   if(!video||!button)return;
   let userPaused=false,visible=false;
-  const update=()=>{symbol.textContent=video.paused?'▶':'Ⅱ';label.textContent=video.paused?'Odtwórz film':'Zatrzymaj film';button.setAttribute('aria-label',label.textContent);};
+  button.setAttribute('data-no-translate','');
+  const update=()=>{symbol.innerHTML=filmIcons[video.paused?'play':'pause'];label.textContent=t(video.paused?'Odtwórz film':'Zatrzymaj film');button.setAttribute('aria-label',label.textContent);button.setAttribute('aria-pressed',String(!video.paused));};
   const play=async()=>{if(!video.getAttribute('src')){video.src=video.dataset.src;video.load();}try{await video.play();}catch{}update();};
   const canPlay=()=>!userPaused&&!reduced.matches&&!navigator.connection?.saveData&&!document.hidden;
   button.addEventListener('click',()=>{if(video.paused){userPaused=false;play();}else{userPaused=true;video.pause();}});
@@ -59,4 +66,6 @@ function setupFilm(video,button,symbol,label){
   new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;if(!visible)video.pause();else if(canPlay())play();},{threshold:.12}).observe(video);
   document.addEventListener('visibilitychange',()=>{if(document.hidden)video.pause();else if(visible&&canPlay())play();});
   reduced.addEventListener('change',()=>{if(reduced.matches)video.pause();});
+  addEventListener('languagechange',update);
+  update();
 }

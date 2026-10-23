@@ -1,4 +1,4 @@
-import {getLanguage} from './i18n.js';
+import {getLanguage} from './i18n.js?v=20261023-marine';
 
 export const offerFlavours = [
   ['sandacz', 'pierogi-z-sandaczem-6', 'assets/offer-boiled-sandacz.webp', 'assets/pierog-boiled-whole.webp'],
@@ -36,14 +36,14 @@ export function offerMarkup(products, copy) {
       <div class="offer-caption"><h3><a href="${slug}.html">${escape(product.name)}</a></h3><p data-offer-kind="${kind}">${escape(copy.kinds[kind])}</p></div>
     </article>`;
   }).join('')}</div>
-  <div class="offer-finale"><p data-offer-copy="availability">${escape(copy.availability)}</p><a href="sklep.html" class="button button-cream"><span data-offer-copy="cta">${escape(copy.cta)}</span><span aria-hidden="true">↗</span></a></div>`;
+  <div class="offer-finale"><p data-offer-copy="availability">${escape(copy.availability)}</p><a href="sklep.html" class="button button-cream"><span data-offer-copy="cta">${escape(copy.cta)}</span></a></div>`;
 }
 
 export async function initPierogiOffer() {
   const section = document.querySelector('#nasze-pierogi');
   if (!section) return;
   try {
-    const response = await fetch('data/offer-copy.json?v=20261023-culinary');
+    const response = await fetch('data/offer-copy.json?v=20261023-marine');
     if (!response.ok) throw new Error(`Offer translations: HTTP ${response.status}`);
     const copy = await response.json();
     const translateOffer = () => {

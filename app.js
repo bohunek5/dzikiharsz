@@ -1,12 +1,12 @@
-import { initContactMap } from './js/contact-map.js?v=20261023-culinary';
-import { initShell } from './js/shell.js?v=20261023-culinary';
-import { initStorefront } from './js/storefront.js';
-import { initCinema } from './js/cinema.js?v=20261023-culinary';
-import { initI18n } from './js/i18n.js';
-import { initJourney } from './js/journey.js?v=20261023-culinary';
-import { initFooterFilm } from './js/footer-film.js?v=20261023-culinary';
-import { initAvailability } from './js/availability.js';
-import { initPierogiOffer } from './js/pierogi-offer.js?v=20261023-culinary';
+import { initContactMap } from './js/contact-map.js?v=20261023-marine';
+import { initShell } from './js/shell.js?v=20261023-marine';
+import { initStorefront } from './js/storefront.js?v=20261023-marine';
+import { initCinema } from './js/cinema.js?v=20261023-marine';
+import { initI18n } from './js/i18n.js?v=20261023-marine';
+import { initJourney } from './js/journey.js?v=20261023-marine';
+import { initFooterFilm } from './js/footer-film.js?v=20261023-marine';
+import { initAvailability } from './js/availability.js?v=20261023-marine';
+import { initPierogiOffer } from './js/pierogi-offer.js?v=20261023-marine';
 
 initShell();
 await initStorefront();
