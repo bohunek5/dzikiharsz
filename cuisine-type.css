@@ -1,0 +1,208 @@
+/* A warm menu voice, using the existing locally hosted Fraunces and DM Sans.
+   Load last. Deliberately no body, root, header, .hero or .shop-hero overrides. */
+
+.page-heading h1,
+.product-page .detail-content h1,
+.detail-content h2,
+.intro h2,
+.section-heading h2,
+.delivery h2,
+.place h2,
+.faq h2,
+.story-copy h2,
+.contact-visit h2,
+.contact-channels h2,
+.page-cta h2,
+.legal-content h2,
+.order-layout h2,
+.bag-heading h2,
+.footer-film h2{
+  font-family:var(--serif);
+  font-weight:480;
+  font-style:normal;
+  text-transform:none;
+  letter-spacing:-.035em;
+  line-height:1.12;
+  text-wrap:balance;
+}
+
+.page-heading h1{font-size:clamp(43px,5.5vw,80px)}
+.product-page .detail-content h1{font-size:clamp(39px,4.3vw,66px);line-height:1.13}
+.detail-content h2{font-size:clamp(34px,3.5vw,51px)}
+
+/* Product names read as dishes on a menu, with room for their natural casing. */
+.product-card h3,
+.shop-page .product-card h3{
+  font-family:var(--serif);
+  font-size:clamp(24px,2vw,31px);
+  font-weight:520;
+  font-style:normal;
+  line-height:1.2;
+  letter-spacing:-.025em;
+  text-transform:none;
+  min-height:0;
+  overflow-wrap:break-word;
+}
+.product-card h3 a,
+.product-card h3 button{font:inherit;letter-spacing:inherit;line-height:inherit}
+
+.product-stories h2,
+.related-products h2{
+  font-family:var(--serif);
+  font-size:clamp(29px,3vw,40px);
+  font-weight:480;
+  letter-spacing:-.025em;
+  line-height:1.2;
+  text-transform:none;
+}
+.product-serving h3,
+.place-cards h3,
+.contact-notes h3,
+.legal-content h3{
+  font-family:var(--serif);
+  font-size:clamp(23px,2.3vw,30px);
+  font-weight:500;
+  line-height:1.25;
+  letter-spacing:-.015em;
+  text-transform:none;
+}
+.related-card h3,
+.bag-item h3{
+  font-family:var(--serif);
+  font-size:21px;
+  font-weight:500;
+  line-height:1.24;
+  letter-spacing:-.015em;
+  text-transform:none;
+}
+.process-caption h3{font-family:var(--serif);font-weight:480;font-style:normal;line-height:1.1;letter-spacing:-.025em}
+
+/* Descriptions and practical details stay in the quieter, highly legible face. */
+.product-description,
+.shop-page .product-description{
+  font-family:var(--sans);
+  font-size:14px;
+  font-weight:400;
+  letter-spacing:0;
+  line-height:1.7;
+}
+.detail-content>p,
+.product-stories p,
+.product-stories li,
+.story-copy p,
+.contact-visit p,
+.intro-copy p,
+.delivery-content>p,
+.place-content p{font-family:var(--sans);font-weight:400;letter-spacing:0;line-height:1.8}
+.product-meta,
+.shop-page .product-meta{
+  font-family:var(--sans);
+  font-size:11px;
+  font-weight:400;
+  letter-spacing:.01em;
+  line-height:1.5;
+  text-transform:none;
+}
+
+/* Prices carry the same editorial character as the names, not dashboard weight. */
+.price,
+.shop-page .price,
+.detail-price,
+.bag-total strong,
+.order-costs strong,
+.related-card>p{
+  font-family:var(--serif);
+  font-weight:500;
+  font-style:normal;
+  font-variant-numeric:lining-nums tabular-nums;
+  letter-spacing:-.025em;
+  line-height:1.2;
+}
+.price,.shop-page .price{font-size:23px}
+.price small,.shop-page .price small,.detail-price small{font-family:var(--sans);font-weight:400;font-size:12px;letter-spacing:0}
+.detail-price{font-size:clamp(32px,3vw,43px)}
+.bag-total strong,.order-costs strong{font-size:25px}
+.related-card>p{font-size:21px}
+
+/* A compact menu index; counts and form controls remain easy to scan. */
+.category-tabs button,
+.shop-page .category-tabs button{
+  font-family:var(--serif);
+  font-size:18px;
+  font-weight:450;
+  letter-spacing:-.01em;
+  line-height:1.35;
+  text-transform:none;
+}
+.category-tabs button[aria-pressed=true]{font-weight:550}
+.category-tabs sup,.shop-page .category-tabs sup{font-family:var(--sans);font-size:10px;font-weight:400;letter-spacing:0}
+.sort-label select,
+.shop-page .sort-label select,
+.search-row label,
+.shop-page .search-row label,
+.search-row button,
+.shop-page .search-row button{font-family:var(--sans);font-size:13px;font-weight:400;letter-spacing:0;text-transform:none}
+.result-count,.shop-page .result-count{font-family:var(--sans);font-size:12px;line-height:1.5;letter-spacing:0}
+.shop .button,.detail-content .button,.order-layout .button,.page-cta .button{font-family:var(--sans);font-weight:550;letter-spacing:0;text-transform:none}
+
+.shop-availability>strong{
+  font-family:var(--serif);
+  font-size:20px;
+  font-weight:500;
+  line-height:1.25;
+  letter-spacing:-.015em;
+}
+.shop-availability>p{font-family:var(--sans);font-size:12px;line-height:1.6}
+.card-availability,
+.related-card .card-availability{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:0;line-height:1.5}
+.product-availability strong{font-family:var(--serif);font-size:19px;font-weight:500;line-height:1.3;letter-spacing:-.01em}
+.product-availability p{font-family:var(--sans);font-size:12px;line-height:1.65}
+.detail-facts,.detail-quantity,.catalog-footnote{font-family:var(--sans);font-weight:400;letter-spacing:0;line-height:1.7}
+
+.faq-list summary{font-family:var(--serif);font-size:22px;font-weight:450;line-height:1.35;letter-spacing:-.015em}
+.intro .eyebrow,.section-heading .eyebrow,.page-heading>.eyebrow,.story-copy .eyebrow,.delivery .eyebrow,.place .eyebrow,.footer-film .eyebrow{font-family:var(--sans);font-weight:500;letter-spacing:.12em}
+.footer-top>p{font-weight:450;line-height:1.25;letter-spacing:-.025em}
+
+@media(max-width:1100px){
+  .product-card h3,.shop-page .product-card h3{font-size:27px}
+  .category-tabs button,.shop-page .category-tabs button{font-size:17px}
+  .shop-availability{flex-wrap:wrap;gap:5px 22px}
+}
+@media(max-width:760px){
+  .page-heading h1{font-size:45px}
+  .product-page .detail-content h1{font-size:40px}
+  .detail-content h2{font-size:34px}
+  .product-card h3,.shop-page .product-card h3{font-size:23px;line-height:1.22;letter-spacing:-.02em}
+  .product-description,.shop-page .product-description{font-size:13px;line-height:1.65}
+  .product-meta,.shop-page .product-meta{font-size:10px;line-height:1.5;letter-spacing:0;min-height:30px}
+  .price,.shop-page .price{font-size:20px}
+  .price small,.shop-page .price small{font-size:10px}
+  .category-tabs button,.shop-page .category-tabs button{font-size:15px;line-height:1.4}
+  .category-tabs sup,.shop-page .category-tabs sup{font-size:9px}
+  .shop-page .category-tabs{gap:12px}
+  .sort-label select,.shop-page .sort-label select,.search-row label,.shop-page .search-row label,.search-row button,.shop-page .search-row button{font-size:12px}
+  .result-count,.shop-page .result-count{font-size:11px}
+  .shop-availability>strong{font-size:18px;line-height:1.3}
+  .shop-availability>p{font-size:11px;line-height:1.55}
+  .card-availability,.related-card .card-availability{font-size:11px;line-height:1.5;min-height:33px}
+  .product-availability strong{font-size:18px}
+  .product-availability p{font-size:12px}
+  .related-card h3,.bag-item h3{font-size:19px}
+  .product-stories h2,.related-products h2{font-size:30px}
+  .product-serving h3,.place-cards h3,.contact-notes h3,.legal-content h3{font-size:25px}
+  .faq-list summary{font-size:20px}
+}
+@media(max-width:380px){
+  .page-heading h1{font-size:39px}
+  .product-page .detail-content h1{font-size:35px}
+  .product-card h3,.shop-page .product-card h3{font-size:21px;line-height:1.23}
+  .product-description,.shop-page .product-description{font-size:12.5px;line-height:1.65}
+  .price,.shop-page .price{font-size:19px}
+  .category-tabs button,.shop-page .category-tabs button{font-size:12px}
+  .shop-page .category-tabs{gap:12px}
+  .shop-availability>strong{font-size:17px}
+  .card-availability,.related-card .card-availability{font-size:10.5px}
+  /* Intl uses the longer PLN currency code outside Polish. Keep three-digit
+     amounts readable beside the existing 44 px button at a 320 px viewport. */
+  :root:not(:lang(pl)) .price,:root:not(:lang(pl)) .shop-page .price{font-size:16px;letter-spacing:-.03em}
+}

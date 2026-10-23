@@ -1,5 +1,4 @@
 const $ = s => document.querySelector(s);
-const $$ = s => [...document.querySelectorAll(s)];
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const clamp = n => Math.max(0,Math.min(1,n));
 export function initCinema(){
@@ -7,12 +6,15 @@ export function initCinema(){
   setupFilm($('#place-film'),$('#place-film-control'),$('#place-film-symbol'),$('#place-film-label'));
   let requested=false,last=-1;
   const section=$('#w-srodku');
+  const photos=section?[...section.querySelectorAll('.process-photo')]:[];
+  const captions=section?[...section.querySelectorAll('.process-caption')]:[];
+  const progress=section?.querySelector('#scene-progress');
   const render=()=>{
     requested=false;
-    $('#header').classList.toggle('is-scrolled',scrollY>40||document.body.classList.contains('inner-page'));
+    $('#header')?.classList.toggle('is-scrolled',scrollY>40||document.body.classList.contains('inner-page'));
     if(!section)return;
     const rect=section.getBoundingClientRect();
-    if(rect.bottom<0||rect.top>innerHeight)return;
+    if(!reduced.matches&&(rect.bottom<0||rect.top>innerHeight))return;
     const p=reduced.matches?1:clamp(-rect.top/Math.max(1,rect.height-innerHeight));
     const scene=p<.16?0:p<.32?1:p<.49?2:p<.65?3:p<.84?4:5;
     const isPierog=scene>=4;
@@ -32,20 +34,16 @@ export function initCinema(){
     section.style.setProperty('--split-left',`${3.4-smooth*5.4}%`);
     section.style.setProperty('--split-right',`${-3.4+smooth*5.4}%`);
     section.style.setProperty('--split-rotation',`${smooth*3}deg`);
-    $('#scene-progress').style.width=`${p*100}%`;
+    if(progress)progress.style.width=`${p*100}%`;
     if(scene!==last){
-      $$('.process-photo').forEach((e,i)=>e.classList.toggle('active',i===scene));
-      $$('.process-caption').forEach((e,i)=>{e.classList.toggle('active',i===scene);e.setAttribute('aria-hidden',String(!reduced.matches&&i!==scene));});
-      $$('[data-process-step]').forEach((b,i)=>b.setAttribute('aria-current',i===scene?'step':'false'));
-      $('#scene-number').textContent=`0${scene+1}`;
-      $('#filling-label')?.classList.toggle('visible',scene===5);
+      photos.forEach((e,i)=>e.classList.toggle('active',i===scene));
+      captions.forEach((e,i)=>{e.classList.toggle('active',i===scene);e.setAttribute('aria-hidden',String(!reduced.matches&&i!==scene));});
       section.dataset.scene=scene;
       last=scene;
     }
   };
   const schedule=()=>{if(!requested){requested=true;requestAnimationFrame(render);}};
   addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule,{passive:true});reduced.addEventListener('change',()=>{last=-1;schedule();});
-  $$('[data-process-step]').forEach(b=>b.addEventListener('click',()=>{const index=Number(b.dataset.processStep);const progress=[.07,.24,.40,.57,.73,.97][index];scrollTo({top:section.offsetTop+(section.offsetHeight-innerHeight)*progress,behavior:reduced.matches?'instant':'smooth'});}));
   window.__renderCinema=render;render();
 }
 

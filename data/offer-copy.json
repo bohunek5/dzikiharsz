@@ -1,0 +1,100 @@
+{
+  "pl": {
+    "title": "Nasze pierogi",
+    "intro": "Co kryją w środku?",
+    "hint": "Przewiń i poznaj farsze.",
+    "cta": "Przejdź do sklepu",
+    "detail": "Poznaj ten smak",
+    "illustration": "Ilustracje farszów. Zdjęcia produktów znajdziesz w sklepie.",
+    "availability": "Pierogi i uszka od 5 listopada",
+    "uszka": "A do barszczu — uszka z grzybami.",
+    "kinds": {
+      "sandacz": "Sandacz", "kaczka": "Kaczka", "ruskie": "Ziemniaki i twaróg", "kapusta": "Kapusta i grzyby",
+      "mietus": "Miętus", "szczupak": "Szczupak", "mieso": "Mięso", "twarog": "Twaróg na słodko"
+    }
+  },
+  "en": {
+    "title": "Our pierogi",
+    "intro": "What’s inside?",
+    "hint": "Scroll to discover the fillings.",
+    "cta": "Visit the shop",
+    "detail": "Discover this flavour",
+    "illustration": "Filling illustrations. Product photos are in the shop.",
+    "availability": "Pierogi and uszka from 5 November",
+    "uszka": "And for borscht — mushroom uszka.",
+    "kinds": {
+      "sandacz": "Zander", "kaczka": "Duck", "ruskie": "Potato and curd cheese", "kapusta": "Cabbage and mushrooms",
+      "mietus": "Burbot", "szczupak": "Pike", "mieso": "Meat", "twarog": "Sweet curd cheese"
+    }
+  },
+  "de": {
+    "title": "Unsere Pierogi",
+    "intro": "Was steckt drin?",
+    "hint": "Scrolle weiter und entdecke die Füllungen.",
+    "cta": "Zum Shop",
+    "detail": "Diesen Geschmack entdecken",
+    "illustration": "Illustrationen der Füllungen. Produktfotos findest du im Shop.",
+    "availability": "Pierogi und Uszka ab 5. November",
+    "uszka": "Und zum Borschtsch — Uszka mit Pilzen.",
+    "kinds": {
+      "sandacz": "Zander", "kaczka": "Ente", "ruskie": "Kartoffeln und Quark", "kapusta": "Kohl und Pilze",
+      "mietus": "Quappe", "szczupak": "Hecht", "mieso": "Fleisch", "twarog": "Süßer Quark"
+    }
+  },
+  "lt": {
+    "title": "Mūsų virtiniai",
+    "intro": "Kas slypi viduje?",
+    "hint": "Slinkite ir susipažinkite su įdarais.",
+    "cta": "Į parduotuvę",
+    "detail": "Atraskite šį skonį",
+    "illustration": "Įdarų iliustracijos. Produktų nuotraukas rasite parduotuvėje.",
+    "availability": "Virtiniai ir auselės nuo lapkričio 5 d.",
+    "uszka": "O prie barščių — auselės su grybais.",
+    "kinds": {
+      "sandacz": "Sterkas", "kaczka": "Antis", "ruskie": "Bulvės ir varškė", "kapusta": "Kopūstai ir grybai",
+      "mietus": "Vėgėlė", "szczupak": "Lydeka", "mieso": "Mėsa", "twarog": "Saldi varškė"
+    }
+  },
+  "hu": {
+    "title": "Pierogijaink",
+    "intro": "Mi van bennük?",
+    "hint": "Görgess tovább, és ismerd meg a töltelékeket.",
+    "cta": "Irány a bolt",
+    "detail": "Fedezd fel ezt az ízt",
+    "illustration": "A töltelékek illusztrációi. A termékfotókat a boltban találod.",
+    "availability": "Pierogi és uszka november 5-től",
+    "uszka": "A borscshoz pedig — gombás uszka.",
+    "kinds": {
+      "sandacz": "Süllő", "kaczka": "Kacsa", "ruskie": "Burgonya és túró", "kapusta": "Káposzta és gomba",
+      "mietus": "Menyhal", "szczupak": "Csuka", "mieso": "Hús", "twarog": "Édes túró"
+    }
+  },
+  "cs": {
+    "title": "Naše pirohy",
+    "intro": "Co se skrývá uvnitř?",
+    "hint": "Posuňte stránku a poznejte náplně.",
+    "cta": "Přejít do obchodu",
+    "detail": "Poznejte tuto chuť",
+    "illustration": "Ilustrace náplní. Fotografie produktů najdete v obchodě.",
+    "availability": "Pirohy a ouška od 5. listopadu",
+    "uszka": "A k boršči — ouška s houbami.",
+    "kinds": {
+      "sandacz": "Candát", "kaczka": "Kachna", "ruskie": "Brambory a tvaroh", "kapusta": "Zelí a houby",
+      "mietus": "Mník", "szczupak": "Štika", "mieso": "Maso", "twarog": "Sladký tvaroh"
+    }
+  },
+  "sk": {
+    "title": "Naše pirohy",
+    "intro": "Čo sa skrýva vnútri?",
+    "hint": "Posuňte stránku a spoznajte náplne.",
+    "cta": "Prejsť do obchodu",
+    "detail": "Spoznajte túto chuť",
+    "illustration": "Ilustrácie náplní. Fotografie produktov nájdete v obchode.",
+    "availability": "Pirohy a ušká od 5. novembra",
+    "uszka": "A k boršču — ušká s hubami.",
+    "kinds": {
+      "sandacz": "Zubáč", "kaczka": "Kačica", "ruskie": "Zemiaky a tvaroh", "kapusta": "Kapusta a huby",
+      "mietus": "Mieň", "szczupak": "Šťuka", "mieso": "Mäso", "twarog": "Sladký tvaroh"
+    }
+  }
+}

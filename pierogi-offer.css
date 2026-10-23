@@ -1,0 +1,51 @@
+/* A menu of cutaways, connected to the same navy kitchen sequence. */
+.hero h1 .hero-yearline{display:block;font-size:.65em;line-height:1.08;max-width:13em;color:#fff9ed}
+.hero h1 .hero-yearline em{color:#e6bd79;white-space:nowrap}
+.pierogi-offer{background:#071f2d;color:#f6efe2;padding:64px var(--gutter) 100px;overflow:clip;scroll-margin-top:var(--header-height)}
+.offer-heading{max-width:780px;margin:0 auto 50px;text-align:center}
+.offer-kicker{font:400 18px/1.5 var(--serif);color:#d9bd94;margin:0 0 18px}
+.offer-heading h2{font:480 clamp(54px,7vw,100px)/1.05 var(--serif);letter-spacing:-.04em;margin:0 0 20px}
+.offer-hint{font:400 14px/1.7 var(--sans);color:#b6cbd2}
+.offer-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 5vw;max-width:1340px;margin:auto}
+.offer-flavour{min-width:0;position:relative;text-align:center;padding-bottom:38px}
+.offer-visual{display:block;position:relative;aspect-ratio:16/9;width:100%;isolation:isolate}
+.offer-visual::before{content:'';position:absolute;inset:8% 5%;z-index:-1;background:radial-gradient(ellipse,#29516340,transparent 68%)}
+.offer-visual img{display:block;width:100%;height:100%;object-fit:contain}
+.offer-whole,.offer-half{position:absolute;inset:0;pointer-events:none}
+.offer-whole{visibility:visible}
+.offer-half{visibility:hidden}
+.offer-half-left{clip-path:inset(0 50% 0 0);transform:translateX(var(--open-x,3.4%)) rotate(var(--open-turn,0deg));transform-origin:30% 60%}
+.offer-half-right{clip-path:inset(0 0 0 50%);transform:translateX(calc(-1 * var(--open-x,3.4%))) rotate(calc(-1 * var(--open-turn,0deg)));transform-origin:70% 60%}
+.offer-flavour[data-open=true] .offer-whole{visibility:hidden}
+.offer-flavour[data-open=true] .offer-half{visibility:visible}
+.offer-caption{margin-top:-7px;position:relative}
+.offer-caption h3{font:480 clamp(25px,2.5vw,38px)/1.18 var(--serif);letter-spacing:-.025em;text-wrap:balance;margin:0 0 12px;color:#f6efe2}
+.offer-caption p{font:400 14px/1.6 var(--sans);color:#d9bd94;margin:0 0 12px}
+.offer-detail{display:inline-flex;align-items:center;gap:26px;min-height:46px;font:400 13px/1.5 var(--sans);border-bottom:1px solid #d9bd9450;color:#d3e0e6}
+.offer-detail:hover{color:#efd4aa;border-color:#efd4aa}
+.offer-uszka{display:flex;align-items:center;gap:25px;max-width:750px;margin:42px auto 0;padding:24px 0;border-top:1px solid #adc6d130;border-bottom:1px solid #adc6d130;font:400 clamp(22px,2.5vw,30px)/1.3 var(--serif)}
+.offer-uszka img{width:106px;height:90px;object-fit:cover;border-radius:50%;flex:none}
+.offer-uszka>span:last-child{margin-left:auto;color:#d9bd94}
+.offer-finale{text-align:center;display:flex;align-items:center;flex-direction:column;gap:24px;margin:56px auto 0}
+.offer-finale>p{font:400 20px/1.4 var(--serif);margin:0;color:#d9bd94}
+.offer-finale .button{min-width:260px;min-height:60px;background:#e8c797;color:#071f2d;justify-content:space-between}
+.offer-finale small{display:block;max-width:45em;font:400 11px/1.7 var(--sans);color:#9eb7c2}
+.offer-visual:focus-visible,.offer-detail:focus-visible,.offer-uszka:focus-visible{outline:2px solid #e8c797;outline-offset:7px}
+@media(min-width:1100px){.offer-flavour:nth-child(even){padding-top:75px}}
+@media(max-width:760px){
+ .hero h1 .hero-yearline{font-size:.64em;max-width:10em}
+ .pierogi-offer{padding-top:45px;padding-bottom:60px}
+ .offer-heading{margin-bottom:24px}
+ .offer-heading h2{font-size:55px}
+ .offer-kicker{font-size:17px;margin-bottom:14px}
+ .offer-grid{grid-template-columns:1fr;gap:22px;max-width:540px}
+ .offer-flavour{padding-bottom:22px}
+ .offer-visual{width:calc(100% + 16px);margin-left:-8px}
+ .offer-caption h3{font-size:29px;max-width:12em;margin:0 auto 10px}
+ .offer-caption p{font-size:13px;margin-bottom:5px}
+ .offer-uszka{gap:18px;margin-top:24px;font-size:23px}
+ .offer-uszka img{width:76px;height:76px}
+ .offer-finale{margin-top:38px;gap:22px}
+ .offer-finale .button{width:100%;max-width:350px}
+}
+@media(prefers-reduced-motion:reduce){.offer-half-left{transform:translateX(-3%)}.offer-half-right{transform:translateX(3%)}}

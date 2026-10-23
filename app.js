@@ -5,6 +5,7 @@ import { initI18n } from './js/i18n.js';
 import { initJourney } from './js/journey.js';
 import { initFooterFilm } from './js/footer-film.js';
 import { initAvailability } from './js/availability.js';
+import { initPierogiOffer } from './js/pierogi-offer.js';
 
 initShell();
 await initStorefront();
@@ -12,6 +13,7 @@ initCinema();
 initJourney();
 await initI18n();
 await initAvailability();
+await initPierogiOffer();
 initFooterFilm();
 await document.fonts.ready;
 window.__ready = true;
