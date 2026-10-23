@@ -1,14 +1,16 @@
-import { initContactMap } from './js/contact-map.js?v=20261023-direct';
-import { initShell } from './js/shell.js?v=20261023-direct';
-import { initStorefront } from './js/storefront.js?v=20261023-direct';
-import { initCinema } from './js/cinema.js?v=20261023-direct';
-import { initI18n } from './js/i18n.js?v=20261023-direct';
-import { initJourney } from './js/journey.js?v=20261023-direct';
-import { initFooterFilm } from './js/footer-film.js?v=20261023-direct';
-import { initAvailability } from './js/availability.js?v=20261023-direct';
-import { initPierogiOffer } from './js/pierogi-offer.js?v=20261023-direct';
+import { initContactMap } from './js/contact-map.js?v=20261023-motion';
+import { initFavicon } from './js/favicon.js?v=20261023-motion';
+import { initShell } from './js/shell.js?v=20261023-motion';
+import { initStorefront } from './js/storefront.js?v=20261023-motion';
+import { initCinema } from './js/cinema.js?v=20261023-motion';
+import { initI18n } from './js/i18n.js?v=20261023-motion';
+import { initJourney } from './js/journey.js?v=20261023-motion';
+import { initFooterFilm } from './js/footer-film.js?v=20261023-motion';
+import { initAvailability } from './js/availability.js?v=20261023-motion';
+import { initPierogiOffer } from './js/pierogi-offer.js?v=20261023-motion';
 
 initShell();
+void initFavicon();
 await initStorefront();
 initCinema();
 initJourney();

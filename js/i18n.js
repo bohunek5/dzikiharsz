@@ -113,7 +113,7 @@ async function load(code) {
   if (code === 'pl') return {};
   if (!dictionaries.has(code)) {
     const url = new URL(`../data/locales/${code}.json`, import.meta.url);
-    url.searchParams.set('v', '20261023-direct');
+    url.searchParams.set('v', '20261023-motion');
     const pending = fetch(url).then(response => {
       if (!response.ok) throw new Error(`Translation ${code}: HTTP ${response.status}`);
       return response.json();

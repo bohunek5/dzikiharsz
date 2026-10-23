@@ -1,4 +1,6 @@
-import {t} from './i18n.js?v=20261023-direct';
+import {t} from './i18n.js?v=20261023-motion';
+import {createHeaderScrollState} from './header-scroll.js?v=20261023-motion';
+import {dumplingPose,applyDumplingPose} from './pierogi-offer.js?v=20261023-motion';
 
 const $ = s => document.querySelector(s);
 const filmIcons = {
@@ -11,6 +13,7 @@ export function initCinema(){
   setupFilm($('#hero-film'),$('#film-control'),$('#film-symbol'),$('#film-label'));
   setupFilm($('#place-film'),$('#place-film-control'),$('#place-film-symbol'),$('#place-film-label'));
   let requested=false,last=-1;
+  const compactHeader=createHeaderScrollState(scrollY);
   const section=$('#w-srodku');
   if(section)new IntersectionObserver(([entry])=>section.classList.toggle('is-visible',entry.isIntersecting),{threshold:0}).observe(section);
   const photos=section?[...section.querySelectorAll('.process-photo')]:[];
@@ -21,11 +24,9 @@ export function initCinema(){
     const header=$('#header');
     if(header){
       header.classList.toggle('is-scrolled',scrollY>40||document.body.classList.contains('inner-page'));
-      // Separate the visual bar from the reserved page spacing; hysteresis avoids flicker.
-      if(scrollY>72)header.classList.add('is-compact');
-      else if(scrollY<24)header.classList.remove('is-compact');
+      header.classList.toggle('is-compact',compactHeader(scrollY,header.classList.contains('menu-open')));
     }
-    if(!section)return;
+    if(!section||document.hidden)return;
     const rect=section.getBoundingClientRect();
     if(!reduced.matches&&(rect.bottom<0||rect.top>innerHeight))return;
     const p=reduced.matches?1:clamp(-rect.top/Math.max(1,rect.height-innerHeight));
@@ -33,20 +34,17 @@ export function initCinema(){
     const isPierog=scene>=4;
     section.style.setProperty('--process-photo-opacity',isPierog?'0':'1');
     section.style.setProperty('--pierog-opacity',isPierog?'1':'0');
-    // The closed dumpling and the cut faces are mutually exclusive frames.
-    // Compress the whole silhouette slightly, then reveal both halves in one paint.
-    const split=p>=.84;
-    const compression=clamp((p-.80)/.04);
-    const opening=clamp((p-.84)/.13);
-    const smooth=opening*opening*(3-2*opening);
+    // Hold the cooked dumpling before tension, then open along the same shallow
+    // asymmetric arc as the flavour cards. The source frames never crossfade.
+    const pose=dumplingPose(reduced.matches?1:clamp((p-.75)/.225));
+    const split=pose.open;
     section.dataset.dumpling=split?'split':'whole';
     section.style.setProperty('--whole-opacity',split?'0':'1');
     section.style.setProperty('--split-opacity',split?'1':'0');
-    section.style.setProperty('--whole-scale-x',String(1-compression*.035));
-    section.style.setProperty('--whole-scale-y',String(1+compression*.012));
-    section.style.setProperty('--split-left',`${3.4-smooth*5.4}%`);
-    section.style.setProperty('--split-right',`${-3.4+smooth*5.4}%`);
-    section.style.setProperty('--split-rotation',`${smooth*3}deg`);
+    applyDumplingPose(section,pose);
+    const warmth=clamp((p-.65)/.35);
+    section.style.setProperty('--steam-rise',`${8-warmth*65}%`);
+    section.style.setProperty('--steam-opacity',String(.22+Math.sin(warmth*Math.PI)*.25));
     if(progress)progress.style.width=`${p*100}%`;
     if(scene!==last){
       photos.forEach((e,i)=>e.classList.toggle('active',i===scene));
@@ -57,6 +55,7 @@ export function initCinema(){
   };
   const schedule=()=>{if(!requested){requested=true;requestAnimationFrame(render);}};
   addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule,{passive:true});reduced.addEventListener('change',()=>{last=-1;schedule();});
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)schedule();});
   window.__renderCinema=render;render();
 }
 

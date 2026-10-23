@@ -1,4 +1,4 @@
-import {getLanguage,t} from './i18n.js?v=20261023-direct';
+import {getLanguage,t} from './i18n.js?v=20261023-motion';
 
 const compactLabels={
   pl:['Wybierasz','Pakujemy','W drodze','Cieszysz się smakiem'],

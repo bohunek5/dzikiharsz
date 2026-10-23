@@ -1,4 +1,4 @@
-import { t, getLanguage } from './i18n.js?v=20261023-direct';
+import { t, getLanguage } from './i18n.js?v=20261023-motion';
 const $ = (s, parent = document) => parent.querySelector(s);
 const $$ = (s, parent = document) => [...parent.querySelectorAll(s)];
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

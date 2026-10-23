@@ -84,18 +84,23 @@ html[data-theme] .hero-content > .button:focus-visible { outline: 2px solid curr
     align-self: start;
     justify-self: start;
   }
-  .footer .footer-links { gap: 2px 16px; padding-top: 12px; }
+  .footer .footer-links { gap: 8px 22px; padding-top: 22px; }
   .footer .footer-links nav {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: stretch;
-    max-width: 400px;
+    max-width: 360px;
+    gap: 8px 16px;
+    margin-bottom: 8px;
   }
   .footer .footer-links nav > :is(a, button) {
     min-width: 0;
-    padding: 7px 8px;
+    min-height: 48px;
+    padding: 10px 4px;
+    font-size: 12px;
+    line-height: 1.5;
     white-space: normal;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
   }
-  .footer .footer-links nav > :nth-child(3n + 1)::before { display: none; }
+  .footer .footer-links nav > :not(:first-child)::before { display: none; }
 }

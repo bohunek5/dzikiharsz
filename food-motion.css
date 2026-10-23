@@ -1,0 +1,84 @@
+/* Scroll is the only clock. No crossfade between closed dough and cut faces. */
+.offer-visual { perspective:850px; }
+.process-pierog { perspective:1100px; }
+.offer-whole,.process-whole {
+  transform:translate3d(0,var(--whole-lift,0%),0) rotate(var(--whole-turn,0deg)) scale(var(--whole-scale-x,1),var(--whole-scale-y,1));
+  transform-origin:50% 62%;
+  transition:none;
+}
+.offer-half,.process-half { transition:none; backface-visibility:hidden; }
+.offer-half-left,.process-left {
+  transform:translate3d(var(--food-left-x,3.4%),var(--food-left-y,.6%),0) rotate(var(--food-left-turn,0deg)) rotateY(var(--food-left-tilt,-7deg)) scale(var(--food-part-scale,.985));
+  transform-origin:38% 64%;
+}
+.offer-half-right,.process-right {
+  transform:translate3d(var(--food-right-x,-3.4%),var(--food-right-y,.6%),0) rotate(var(--food-right-turn,0deg)) rotateY(var(--food-right-tilt,7deg)) scale(var(--food-part-scale,.985));
+  transform-origin:62% 64%;
+}
+.offer-flavour .offer-whole { opacity:1; visibility:visible; }
+.offer-flavour .offer-half { opacity:0; visibility:hidden; }
+.offer-flavour[data-open=true] .offer-whole { opacity:0; visibility:hidden; }
+.offer-flavour[data-open=true] .offer-half { opacity:1; visibility:visible; }
+.offer-flavour .offer-flour {
+  inset:36% 8% 24%;
+  background:radial-gradient(circle at 29% 65%,currentColor 0 .7px,transparent 1.5px),radial-gradient(circle at 34% 42%,currentColor 0 .6px,transparent 1.2px),radial-gradient(circle at 46% 76%,currentColor 0 .7px,transparent 1.4px),radial-gradient(circle at 58% 48%,currentColor 0 .8px,transparent 1.6px),radial-gradient(circle at 69% 72%,currentColor 0 .6px,transparent 1.3px),radial-gradient(circle at 74% 39%,currentColor 0 .5px,transparent 1.2px);
+  color:var(--ink,#f4eee2);
+  mask-image:none;
+  pointer-events:none;
+}
+.offer-dish-image {
+  transform:translate3d(var(--dish-x,0px),var(--dish-y,0px),0) scale(var(--dish-scale,1));
+  transform-origin:50% 72%;
+  opacity:1;
+  transition:none;
+}
+.offer-dish[data-flavour=uszka] .offer-visual::before,
+.offer-dish[data-flavour=uszka] .offer-visual::after {
+  content:"";
+  position:absolute;
+  z-index:1;
+  width:4%;height:20%;left:43%;top:12%;
+  border-radius:50%;
+  background:radial-gradient(ellipse,color-mix(in srgb,var(--ink,#f4eee2) 24%,transparent),transparent 68%);
+  filter:blur(2px);
+  opacity:var(--accent-opacity,0);
+  transform:translate3d(var(--accent-x,0px),var(--accent-y,0px),0) rotate(-7deg);
+  pointer-events:none;
+}
+.offer-dish[data-flavour=uszka] .offer-visual::after { left:57%;top:16%;height:17%;transform:translate3d(calc(var(--accent-x,0px) * -.6),calc(var(--accent-y,0px) * .8),0) rotate(8deg); }
+.offer-dish[data-flavour=pasztet] .offer-flour { inset:49% 7% 20% 15%;color:#a58150; }
+.offer-dish[data-flavour=smalec] .offer-flour { inset:48% 2% 20% 40%;color:#a58150; }
+.process-scroll .pierog-steam { top:3%;height:25%; }
+.process-scroll .pierog-steam i {
+  animation:none;
+  bottom:0;width:7%;height:calc(72% - var(--steam-rise,0%) * .3);
+  color:#fffaf0;
+  background:none;filter:none;border-radius:0;
+  opacity:calc(var(--steam-opacity,0) * .08);
+  transform:translateX(calc(var(--steam-rise,0%) * -.12)) rotate(-5deg);
+  transform-origin:50% 100%;
+  mask-image:linear-gradient(0deg,transparent,#000 16% 72%,transparent);
+}
+.process-scroll .pierog-steam i::before,
+.process-scroll .pierog-steam i::after { content:"";position:absolute;width:100%;height:56%;box-sizing:border-box; }
+.process-scroll .pierog-steam i::before { top:0;left:0;border-left:1px solid currentColor;border-radius:70% 0 0 70%;transform:rotate(9deg); }
+.process-scroll .pierog-steam i::after { bottom:0;right:0;border-right:1px solid currentColor;border-radius:0 65% 65% 0;transform:rotate(8deg); }
+.process-scroll .pierog-steam i:nth-child(2) { height:calc(64% - var(--steam-rise,0%) * .25);transform:translateX(calc(var(--steam-rise,0%) * .08)) rotate(3deg); }
+.process-scroll .pierog-steam i:nth-child(3) { height:calc(76% - var(--steam-rise,0%) * .3);transform:translateX(calc(var(--steam-rise,0%) * -.08)) rotate(-3deg); }
+.offer-flavour.food-in-view :is(.offer-whole,.offer-half,.offer-dish-image) { will-change:transform; }
+.process-scroll:not(.is-visible) .process-half { will-change:auto; }
+
+@media(prefers-reduced-motion:reduce) {
+  .offer-visual,.process-pierog { perspective:none; }
+  .offer-whole,.process-whole,.offer-dish-image { transform:none; }
+  .offer-half-left,.process-left { transform:translateX(-3%); }
+  .offer-half-right,.process-right { transform:translateX(3%); }
+  .offer-flavour .offer-flour,.offer-dish .offer-visual::before,.offer-dish .offer-visual::after,.process-scroll .pierog-steam { display:none; }
+  .offer-flavour.food-in-view :is(.offer-whole,.offer-half,.offer-dish-image) { will-change:auto; }
+}
+
+/* Leave room for the open silhouette, including its arc, on narrow screens.
+   This also wins over the earlier 100vw reduced-motion presentation. */
+@media(max-width:760px) {
+  .process-scroll .process-pierog { width:90vw;left:50%; }
+}

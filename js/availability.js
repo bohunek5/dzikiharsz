@@ -1,4 +1,4 @@
-import { getLanguage, t } from './i18n.js?v=20261023-direct';
+import { getLanguage, t } from './i18n.js?v=20261023-motion';
 
 // The catalogue is the source of truth. A missing date never means in stock.
 // No year is added: the original product notices only specify 5 November.

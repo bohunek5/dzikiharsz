@@ -1,4 +1,4 @@
-import {getLanguage} from './i18n.js?v=20261023-direct';
+import {getLanguage} from './i18n.js?v=20261023-motion';
 
 export const offerFlavours = [
   ['sandacz', 'pierogi-z-sandaczem-6', 'assets/offer-boiled-sandacz.webp', 'assets/pierog-boiled-whole.webp'],
@@ -17,6 +17,51 @@ export const offerDishes = [
   {kind:'smalec', slug:'smalec-14', image:'assets/offer-smalec.webp', type:'dish'}
 ];
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clamp = value => Math.max(0, Math.min(1, value));
+const smooth = value => { const t = clamp(value); return t * t * (3 - 2 * t); };
+
+/** One reversible pose for both the large dumpling and each flavour.
+ * Only one source frame is visible: closed dough, then the two cut faces.
+ * The first part of the opening reveals the seam; the rest follows a shallow arc.
+ */
+export function dumplingPose(progress) {
+  const tension = smooth((progress - .18) / .22);
+  const opening = clamp((progress - .4) / .6);
+  const seam = smooth(opening / .2);
+  const release = smooth((opening - .12) / .88);
+  const arc = Math.sin(release * Math.PI);
+  return {
+    open: progress >= .4,
+    wholeX: 1 - tension * .045,
+    wholeY: 1 + tension * .022,
+    wholeLift: tension * .6,
+    wholeTurn: tension * -.65,
+    leftX: 3.4 - seam * 1.3 - release * 6.1,
+    rightX: -3.4 + seam * 1.3 + release * 5.7,
+    leftY: .6 - arc * 3.2 + release * 1.2,
+    rightY: .6 - arc * 2.3 + release * .5,
+    leftTurn: -release * 4.5 - arc,
+    rightTurn: release * 3.2 + arc * .6,
+    leftTilt: -7 + release * 5,
+    rightTilt: 7 - release * 5,
+    scale: .985 + seam * .015,
+    flour: Math.sin(opening * Math.PI) * .2,
+    release
+  };
+}
+
+export function applyDumplingPose(element, pose) {
+  const values = {
+    '--whole-scale-x':pose.wholeX, '--whole-scale-y':pose.wholeY,
+    '--whole-lift':`${pose.wholeLift}%`, '--whole-turn':`${pose.wholeTurn}deg`,
+    '--food-left-x':`${pose.leftX}%`, '--food-right-x':`${pose.rightX}%`,
+    '--food-left-y':`${pose.leftY}%`, '--food-right-y':`${pose.rightY}%`,
+    '--food-left-turn':`${pose.leftTurn}deg`, '--food-right-turn':`${pose.rightTurn}deg`,
+    '--food-left-tilt':`${pose.leftTilt}deg`, '--food-right-tilt':`${pose.rightTilt}deg`,
+    '--food-part-scale':pose.scale
+  };
+  for (const [name, value] of Object.entries(values)) element.style.setProperty(name, String(value));
+}
 
 /** Shared with the static build: all eleven food links exist without JavaScript. */
 export function offerMarkup(products, copy) {
@@ -43,7 +88,7 @@ export async function initPierogiOffer() {
   const section = document.querySelector('#nasze-pierogi');
   if (!section) return;
   try {
-    const response = await fetch('data/offer-copy.json?v=20261023-direct');
+    const response = await fetch('data/offer-copy.json?v=20261023-motion');
     if (!response.ok) throw new Error(`Offer translations: HTTP ${response.status}`);
     const copy = await response.json();
     const translateOffer = () => {
@@ -59,36 +104,57 @@ export async function initPierogiOffer() {
     // The static Polish offer and its animation remain usable if translations fail.
   }
   const cards = [...section.querySelectorAll('.offer-flavour')];
+  const visuals = new Map(cards.map(card => [card, card.querySelector('.offer-visual')]));
+  const images = new Map(cards.map(card => [card, [...card.querySelectorAll(card.dataset.offerType === 'pierog' ? '.offer-half img' : '.offer-dish-image')]]));
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const visible = new Set();
   let frame = 0;
   function render() {
     frame = 0;
+    if (document.hidden) return;
     for (const card of visible) {
-      const visual = card.querySelector('.offer-visual');
+      const visual = visuals.get(card);
       const rect = visual.getBoundingClientRect();
-      const progress = reduced.matches ? 1 : Math.max(0, Math.min(1, (innerHeight * .87 - rect.top) / Math.max(180, innerHeight * .38)));
+      const onScreen = rect.bottom >= 0 && rect.top <= innerHeight;
+      card.classList.toggle('food-in-view', onScreen);
+      if (!onScreen && !reduced.matches) continue;
+      const progress = reduced.matches || card.matches(':focus-within') ? 1 : clamp((innerHeight * .87 - rect.top) / Math.max(180, innerHeight * .38));
       const isPierog = card.dataset.offerType === 'pierog';
-      const ready = [...card.querySelectorAll(isPierog ? '.offer-half img' : '.offer-dish-image')].every(img => img.complete && img.naturalWidth > 0);
-      const amount = Math.max(0, (progress - .12) / .88);
-      const ease = amount * amount * (3 - 2 * amount);
+      const ready = images.get(card).every(img => img.complete && img.naturalWidth > 0);
+      const ease = smooth(progress);
+      card.dataset.foodProgress = progress.toFixed(4);
       if (isPierog) {
-        card.dataset.open = String((progress > .12 || card.matches(':focus-within')) && ready);
-        visual.style.setProperty('--open-x', `${3.4 - ease * 7.4}%`);
-        visual.style.setProperty('--open-turn', `${ease * -3}deg`);
+        const pose = dumplingPose(ready ? progress : 0);
+        applyDumplingPose(visual, pose);
+        card.dataset.open = String(pose.open && ready);
+        card.style.setProperty('--flour-opacity', reduced.matches ? '0' : String(pose.flour));
+        card.style.setProperty('--flour-y', `${8 - pose.release * 16}px`);
       } else {
-        visual.style.setProperty('--dish-y', reduced.matches ? '0px' : `${20 - ease * 28}px`);
-        visual.style.setProperty('--dish-opacity', reduced.matches ? '1' : String(.65 + ease * .35));
+        const kind = card.dataset.flavour;
+        // A plate settles upright. Bread dishes approach from opposite sides;
+        // neither plate nor jar rotates, and no photograph is duplicated.
+        const x = kind === 'pasztet' ? (1 - ease) * 14 : kind === 'smalec' ? (ease - 1) * 16 : 0;
+        const y = (1 - ease) * (kind === 'uszka' ? 20 : 8);
+        visual.style.setProperty('--dish-x', reduced.matches ? '0px' : `${x}px`);
+        visual.style.setProperty('--dish-y', reduced.matches ? '0px' : `${y}px`);
+        visual.style.setProperty('--dish-scale', reduced.matches ? '1' : String(.975 + ease * .025));
+        visual.style.setProperty('--dish-opacity', '1');
+        visual.style.setProperty('--accent-y', `${10 - ease * 26}px`);
+        visual.style.setProperty('--accent-x', `${(ease - .5) * 8}px`);
+        visual.style.setProperty('--accent-opacity', reduced.matches ? '0' : String(Math.sin(progress * Math.PI) * .32));
+        card.style.setProperty('--flour-opacity', reduced.matches || kind === 'uszka' ? '0' : String(Math.sin(progress * Math.PI) * .35));
+        card.style.setProperty('--flour-y', `${5 - ease * 12}px`);
       }
-      card.style.setProperty('--flour-opacity', ready ? String(reduced.matches ? .1 : .08 + ease * .16) : '0');
-      card.style.setProperty('--flour-y', reduced.matches ? '0px' : `${(1 - ease) * 16}px`);
     }
   }
-  const schedule = () => { if (!frame) frame = requestAnimationFrame(render); };
+  const schedule = () => { if (!frame && !document.hidden && visible.size) frame = requestAnimationFrame(render); };
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => entry.isIntersecting ? visible.add(entry.target) : visible.delete(entry.target));
+    entries.forEach(entry => {
+      if (entry.isIntersecting) visible.add(entry.target);
+      else { visible.delete(entry.target); entry.target.classList.remove('food-in-view'); }
+    });
     schedule();
-  }, {rootMargin:'160px 0px'});
+  }, {rootMargin:'0px'});
   cards.forEach(card => {
     observer.observe(card);
     card.querySelectorAll('img').forEach(img => img.addEventListener('load', schedule, {once:true}));
@@ -98,4 +164,8 @@ export async function initPierogiOffer() {
   addEventListener('scroll', schedule, {passive:true});
   addEventListener('resize', schedule, {passive:true});
   reduced.addEventListener('change', schedule);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { cancelAnimationFrame(frame); frame = 0; }
+    else schedule();
+  });
 }
