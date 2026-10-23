@@ -1,0 +1,128 @@
+{
+  "pierogi-z-sandaczem-6": {
+    "intro": [
+      "Sandacz ma u nas swoje miejsce także w pierogach. Delikatny rybny farsz zamykamy w cieście, a obok pojawia się sos cebulowy — duet dobrze znany z naszej kuchni.",
+      "W porcji jest 9 pierogów, a sos dostajesz w zestawie. To dobry wybór, gdy masz ochotę na rybę w nieco innej postaci albo chcesz zacząć poznawanie naszych mazurskich smaków."
+    ],
+    "serving": "Propozycja podania: wyłóż pierogi na talerz i dodaj sos cebulowy dołączony do zestawu.",
+    "highlights": ["Farsz z sandacza", "9 sztuk w porcji", "Sos cebulowy w zestawie"],
+    "occasion": "Na obiad dla miłośników ryb i pierwsze spotkanie z kuchnią Harszu."
+  },
+  "pierogi-z-kaczka-17": {
+    "intro": [
+      "Kaczka trafia do farszu, a kurki do sosu. To jedno z tych połączeń, po które sięga się, gdy przy stole ma być trochę bardziej odświętnie, ale nadal po domowemu.",
+      "Porcja liczy 9 pierogów. Sos kurkowy pakujemy w osobny pojemniczek, więc samodzielnie zdecydujesz, ile trafi na talerz."
+    ],
+    "serving": "Propozycja podania: podaj z dołączonym sosem kurkowym; polej nim pierogi lub postaw go obok.",
+    "highlights": ["Farsz z kaczki", "9 sztuk w porcji", "Sos kurkowy osobno"],
+    "occasion": "Na spokojny weekendowy obiad albo kolację w dobrym towarzystwie."
+  },
+  "pierogi-ruskie-12": {
+    "intro": [
+      "Ziemniaki i twaróg — znajomy farsz, do którego chętnie się wraca. Ruskie mają w naszej karcie stałe miejsce obok rybnych propozycji znad Darginu.",
+      "W porcji dostajesz 9 pierogów. Wybierz je, gdy masz ochotę na klasyczny obiad, albo zestaw z innym smakiem i podziel się przy stole."
+    ],
+    "serving": "Propozycja podania: ze śmietaną i skwarkami, jak w naszej propozycji z tawerny. Dodatki dobierz osobno.",
+    "highlights": ["Ziemniaki i twaróg", "9 sztuk w porcji"],
+    "occasion": "Na codzienny obiad i wspólny stół, przy którym każdy ma swój ulubiony farsz."
+  },
+  "pierogi-z-kapusta-i-grzybami-16": {
+    "intro": [
+      "Kapusta i grzyby to połączenie, które kojarzy się z domową kuchnią i świątecznym stołem. U nas trafia do pierogów, po które można sięgnąć również bez specjalnej okazji.",
+      "Porcja liczy 9 sztuk. To propozycja dla osób, które szukają znajomego smaku kapusty i grzybów oraz dobrego towarzystwa dla czerwonego barszczu."
+    ],
+    "serving": "Propozycja podania: postaw obok kubek czerwonego barszczu. Barszcz przygotuj osobno.",
+    "highlights": ["Kapusta i grzyby", "9 sztuk w porcji"],
+    "occasion": "Na świąteczny stół albo obiad, który przypomina domowe spotkania."
+  },
+  "pierogi-z-mietusem-8": {
+    "intro": [
+      "Miętus to mniej oczywisty wybór do pierogów i właśnie dlatego warto go poznać. W środku znajdziesz delikatny rybny farsz — jedną z naszych propozycji dla ciekawych mazurskiej kuchni.",
+      "Porcja to 9 pierogów. Możesz zacząć od miętusa albo porównać go przy wspólnym stole z sandaczem i szczupakiem. Każdy ma tu swoich zwolenników."
+    ],
+    "serving": "Propozycja podania: podaj na osobnym talerzu, aby poznać smak farszu, lub zestaw z drugim rodzajem pierogów rybnych.",
+    "highlights": ["Farsz z miętusa", "9 sztuk w porcji"],
+    "occasion": "Na obiad dla tych, którzy lubią odkrywać mniej oczywiste rybne smaki."
+  },
+  "pierogi-ze-szczupakiem-19": {
+    "intro": [
+      "Szczupak dobrze odnajduje się w naszej mazurskiej karcie. Tutaj występuje jako delikatny farsz w pierogach, którym wystarcza proste podanie.",
+      "W porcji jest 9 sztuk. Jeśli lubisz ryby i chcesz spróbować ich w innym wydaniu, ten smak dobrze nadaje się na początek — lub do porównania z sandaczem i miętusem."
+    ],
+    "serving": "Propozycja podania: z roztopionym masłem i świeżo mielonym pieprzem. Dodatki przygotuj osobno.",
+    "highlights": ["Farsz ze szczupaka", "9 sztuk w porcji"],
+    "occasion": "Na obiad z rybnym akcentem i degustację smaków z naszej kuchni."
+  },
+  "pierogi-z-miesem-13": {
+    "intro": [
+      "Mięsny farsz, ciasto i skwarki — klasyka, która w naszej kuchni nie potrzebuje wymyślnej oprawy. To propozycja dla tych, którzy przy wyborze pierogów najchętniej wracają do mięsa.",
+      "Porcja liczy 9 sztuk. Sprawdzą się jako główny punkt obiadu albo część większego wyboru pierogów, gdy każdy przy stole zamawia coś innego."
+    ],
+    "serving": "Propozycja podania: ze skwarkami, zgodnie z opisem produktu w naszej karcie.",
+    "highlights": ["Mięsny farsz", "9 sztuk w porcji"],
+    "occasion": "Na konkretny obiad po dniu pracy, spacerze albo powrocie znad jeziora."
+  },
+  "pierogi-z-twarogiem-11": {
+    "intro": [
+      "W naszej karcie jest też miejsce na słodko. Pierogi z twarogiem to znajomy smak, który równie dobrze pasuje na obiad, jak na zakończenie posiłku.",
+      "Dostajesz 9 pierogów z twarogiem na słodko. Możesz wybrać całą porcję dla siebie lub postawić ją na środku stołu po wytrawnych smakach."
+    ],
+    "serving": "Propozycja podania: jako słodkie danie główne lub deser do podzielenia przy stole.",
+    "highlights": ["Twaróg na słodko", "9 sztuk w porcji"],
+    "occasion": "Na słodki obiad, deser i małą zmianę po rybnych lub mięsnych farszach."
+  },
+  "uszka-z-grzybami-18": {
+    "intro": [
+      "Małe uszka, grzybowy farsz i cienkie ciasto. W naszej kuchni ich naturalnym towarzystwem jest czerwony barszcz — przy świątecznym stole i w zwykły dzień.",
+      "To osobna pozycja w karcie, mniejsza od klasycznych pierogów. Jeśli planujesz poczęstunek dla większej liczby osób, przed zamówieniem zapytaj nas o wielkość opakowania."
+    ],
+    "serving": "Propozycja podania: w czerwonym barszczu przygotowanym osobno.",
+    "highlights": ["Grzybowy farsz", "Cienkie ciasto"],
+    "occasion": "Do wigilijnego barszczu i na każdy dzień, kiedy masz ochotę na tę klasykę."
+  },
+  "pasztet-15": {
+    "intro": [
+      "W naszym pasztecie jedną z głównych ról gra drób. Ma smarowną konsystencję i dobrze pasuje do pieczywa — na śniadanie, spokojną kolację albo kanapkę zabraną ze sobą.",
+      "W Harszu taki smak kojarzy się także z przygotowaniami do rejsu. Kromka chleba, pasztet i ogórek to nasza propozycja prostego posiłku przed wyjściem na wodę."
+    ],
+    "serving": "Propozycja podania: na pieczywie, z ogórkiem obok. Pieczywo i dodatki przygotuj osobno.",
+    "highlights": ["Z dodatkiem drobiu", "Smarowna konsystencja"],
+    "occasion": "Na śniadanie i kanapki przed spacerem lub rejsem."
+  },
+  "smalec-14": {
+    "intro": [
+      "Smalec w słoiku, u nas znany również pod nazwą „Dżem ze Świni”. To wytrawna propozycja do chleba dla osób, które lubią tradycyjne smaki.",
+      "W portowej kuchni dobrze odnajduje się przy prostym posiłku przed wyjściem na wodę. Postaw słoik na stole, dołóż pieczywo i coś kiszonego — reszta zależy od apetytu."
+    ],
+    "serving": "Propozycja podania: na kromce chleba, z kiszonym dodatkiem. Pieczywo i dodatki przygotuj osobno.",
+    "highlights": ["Smalec w słoiku", "Do pieczywa"],
+    "occasion": "Na wspólny stół, domową kolację albo początek dnia nad wodą."
+  },
+  "torba-harszowa-10": {
+    "intro": [
+      "Torba Dziki Harsz na zakupy i rzeczy, które trzeba zabrać ze sobą. Przyda się na pieczywo, ręcznik czy drobiazgi przenoszone między jachtem a lądem.",
+      "To praktyczna pamiątka z Harszu do codziennego używania. Możesz zabrać ją na kolejną wyprawę albo po prostu po zakupy w swojej okolicy."
+    ],
+    "serving": "Propozycja użycia: na codzienne zakupy, ręcznik lub drobiazgi z jachtu.",
+    "highlights": ["Torba Dziki Harsz", "Na zakupy i drobiazgi"],
+    "occasion": "Dla siebie albo na praktyczny prezent komuś, kto lubi wracać nad Dargin."
+  },
+  "kaczka-harszowa-20": {
+    "intro": [
+      "Mała, żółta Kaczka Harszowa może zająć miejsce na biurku, w kamperze albo na jachcie. To drobna pamiątka dla tych, którzy chcą mieć przy sobie coś z Harszu.",
+      "Nie wymaga planowania wielkiej wyprawy. Możesz podarować ją znajomemu z załogi albo postawić u siebie i przypominać sobie chwile nad Darginem."
+    ],
+    "serving": "Propozycja użycia: jako pamiątka na biurku, w kamperze lub na jachcie.",
+    "highlights": ["Żółta Kaczka Harszowa", "Pamiątka znad Darginu"],
+    "occasion": "Na drobny prezent dla kogoś z załogi i wspomnienie pobytu w Harszu."
+  },
+  "voucher-portowy-9": {
+    "intro": [
+      "150 zł do wykorzystania na dostępne usługi w Dzikim Harszu. Voucher może objąć port, prąd, camping lub aktywności oferowane w chwili realizacji — wybór należy do obdarowanej osoby.",
+      "Voucher jest ważny przez 12 miesięcy od daty zakupu. Na miejscu wystarczy go okazać i przeznaczyć jego wartość na wybrane dostępne usługi. Szczegółowe warunki znajdziesz w regulaminie."
+    ],
+    "serving": "Propozycja wykorzystania: podaruj voucher osobie planującej pobyt w Harszu; zakres usług ustala się według dostępności przy realizacji.",
+    "highlights": ["Wartość 150 zł", "Ważny przez 12 miesięcy", "Na dostępne usługi w Harszu"],
+    "occasion": "Na prezent dla żeglarza, miłośnika campingu lub kogoś, kto planuje wrócić nad Dargin."
+  }
+}

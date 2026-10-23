@@ -1,0 +1,9 @@
+/* Rendered kitchen keyframe, integrated into the existing navy footer. */
+.footer-kitchen-art{position:relative;overflow:hidden;background:#062b3c;color:#f7f1e7;padding:0 var(--gutter)}
+.footer-kitchen-figure{position:relative;max-width:1100px;margin:0 auto;isolation:isolate}
+.footer-kitchen-figure:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#062b3c,transparent 9%,transparent 91%,#062b3c),linear-gradient(0deg,#062b3c,transparent 20%,transparent 90%,#062b3c)}
+.footer-kitchen-figure img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain}
+.footer-kitchen-figure figcaption{position:absolute;z-index:1;bottom:14px;left:4%;right:4%;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:12px;line-height:1.5;letter-spacing:.03em}
+.footer-kitchen-figure small{font-size:10px;color:#c0d0d5}
+.footer-kitchen-art+.footer{border-top:0;padding-top:34px}
+@media(max-width:760px){.footer-kitchen-art{padding:0}.footer-kitchen-figure img{aspect-ratio:1.46;object-fit:cover;object-position:50% 50%}.footer-kitchen-figure:after{background:linear-gradient(0deg,#062b3c,transparent 28%,transparent 90%,#062b3c)}.footer-kitchen-figure figcaption{left:var(--gutter);right:var(--gutter);bottom:10px;font-size:11px}.footer-kitchen-figure small{font-size:9px}.footer-kitchen-art+.footer{padding-top:28px}}

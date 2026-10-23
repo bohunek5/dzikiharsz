@@ -1,0 +1,50 @@
+# Dziki Harsz
+
+> Katalog produktów z kuchni tawerny Dziki Harsz w Nowym Harszu nad jeziorem Dargin na Mazurach.
+
+## Zakres tej strony
+
+Strona prezentuje 14 produktów i pozwala przygotować listę oraz pobrać szkic zamówienia TXT. Nie wysyła zamówienia, nie rezerwuje produktów i nie obsługuje płatności. Warunki zakupu, dostępność i dostawę należy potwierdzić bezpośrednio z Dzikim Harszem.
+
+Pierogi i uszka (9 pozycji katalogu) są oznaczone jako dostępne od 5 listopada. Pozostałe pozycje wymagają potwierdzenia dostępności. Porcja ośmiu rodzajów pierogów liczy 9 sztuk; liczba ta nie dotyczy uszek.
+
+## Kontakt
+
+- Dziki Harsz, Nowy Harsz 84, 11-610 Pozezdrze, Polska.
+- Telefon: +48 722 277 527. E-mail: sklep@dzikiharsz.pl.
+- Skład, alergeny, przechowywanie i szczegóły dostawy należy potwierdzić przed zakupem.
+
+## Strony
+
+- [Strona główna](https://bohunek5.github.io/dzikiharsz/): Pierogi z sandaczem, kaczką i mazurskie smaki z tawerny Dziki Harsz nad Darginem. Poznaj menu i przygotuj własną paczkę produktów.
+- [Sklep](https://bohunek5.github.io/dzikiharsz/sklep.html): Poznaj 14 produktów Dziki Harsz: pierogi, uszka, pasztet, smalec i upominki. Pierogi i uszka dostępne od 5 listopada. Przygotuj swoją listę.
+- [O nas](https://bohunek5.github.io/dzikiharsz/o-nas.html): Poznaj Dziki Harsz w Nowym Harszu nad jeziorem Dargin. Tawerna, mazurskie smaki i miejsce, do którego wracają żeglarze i sąsiedzi.
+- [Kontakt](https://bohunek5.github.io/dzikiharsz/kontakt.html): Skontaktuj się z Dzikim Harszem: 722 277 527, sklep@dzikiharsz.pl. Adres: Nowy Harsz 84, 11-610 Pozezdrze, nad jeziorem Dargin.
+- [Regulamin](https://bohunek5.github.io/dzikiharsz/regulamin.html): Zasady korzystania ze strony Dziki Harsz i przygotowania listy produktów. Informacje o zamawianiu, dostawie oraz kontakcie z kuchnią.
+- [Polityka prywatności](https://bohunek5.github.io/dzikiharsz/polityka-prywatnosci.html): Sprawdź, jakie dane zapisuje strona Dziki Harsz, jak działa lokalna lista produktów oraz jak zarządzać ustawieniami prywatności.
+- [Cookies](https://bohunek5.github.io/dzikiharsz/cookies.html): Informacje o zapamiętywaniu paczki, języka i motywu na stronie Dziki Harsz. Poznaj ustawienia cookies i danych w przeglądarce.
+
+## Produkty
+
+- [Pierogi z sandaczem](https://bohunek5.github.io/dzikiharsz/pierogi-z-sandaczem-6.html): Pierogi z farszem z sandacza i sosem cebulowym w zestawie.
+- [Pierogi z kaczką](https://bohunek5.github.io/dzikiharsz/pierogi-z-kaczka-17.html): Pierogi z farszem z kaczki. Sos kurkowy w osobnym pojemniczku.
+- [Pierogi ruskie](https://bohunek5.github.io/dzikiharsz/pierogi-ruskie-12.html): Klasyczne pierogi z ziemniakami i twarogiem.
+- [Pierogi z kapustą i grzybami](https://bohunek5.github.io/dzikiharsz/pierogi-z-kapusta-i-grzybami-16.html): Pierogi z kapustą i grzybami. Do barszczu i na świąteczny stół.
+- [Pierogi z miętusem](https://bohunek5.github.io/dzikiharsz/pierogi-z-mietusem-8.html): Pierogi z delikatnym farszem z miętusa.
+- [Pierogi ze szczupakiem](https://bohunek5.github.io/dzikiharsz/pierogi-ze-szczupakiem-19.html): Pierogi z farszem ze szczupaka. Propozycja podania: roztopione masło i świeżo mielony pieprz.
+- [Pierogi z mięsem](https://bohunek5.github.io/dzikiharsz/pierogi-z-miesem-13.html): Pierogi z mięsnym farszem, podawane ze skwarkami.
+- [Pierogi z twarogiem](https://bohunek5.github.io/dzikiharsz/pierogi-z-twarogiem-11.html): Pierogi z twarogiem na słodko — na obiad lub deser.
+- [Uszka z grzybami](https://bohunek5.github.io/dzikiharsz/uszka-z-grzybami-18.html): Uszka z grzybowym farszem i cienkim ciastem. Do czerwonego barszczu.
+- [Pasztet](https://bohunek5.github.io/dzikiharsz/pasztet-15.html): Pasztet z dodatkiem drobiu, do pieczywa i ogórka.
+- [Smalec](https://bohunek5.github.io/dzikiharsz/smalec-14.html): Smalec do pieczywa, oferowany w słoiku.
+- [Torba Harszowa](https://bohunek5.github.io/dzikiharsz/torba-harszowa-10.html): Torba Dziki Harsz na zakupy, rzeczy z jachtu i codzienne drobiazgi.
+- [Kaczka Harszowa](https://bohunek5.github.io/dzikiharsz/kaczka-harszowa-20.html): Żółta kaczka z Dzikiego Harszu — pamiątka na jacht, do kampera albo na biurko.
+- [Voucher portowy](https://bohunek5.github.io/dzikiharsz/voucher-portowy-9.html): 150 zł na dostępne usługi w Dzikim Harszu. Ważny przez 12 miesięcy od zakupu.
+
+## Informacje o treści
+
+Polska wersja jest podstawową wersją dokumentów. Przełącznik języków zmienia treść w przeglądarce i nie tworzy osobnych adresów. Zdjęcia produktów pochodzą z materiałów Dziki Harsz; sekwencje przygotowania i rozłamywania pieroga oznaczone na stronie są ilustracjami AI, a nie dokumentacją rzeczywistej kuchni. Film otwierający jest animowanym montażem zdjęć dań.
+
+- [Mapa strony](https://bohunek5.github.io/dzikiharsz/sitemap.xml): publiczne adresy przeznaczone do indeksowania.
+
+Ten plik jest opisem i zbiorem odnośników. Nie stanowi gwarancji indeksowania ani widoczności w wyszukiwarkach lub odpowiedziach modeli.

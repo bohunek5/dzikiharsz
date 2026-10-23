@@ -1,0 +1,94 @@
+/* Transparent source assets and an atomic whole-to-halves swap prevent ghosts. */
+.process-pierog {
+  aspect-ratio: 1200 / 676;
+  background: transparent;
+  mix-blend-mode: normal;
+}
+
+.process-whole,
+.process-half {
+  background-color: transparent;
+  -webkit-mask-image: none;
+  mask-image: none;
+  mix-blend-mode: normal;
+  transition: none;
+}
+
+.process-whole {
+  transform: scale(var(--whole-scale-x, 1), var(--whole-scale-y, 1));
+  transform-origin: 50% 50%;
+  visibility: visible;
+}
+
+.process-half {
+  background-image: url('assets/process-pierog-split.webp');
+  visibility: hidden;
+}
+
+.process-scroll[data-dumpling='whole'] .process-whole {
+  opacity: 1;
+  visibility: visible;
+}
+
+.process-scroll[data-dumpling='whole'] .process-half {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.process-scroll[data-dumpling='split'] .process-whole {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.process-scroll[data-dumpling='split'] .process-half {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* No fade between the closed cookie dumpling and its two cut faces. */
+.cookie-whole {
+  opacity: 1;
+  visibility: visible;
+  transition: none;
+}
+
+.cookie-half {
+  visibility: hidden;
+  transition: none;
+}
+
+.is-cracking .cookie-whole {
+  animation: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.is-cracking .cookie-half {
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-cracking .cookie-left {
+  animation: cookie-split-clean-left .85s both;
+}
+
+.is-cracking .cookie-right {
+  animation: cookie-split-clean-right .85s both;
+}
+
+@keyframes cookie-split-clean-left {
+  0% { opacity: 1; transform: translate(6px, 0); }
+  65% { opacity: 1; transform: translate(-20px, -9px) rotate(-10deg); }
+  100% { opacity: 0; transform: translate(-25px, 15px) rotate(-15deg); }
+}
+
+@keyframes cookie-split-clean-right {
+  0% { opacity: 1; transform: translate(-6px, 0); }
+  65% { opacity: 1; transform: translate(20px, -9px) rotate(10deg); }
+  100% { opacity: 0; transform: translate(25px, 15px) rotate(15deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .process-whole { transform: none; }
+  .is-cracking .cookie-half { animation: none; }
+}

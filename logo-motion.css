@@ -1,0 +1,72 @@
+/* Existing SVG paths keep the original 450 × 357.6 composition.
+   The full wheel rotates behind the original y=218 crop; lettering is fixed. */
+.site-header .brand,
+.footer .footer-brand {
+  display: block;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  --logo-filter: brightness(0) invert(1);
+}
+.site-header.is-scrolled .brand,
+.site-header.menu-open .brand,
+.inner-page .site-header .brand {
+  --logo-filter: none;
+}
+html[data-theme="dark"] .site-header .brand {
+  --logo-filter: brightness(0) invert(1);
+}
+.brand .logo-sigil,
+.footer-brand .logo-sigil {
+  display: block;
+  position: relative;
+  width: 136px;
+  aspect-ratio: 450 / 357.6;
+}
+.footer-brand .logo-sigil {
+  width: 150px;
+}
+.logo-wheel-window {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 60.96196868%;
+  overflow: hidden;
+}
+.site-header .brand .logo-sigil img,
+.footer .footer-brand .logo-sigil img {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  filter: var(--logo-filter) !important;
+}
+.logo-sigil .logo-wheel {
+  top: 0;
+  transform-origin: 50% 50%;
+  animation: logo-wheel-revolve 32s linear infinite;
+  will-change: transform;
+}
+.logo-sigil .logo-wordmark {
+  top: 60.96196868%;
+  transform: none;
+  animation: none;
+}
+@keyframes logo-wheel-revolve {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (max-width: 760px) {
+  .brand .logo-sigil,
+  .footer-brand .logo-sigil { width: 120px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-sigil .logo-wheel {
+    animation: none;
+    transform: none;
+    will-change: auto;
+  }
+}

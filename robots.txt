@@ -1,0 +1,8 @@
+# Project copy. Crawlers apply robots.txt only at the origin root:
+# https://bohunek5.github.io/robots.txt
+# Merge the Sitemap line there; do not replace rules for other projects.
+# Order and legacy query pages use HTML noindex, not crawl blocking.
+User-agent: *
+Allow: /
+
+Sitemap: https://bohunek5.github.io/dzikiharsz/sitemap.xml

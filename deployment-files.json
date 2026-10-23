@@ -1,0 +1,1699 @@
+{
+  "format_version": 1,
+  "generated_at": "2026-10-23T18:30:39.849893+00:00",
+  "site_url": "https://bohunek5.github.io/dzikiharsz/",
+  "payload_file_count": 106,
+  "payload_bytes": 11670719,
+  "manifest_filename": "deployment-files.json",
+  "manifest_note": "This manifest is not self-hashed. All payload files, including .nojekyll, are hashed.",
+  "text_normalization": {
+    "operation": "CRLF to LF before hashing/export; sources unchanged",
+    "extensions": [
+      ".css",
+      ".html",
+      ".js",
+      ".json",
+      ".svg",
+      ".txt",
+      ".xml"
+    ],
+    "changed_payloads": [
+      "app.js",
+      "assets/fonts/DM-Sans-OFL.txt",
+      "assets/logo-wheel.svg",
+      "assets/logo-wordmark.svg",
+      "cookies.html",
+      "data/locales/cs.json",
+      "data/locales/de.json",
+      "data/locales/en.json",
+      "data/locales/hu.json",
+      "data/locales/lt.json",
+      "data/locales/sk.json",
+      "data/products.json",
+      "index.html",
+      "js/shell.js",
+      "js/storefront.js",
+      "kaczka-harszowa-20.html",
+      "kontakt.html",
+      "o-nas.html",
+      "pasztet-15.html",
+      "pierogi-ruskie-12.html",
+      "pierogi-z-kaczka-17.html",
+      "pierogi-z-kapusta-i-grzybami-16.html",
+      "pierogi-z-miesem-13.html",
+      "pierogi-z-mietusem-8.html",
+      "pierogi-z-sandaczem-6.html",
+      "pierogi-z-twarogiem-11.html",
+      "pierogi-ze-szczupakiem-19.html",
+      "polityka-prywatnosci.html",
+      "produkt.html",
+      "refinements.css",
+      "regulamin.html",
+      "shop-refresh.css",
+      "sklep.html",
+      "smalec-14.html",
+      "styles.css",
+      "torba-harszowa-10.html",
+      "uszka-z-grzybami-18.html",
+      "voucher-portowy-9.html",
+      "zamowienie.html"
+    ],
+    "git_policy": "* -text preserves exact package bytes; binary media/fonts are unchanged"
+  },
+  "public_html": [
+    "cookies.html",
+    "index.html",
+    "kaczka-harszowa-20.html",
+    "kontakt.html",
+    "o-nas.html",
+    "pasztet-15.html",
+    "pierogi-ruskie-12.html",
+    "pierogi-z-kaczka-17.html",
+    "pierogi-z-kapusta-i-grzybami-16.html",
+    "pierogi-z-miesem-13.html",
+    "pierogi-z-mietusem-8.html",
+    "pierogi-z-sandaczem-6.html",
+    "pierogi-z-twarogiem-11.html",
+    "pierogi-ze-szczupakiem-19.html",
+    "polityka-prywatnosci.html",
+    "produkt.html",
+    "regulamin.html",
+    "sklep.html",
+    "smalec-14.html",
+    "torba-harszowa-10.html",
+    "uszka-z-grzybami-18.html",
+    "voucher-portowy-9.html",
+    "zamowienie.html"
+  ],
+  "dynamic_resources": [
+    {
+      "type": "locales",
+      "languages": [
+        "pl",
+        "de",
+        "en",
+        "lt",
+        "hu",
+        "cs",
+        "sk"
+      ],
+      "polish": "canonical HTML/JSON"
+    },
+    {
+      "type": "product images",
+      "products": 14,
+      "fields": [
+        "image",
+        "imageAlt"
+      ]
+    }
+  ],
+  "missing_references": [],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "included_by": [
+        "preserve exact exported bytes through Git checkout/commit"
+      ]
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "included_by": [
+        "generated GitHub Pages marker"
+      ]
+    },
+    {
+      "path": "app.js",
+      "bytes": 520,
+      "sha256": "3def859b35ae2f0e2955714a8e94530916e37f3469f0bad490eeff4528043c57",
+      "included_by": [
+        "cookies.html: script[src]",
+        "index.html: script[src]",
+        "kaczka-harszowa-20.html: script[src]",
+        "kontakt.html: script[src]",
+        "o-nas.html: script[src]",
+        "pasztet-15.html: script[src]",
+        "pierogi-ruskie-12.html: script[src]",
+        "pierogi-z-kaczka-17.html: script[src]",
+        "pierogi-z-kapusta-i-grzybami-16.html: script[src]",
+        "pierogi-z-miesem-13.html: script[src]",
+        "pierogi-z-mietusem-8.html: script[src]",
+        "pierogi-z-sandaczem-6.html: script[src]",
+        "pierogi-z-twarogiem-11.html: script[src]",
+        "pierogi-ze-szczupakiem-19.html: script[src]",
+        "polityka-prywatnosci.html: script[src]",
+        "produkt.html: script[src]",
+        "regulamin.html: script[src]",
+        "sklep.html: script[src]",
+        "smalec-14.html: script[src]",
+        "torba-harszowa-10.html: script[src]",
+        "uszka-z-grzybami-18.html: script[src]",
+        "voucher-portowy-9.html: script[src]",
+        "zamowienie.html: script[src]"
+      ]
+    },
+    {
+      "path": "assets/cookie-split.webp",
+      "bytes": 39968,
+      "sha256": "1bb0bfa5e95db44d0fff45c0d32acb886b5fc48b8551aabca8bcad43aa94b7ec",
+      "included_by": [
+        "refinements.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/cookie-whole.webp",
+      "bytes": 41412,
+      "sha256": "0783ef27ae890dfe99666c96713299fbb03cab30f66bd0e0c24e1deabbf97758",
+      "included_by": [
+        "index.html: img[src]",
+        "index.html: js/shell.js: literal runtime resource"
+      ]
+    },
+    {
+      "path": "assets/fonts/Barlow-Condensed-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+      "included_by": [
+        "index.html: font license for assets/fonts/barlow-condensed-bold.ttf"
+      ]
+    },
+    {
+      "path": "assets/fonts/DM-Sans-OFL.txt",
+      "bytes": 4389,
+      "sha256": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
+      "included_by": [
+        "index.html: font license for assets/fonts/dm-sans-latin-ext.woff2",
+        "index.html: font license for assets/fonts/dm-sans-latin.woff2"
+      ]
+    },
+    {
+      "path": "assets/fonts/Fraunces-OFL.txt",
+      "bytes": 4391,
+      "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b",
+      "included_by": [
+        "index.html: font license for assets/fonts/fraunces-latin-ext.woff2",
+        "index.html: font license for assets/fonts/fraunces-latin.woff2"
+      ]
+    },
+    {
+      "path": "assets/fonts/barlow-condensed-bold.ttf",
+      "bytes": 87120,
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7",
+      "included_by": [
+        "refinements.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/fonts/dm-sans-latin-ext.woff2",
+      "bytes": 18228,
+      "sha256": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49",
+      "included_by": [
+        "styles.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/fonts/dm-sans-latin.woff2",
+      "bytes": 36932,
+      "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+      "included_by": [
+        "styles.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/fonts/fraunces-latin-ext.woff2",
+      "bytes": 59388,
+      "sha256": "a2930b27d13a228bd9ab6a49269b5f800237892ad560cb9dd7fab01b1620f88e",
+      "included_by": [
+        "styles.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/fonts/fraunces-latin.woff2",
+      "bytes": 67304,
+      "sha256": "7234ed860a9cc83045413c4faee63c960a8f2d1917adcf728119307d56e0d783",
+      "included_by": [
+        "styles.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/footer-kitchen-art.webp",
+      "bytes": 227098,
+      "sha256": "db12730ae714b164f7e6b8dfa6da6864a4741c5e64577715dc2517d4448e65db",
+      "included_by": [
+        "index.html: img[src]",
+        "index.html: js/footer-film.js: literal runtime resource"
+      ]
+    },
+    {
+      "path": "assets/harsz-aerial.jpg",
+      "bytes": 184008,
+      "sha256": "5760237fff11e1b27a6492e29455c6fd2a9fb10474d0228b2bd984e838889924",
+      "included_by": [
+        "o-nas.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/harsz-film-light.mp4",
+      "bytes": 2485743,
+      "sha256": "c0c77109f59cec72c22c14db43d78342c4940c88a85244a5ec86ce0bfcf3cb80",
+      "included_by": [
+        "index.html: video[data-src]"
+      ]
+    },
+    {
+      "path": "assets/harsz-hero.jpg",
+      "bytes": 308682,
+      "sha256": "858ea8602f749ff1a1766242f192eb263ce1238891440e78173435a2243e28ff",
+      "included_by": [
+        "index.html: video[poster]"
+      ]
+    },
+    {
+      "path": "assets/harsz-pier.jpg",
+      "bytes": 381105,
+      "sha256": "f198434dfdad25ad06f642f750e7ed5f16c8a0229d2b13a81003373ee4cf2dc0",
+      "included_by": [
+        "kontakt.html: img[src]",
+        "o-nas.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/harsz-tavern.jpg",
+      "bytes": 166198,
+      "sha256": "86d4d57a12a03c632ee62638fd75e3d0f3e2e7205cbcfcc3bbee8f6296076346",
+      "included_by": [
+        "o-nas.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/kaczka-harszowa-20-alt.webp",
+      "bytes": 127182,
+      "sha256": "c0c8c15507f2a1623b141209c56106e4899950dd042f25c5c0924f58bcf73cd7",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "kaczka-harszowa-20.html: JSON-LD local URL",
+        "kaczka-harszowa-20.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/kaczka-harszowa-20.webp",
+      "bytes": 102958,
+      "sha256": "a9e59b7c76e59535270066b08a8f897a07b4628dbc86b9b00f970cde2cae2d0c",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "kaczka-harszowa-20.html: JSON-LD local URL",
+        "kaczka-harszowa-20.html: img[src]",
+        "kaczka-harszowa-20.html: meta[og:image]",
+        "kaczka-harszowa-20.html: meta[twitter:image]",
+        "sklep.html: img[src]",
+        "torba-harszowa-10.html: img[src]",
+        "voucher-portowy-9.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/kuchnia-film-light.mp4",
+      "bytes": 1278082,
+      "sha256": "eee617794886ad61b81f20679e42fac593e7895e636643d190f3c86de3005e04",
+      "included_by": [
+        "index.html: video[data-src]"
+      ]
+    },
+    {
+      "path": "assets/kuchnia-film-v2-poster.webp",
+      "bytes": 99020,
+      "sha256": "ccde0c9fb1cda1dfdf9a034a1af782b4b6cf701fd27e5cc47e26e4e543602f08",
+      "included_by": [
+        "index.html: video[poster]"
+      ]
+    },
+    {
+      "path": "assets/logo-ciemne2.svg",
+      "bytes": 22802,
+      "sha256": "ea494676df248f98b420ccedccf46b68a63ce4390769966ace9853ea83561d13",
+      "included_by": [
+        "cookies.html: JSON-LD local URL",
+        "cookies.html: link[href]",
+        "index.html: JSON-LD local URL",
+        "index.html: img[src]",
+        "index.html: link[href]",
+        "kaczka-harszowa-20.html: JSON-LD local URL",
+        "kaczka-harszowa-20.html: link[href]",
+        "kontakt.html: JSON-LD local URL",
+        "kontakt.html: link[href]",
+        "o-nas.html: JSON-LD local URL",
+        "o-nas.html: link[href]",
+        "pasztet-15.html: JSON-LD local URL",
+        "pasztet-15.html: link[href]",
+        "pierogi-ruskie-12.html: JSON-LD local URL",
+        "pierogi-ruskie-12.html: link[href]",
+        "pierogi-z-kaczka-17.html: JSON-LD local URL",
+        "pierogi-z-kaczka-17.html: link[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: JSON-LD local URL",
+        "pierogi-z-kapusta-i-grzybami-16.html: link[href]",
+        "pierogi-z-miesem-13.html: JSON-LD local URL",
+        "pierogi-z-miesem-13.html: link[href]",
+        "pierogi-z-mietusem-8.html: JSON-LD local URL",
+        "pierogi-z-mietusem-8.html: link[href]",
+        "pierogi-z-sandaczem-6.html: JSON-LD local URL",
+        "pierogi-z-sandaczem-6.html: link[href]",
+        "pierogi-z-twarogiem-11.html: JSON-LD local URL",
+        "pierogi-z-twarogiem-11.html: link[href]",
+        "pierogi-ze-szczupakiem-19.html: JSON-LD local URL",
+        "pierogi-ze-szczupakiem-19.html: link[href]",
+        "polityka-prywatnosci.html: JSON-LD local URL",
+        "polityka-prywatnosci.html: link[href]",
+        "produkt.html: link[href]",
+        "regulamin.html: JSON-LD local URL",
+        "regulamin.html: link[href]",
+        "sklep.html: JSON-LD local URL",
+        "sklep.html: link[href]",
+        "smalec-14.html: JSON-LD local URL",
+        "smalec-14.html: link[href]",
+        "torba-harszowa-10.html: JSON-LD local URL",
+        "torba-harszowa-10.html: link[href]",
+        "uszka-z-grzybami-18.html: JSON-LD local URL",
+        "uszka-z-grzybami-18.html: link[href]",
+        "voucher-portowy-9.html: JSON-LD local URL",
+        "voucher-portowy-9.html: link[href]",
+        "zamowienie.html: link[href]"
+      ]
+    },
+    {
+      "path": "assets/logo-wheel.svg",
+      "bytes": 16381,
+      "sha256": "0d25dbb2c6b366fb8312e2bea5c4fc78c11a6262f97c76040dd1d55eaa120fdc",
+      "included_by": [
+        "index.html: img[src]",
+        "index.html: js/shell.js: literal runtime resource"
+      ]
+    },
+    {
+      "path": "assets/logo-wordmark.svg",
+      "bytes": 14774,
+      "sha256": "c91bbf62ab0564c2312db3d37533050ac7d5e5e8f17214e7d3ae1515230af9e6",
+      "included_by": [
+        "index.html: img[src]",
+        "index.html: js/shell.js: literal runtime resource"
+      ]
+    },
+    {
+      "path": "assets/pasztet-15-alt.webp",
+      "bytes": 263138,
+      "sha256": "3e90e2cbbeff647e6a5b992d1c3b66c48432d0ba47acae5db3991b580e67ea9e",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pasztet-15.html: JSON-LD local URL",
+        "pasztet-15.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pasztet-15.webp",
+      "bytes": 179772,
+      "sha256": "e7756d21ff0055facb281d99471df2a291ebb1f93d254babb125eda8bfb11c8f",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pasztet-15.html: JSON-LD local URL",
+        "pasztet-15.html: img[src]",
+        "pasztet-15.html: meta[og:image]",
+        "pasztet-15.html: meta[twitter:image]",
+        "sklep.html: img[src]",
+        "smalec-14.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-ruskie-12-alt.webp",
+      "bytes": 187932,
+      "sha256": "8a323fc4d15043e8421b3b5c1a87ee30041b0f8be345226b956a0715ff493098",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-ruskie-12.html: JSON-LD local URL",
+        "pierogi-ruskie-12.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-ruskie-12.webp",
+      "bytes": 84272,
+      "sha256": "32ac842b3fdf4bf7bfec7b1b020ccb22a863a12671a4faee6e38cb6f376a6ba3",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-ruskie-12.html: JSON-LD local URL",
+        "pierogi-ruskie-12.html: img[src]",
+        "pierogi-ruskie-12.html: meta[og:image]",
+        "pierogi-ruskie-12.html: meta[twitter:image]",
+        "pierogi-z-kaczka-17.html: img[src]",
+        "pierogi-z-kapusta-i-grzybami-16.html: img[src]",
+        "pierogi-z-miesem-13.html: img[src]",
+        "pierogi-z-mietusem-8.html: img[src]",
+        "pierogi-z-sandaczem-6.html: img[src]",
+        "pierogi-z-twarogiem-11.html: img[src]",
+        "pierogi-ze-szczupakiem-19.html: img[src]",
+        "sklep.html: img[src]",
+        "uszka-z-grzybami-18.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-kaczka-17-alt.webp",
+      "bytes": 107170,
+      "sha256": "fb14e03159257349b3a7aa642686d0149b999d5004a133158107aea5e4604f67",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "o-nas.html: img[src]",
+        "pierogi-z-kaczka-17.html: JSON-LD local URL",
+        "pierogi-z-kaczka-17.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-kaczka-17.webp",
+      "bytes": 91396,
+      "sha256": "85651cd443014325b972b87e6b13ca15c7a750454ba5b1bb97176f3749ab71f2",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pasztet-15.html: img[src]",
+        "pierogi-ruskie-12.html: img[src]",
+        "pierogi-z-kaczka-17.html: JSON-LD local URL",
+        "pierogi-z-kaczka-17.html: img[src]",
+        "pierogi-z-kaczka-17.html: meta[og:image]",
+        "pierogi-z-kaczka-17.html: meta[twitter:image]",
+        "pierogi-z-kapusta-i-grzybami-16.html: img[src]",
+        "pierogi-z-miesem-13.html: img[src]",
+        "pierogi-z-mietusem-8.html: img[src]",
+        "pierogi-z-sandaczem-6.html: img[src]",
+        "pierogi-z-twarogiem-11.html: img[src]",
+        "pierogi-ze-szczupakiem-19.html: img[src]",
+        "sklep.html: img[src]",
+        "smalec-14.html: img[src]",
+        "uszka-z-grzybami-18.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-kapusta-i-grzybami-16-alt.webp",
+      "bytes": 334174,
+      "sha256": "57207f23289bfda70c52f90ffa0cf8c848a0c63eec1b55974738242d08d1edfe",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-z-kapusta-i-grzybami-16.html: JSON-LD local URL",
+        "pierogi-z-kapusta-i-grzybami-16.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-kapusta-i-grzybami-16.webp",
+      "bytes": 275386,
+      "sha256": "1a0b68c9e2ce9275754dae1a5c16b55aa777a31b5a9b77b9b13d3953ae34b803",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-ruskie-12.html: img[src]",
+        "pierogi-z-kaczka-17.html: img[src]",
+        "pierogi-z-kapusta-i-grzybami-16.html: JSON-LD local URL",
+        "pierogi-z-kapusta-i-grzybami-16.html: img[src]",
+        "pierogi-z-kapusta-i-grzybami-16.html: meta[og:image]",
+        "pierogi-z-kapusta-i-grzybami-16.html: meta[twitter:image]",
+        "pierogi-z-sandaczem-6.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-miesem-13-alt.webp",
+      "bytes": 245812,
+      "sha256": "d127c8c08492dfc80a3f4ec1427405f4d6dad55d899ab8891f6b46642593a140",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-z-miesem-13.html: JSON-LD local URL",
+        "pierogi-z-miesem-13.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-miesem-13.webp",
+      "bytes": 221464,
+      "sha256": "b550e0538cd95732761ea0fbae09a8eff98f381728c9fe606a08a4c5d0207d37",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-z-miesem-13.html: JSON-LD local URL",
+        "pierogi-z-miesem-13.html: img[src]",
+        "pierogi-z-miesem-13.html: meta[og:image]",
+        "pierogi-z-miesem-13.html: meta[twitter:image]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-mietusem-8-alt.webp",
+      "bytes": 163284,
+      "sha256": "67f20e2cfd1bf1edb3391205472d829d31a886ba7dfb43dde8722a8de4831f07",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-z-mietusem-8.html: JSON-LD local URL",
+        "pierogi-z-mietusem-8.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-mietusem-8.webp",
+      "bytes": 95860,
+      "sha256": "6a69c22d645f314d8ebf649432270a9148d247a9f21406e4765e5609c8b3ebac",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-z-mietusem-8.html: JSON-LD local URL",
+        "pierogi-z-mietusem-8.html: img[src]",
+        "pierogi-z-mietusem-8.html: meta[og:image]",
+        "pierogi-z-mietusem-8.html: meta[twitter:image]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-sandaczem-6-alt.webp",
+      "bytes": 169642,
+      "sha256": "addd6f8a7d5838875e66b02e2b17b96c4b7255c83837c055943c7bd662e1e089",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-z-sandaczem-6.html: JSON-LD local URL",
+        "pierogi-z-sandaczem-6.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-sandaczem-6.webp",
+      "bytes": 135320,
+      "sha256": "b39562c276b119ed65342b05dc1c38a9322aad2c4345c9f36624a987ef6abb2c",
+      "included_by": [
+        "cookies.html: meta[og:image]",
+        "cookies.html: meta[twitter:image]",
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "index.html: meta[og:image]",
+        "index.html: meta[twitter:image]",
+        "kaczka-harszowa-20.html: img[src]",
+        "kontakt.html: meta[og:image]",
+        "kontakt.html: meta[twitter:image]",
+        "o-nas.html: meta[og:image]",
+        "o-nas.html: meta[twitter:image]",
+        "pasztet-15.html: img[src]",
+        "pierogi-ruskie-12.html: img[src]",
+        "pierogi-z-kaczka-17.html: img[src]",
+        "pierogi-z-kapusta-i-grzybami-16.html: img[src]",
+        "pierogi-z-miesem-13.html: img[src]",
+        "pierogi-z-mietusem-8.html: img[src]",
+        "pierogi-z-sandaczem-6.html: JSON-LD local URL",
+        "pierogi-z-sandaczem-6.html: img[src]",
+        "pierogi-z-sandaczem-6.html: meta[og:image]",
+        "pierogi-z-sandaczem-6.html: meta[twitter:image]",
+        "pierogi-z-twarogiem-11.html: img[src]",
+        "pierogi-ze-szczupakiem-19.html: img[src]",
+        "polityka-prywatnosci.html: meta[og:image]",
+        "polityka-prywatnosci.html: meta[twitter:image]",
+        "produkt.html: meta[og:image]",
+        "produkt.html: meta[twitter:image]",
+        "regulamin.html: meta[og:image]",
+        "regulamin.html: meta[twitter:image]",
+        "sklep.html: img[src]",
+        "sklep.html: meta[og:image]",
+        "sklep.html: meta[twitter:image]",
+        "smalec-14.html: img[src]",
+        "torba-harszowa-10.html: img[src]",
+        "uszka-z-grzybami-18.html: img[src]",
+        "voucher-portowy-9.html: img[src]",
+        "zamowienie.html: meta[og:image]",
+        "zamowienie.html: meta[twitter:image]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-twarogiem-11-alt.webp",
+      "bytes": 182828,
+      "sha256": "40e27896ab637585dcff95417a6e6d0c811be37e278d40b786c889359c5938c5",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-z-twarogiem-11.html: JSON-LD local URL",
+        "pierogi-z-twarogiem-11.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-z-twarogiem-11.webp",
+      "bytes": 146138,
+      "sha256": "7cbfd40acba5b891429fdcc437c13c2cfa8d379363edf4d7a0164a53a11c499c",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-z-twarogiem-11.html: JSON-LD local URL",
+        "pierogi-z-twarogiem-11.html: img[src]",
+        "pierogi-z-twarogiem-11.html: meta[og:image]",
+        "pierogi-z-twarogiem-11.html: meta[twitter:image]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-ze-szczupakiem-19-alt.webp",
+      "bytes": 170326,
+      "sha256": "083215b9ee7418d64bfb555ce261a680e2017dc9cc8de3f69249235c2c4183b5",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-ze-szczupakiem-19.html: JSON-LD local URL",
+        "pierogi-ze-szczupakiem-19.html: img[src]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/pierogi-ze-szczupakiem-19.webp",
+      "bytes": 90442,
+      "sha256": "f3cd300940adba7737b4b391dda865a5afa2030f42e24bb58e0abf9ecee8e9f6",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pierogi-ze-szczupakiem-19.html: JSON-LD local URL",
+        "pierogi-ze-szczupakiem-19.html: img[src]",
+        "pierogi-ze-szczupakiem-19.html: meta[og:image]",
+        "pierogi-ze-szczupakiem-19.html: meta[twitter:image]",
+        "sklep.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/process-boil.webp",
+      "bytes": 165074,
+      "sha256": "5fd70d9af6b472a3b74fc5dc576ac80a22ca0e9ce2b51cfcb3ea06a463675f25",
+      "included_by": [
+        "index.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/process-fill.webp",
+      "bytes": 253186,
+      "sha256": "e0fd89a2be81057ff6600c2aa89b78b6e87cb29661aa8d26f97ab504b73ddc92",
+      "included_by": [
+        "index.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/process-flour.webp",
+      "bytes": 275542,
+      "sha256": "0298f2a73cdfaedb5b9f18bae89135c4a94aa454c06b7e8e02c31fa6ac87440a",
+      "included_by": [
+        "index.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/process-knead.webp",
+      "bytes": 208618,
+      "sha256": "db59029214ea4340eacd90919cc8922fdc969cd5d79aee77c97fae2b1ff4c2cd",
+      "included_by": [
+        "index.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/process-pierog-split.webp",
+      "bytes": 96702,
+      "sha256": "3d35d39c9ab7e59ac1ee85fb1f548b00c2589234c7f4cf57f5989e37d668dc7e",
+      "included_by": [
+        "dumpling-fix.css: CSS url()"
+      ]
+    },
+    {
+      "path": "assets/process-pierog-whole.webp",
+      "bytes": 109226,
+      "sha256": "58818413f38f79dbf595a9ccae6cb4276f01d3d3d0680de7230bdc52056519a4",
+      "included_by": [
+        "index.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/smalec-14-alt.webp",
+      "bytes": 177382,
+      "sha256": "ae7995649e67da180305990c666130414ad9fad1efc9413707c96dca4fa47f3a",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "sklep.html: img[src]",
+        "smalec-14.html: JSON-LD local URL",
+        "smalec-14.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/smalec-14.webp",
+      "bytes": 121090,
+      "sha256": "081104e66609604426b9aa942c6824cb0d52298fbeb1c04bc168a610a62e4f76",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "pasztet-15.html: img[src]",
+        "sklep.html: img[src]",
+        "smalec-14.html: JSON-LD local URL",
+        "smalec-14.html: img[src]",
+        "smalec-14.html: meta[og:image]",
+        "smalec-14.html: meta[twitter:image]"
+      ]
+    },
+    {
+      "path": "assets/torba-harszowa-10.webp",
+      "bytes": 199880,
+      "sha256": "aedea3fe1aa52732a1f2efc793daec75ab666250cffb172bbc125701cb62470d",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "kaczka-harszowa-20.html: img[src]",
+        "sklep.html: img[src]",
+        "torba-harszowa-10.html: JSON-LD local URL",
+        "torba-harszowa-10.html: img[src]",
+        "torba-harszowa-10.html: meta[og:image]",
+        "torba-harszowa-10.html: meta[twitter:image]",
+        "voucher-portowy-9.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/uszka-z-grzybami-18-alt.webp",
+      "bytes": 102870,
+      "sha256": "f4f4f402508f11859f16e37232772c4835581fda2ceda5940ff82af1b8837c8f",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "sklep.html: img[src]",
+        "uszka-z-grzybami-18.html: JSON-LD local URL",
+        "uszka-z-grzybami-18.html: img[src]"
+      ]
+    },
+    {
+      "path": "assets/uszka-z-grzybami-18.webp",
+      "bytes": 86082,
+      "sha256": "380fa3e71f0f702c2f65caa713a4e1f3b1ba5c4f03cbde486ca38f28e4426ef1",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "sklep.html: img[src]",
+        "uszka-z-grzybami-18.html: JSON-LD local URL",
+        "uszka-z-grzybami-18.html: img[src]",
+        "uszka-z-grzybami-18.html: meta[og:image]",
+        "uszka-z-grzybami-18.html: meta[twitter:image]"
+      ]
+    },
+    {
+      "path": "assets/voucher-portowy-9.webp",
+      "bytes": 212464,
+      "sha256": "c3a9d062a17087ddb71d05e11d09d2a9c7618e25e9a13709278a73b8ce111042",
+      "included_by": [
+        "index.html: data/products.json: dynamic product/image field",
+        "index.html: img[src]",
+        "kaczka-harszowa-20.html: img[src]",
+        "sklep.html: img[src]",
+        "torba-harszowa-10.html: img[src]",
+        "voucher-portowy-9.html: JSON-LD local URL",
+        "voucher-portowy-9.html: img[src]",
+        "voucher-portowy-9.html: meta[og:image]",
+        "voucher-portowy-9.html: meta[twitter:image]"
+      ]
+    },
+    {
+      "path": "availability.css",
+      "bytes": 2310,
+      "sha256": "8a740b15f3190df63c4d741c8b8ec2f1817679c8cfdb44c854edca21e2eddf66",
+      "included_by": [
+        "cookies.html: link[href]",
+        "index.html: link[href]",
+        "kaczka-harszowa-20.html: link[href]",
+        "kontakt.html: link[href]",
+        "o-nas.html: link[href]",
+        "pasztet-15.html: link[href]",
+        "pierogi-ruskie-12.html: link[href]",
+        "pierogi-z-kaczka-17.html: link[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: link[href]",
+        "pierogi-z-miesem-13.html: link[href]",
+        "pierogi-z-mietusem-8.html: link[href]",
+        "pierogi-z-sandaczem-6.html: link[href]",
+        "pierogi-z-twarogiem-11.html: link[href]",
+        "pierogi-ze-szczupakiem-19.html: link[href]",
+        "polityka-prywatnosci.html: link[href]",
+        "produkt.html: link[href]",
+        "regulamin.html: link[href]",
+        "sklep.html: link[href]",
+        "smalec-14.html: link[href]",
+        "torba-harszowa-10.html: link[href]",
+        "uszka-z-grzybami-18.html: link[href]",
+        "voucher-portowy-9.html: link[href]",
+        "zamowienie.html: link[href]"
+      ]
+    },
+    {
+      "path": "cookies.html",
+      "bytes": 11136,
+      "sha256": "4f435868d43b530bdf771df2b6af75d169ee00f711c856f8bc6d1cf26a2bd80e",
+      "included_by": [
+        "cookies.html: JSON-LD local URL",
+        "cookies.html: a[href]",
+        "cookies.html: link[href]",
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "index.html: required public page",
+        "polityka-prywatnosci.html: a[href]",
+        "regulamin.html: a[href]",
+        "sitemap.xml: sitemap loc"
+      ]
+    },
+    {
+      "path": "data/locales/cs.json",
+      "bytes": 51116,
+      "sha256": "3074bafe135d5d820c3a07a96f0f8d51e1cb41a00759f5bdff31c395773163e1",
+      "included_by": [
+        "index.html: i18n: expanded code locale"
+      ]
+    },
+    {
+      "path": "data/locales/de.json",
+      "bytes": 52574,
+      "sha256": "3adb220ef92ef4b6128307569a4497c761732c3c9ce6d87231ca1196733266cc",
+      "included_by": [
+        "index.html: i18n: expanded code locale"
+      ]
+    },
+    {
+      "path": "data/locales/en.json",
+      "bytes": 50172,
+      "sha256": "16ba38fccca278bfb869bd3d3eb1457269674c302b87b2f6c52cbd61363e7487",
+      "included_by": [
+        "index.html: i18n: expanded code locale"
+      ]
+    },
+    {
+      "path": "data/locales/hu.json",
+      "bytes": 52640,
+      "sha256": "82e6afa36903ed9fe087798bfe5d32f8945bd3daa6b9446b396c744a49acc871",
+      "included_by": [
+        "index.html: i18n: expanded code locale"
+      ]
+    },
+    {
+      "path": "data/locales/lt.json",
+      "bytes": 51708,
+      "sha256": "c0e5b42093c62b97574d1c3dd986b5a6be52c07d2a09c28d0708538ceb51e5c5",
+      "included_by": [
+        "index.html: i18n: expanded code locale"
+      ]
+    },
+    {
+      "path": "data/locales/sk.json",
+      "bytes": 51016,
+      "sha256": "2e06a5e2d7748596008790635d2b69af593ed95f3ea600f50f46b7e60179dd10",
+      "included_by": [
+        "index.html: i18n: expanded code locale"
+      ]
+    },
+    {
+      "path": "data/product-stories.json",
+      "bytes": 9341,
+      "sha256": "1edb4620413443c13cfb15c5c9b2bc1c306098557ba41bb8e84eda6107c3df85",
+      "included_by": [
+        "index.html: js/storefront.js: fetch",
+        "index.html: js/storefront.js: literal runtime resource"
+      ]
+    },
+    {
+      "path": "data/products.json",
+      "bytes": 14921,
+      "sha256": "75509e40bfd671fed8f1b7733a47b62e356173700b57a2443a87104b4d9836e5",
+      "included_by": [
+        "index.html: js/storefront.js: fetch",
+        "index.html: js/storefront.js: literal runtime resource"
+      ]
+    },
+    {
+      "path": "dumpling-fix.css",
+      "bytes": 2095,
+      "sha256": "7213fc216b2392c3fff7d6eb9e3719aa2fbe17beadbbcffbdc4ac2959b294f21",
+      "included_by": [
+        "cookies.html: link[href]",
+        "index.html: link[href]",
+        "kaczka-harszowa-20.html: link[href]",
+        "kontakt.html: link[href]",
+        "o-nas.html: link[href]",
+        "pasztet-15.html: link[href]",
+        "pierogi-ruskie-12.html: link[href]",
+        "pierogi-z-kaczka-17.html: link[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: link[href]",
+        "pierogi-z-miesem-13.html: link[href]",
+        "pierogi-z-mietusem-8.html: link[href]",
+        "pierogi-z-sandaczem-6.html: link[href]",
+        "pierogi-z-twarogiem-11.html: link[href]",
+        "pierogi-ze-szczupakiem-19.html: link[href]",
+        "polityka-prywatnosci.html: link[href]",
+        "produkt.html: link[href]",
+        "regulamin.html: link[href]",
+        "sklep.html: link[href]",
+        "smalec-14.html: link[href]",
+        "torba-harszowa-10.html: link[href]",
+        "uszka-z-grzybami-18.html: link[href]",
+        "voucher-portowy-9.html: link[href]",
+        "zamowienie.html: link[href]"
+      ]
+    },
+    {
+      "path": "footer-contact.css",
+      "bytes": 297,
+      "sha256": "419361c4c8703eead939ce45b5d64ac8cddfd6cfd5b79fb28c35323b4be7011a",
+      "included_by": [
+        "cookies.html: link[href]",
+        "index.html: link[href]",
+        "kaczka-harszowa-20.html: link[href]",
+        "kontakt.html: link[href]",
+        "o-nas.html: link[href]",
+        "pasztet-15.html: link[href]",
+        "pierogi-ruskie-12.html: link[href]",
+        "pierogi-z-kaczka-17.html: link[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: link[href]",
+        "pierogi-z-miesem-13.html: link[href]",
+        "pierogi-z-mietusem-8.html: link[href]",
+        "pierogi-z-sandaczem-6.html: link[href]",
+        "pierogi-z-twarogiem-11.html: link[href]",
+        "pierogi-ze-szczupakiem-19.html: link[href]",
+        "polityka-prywatnosci.html: link[href]",
+        "produkt.html: link[href]",
+        "regulamin.html: link[href]",
+        "sklep.html: link[href]",
+        "smalec-14.html: link[href]",
+        "torba-harszowa-10.html: link[href]",
+        "uszka-z-grzybami-18.html: link[href]",
+        "voucher-portowy-9.html: link[href]",
+        "zamowienie.html: link[href]"
+      ]
+    },
+    {
+      "path": "footer-film.css",
+      "bytes": 1395,
+      "sha256": "704508175b8281dbfcc0d36921a284e0c24a8207f0707558e40fc285109044b0",
+      "included_by": [
+        "cookies.html: link[href]",
+        "index.html: link[href]",
+        "kaczka-harszowa-20.html: link[href]",
+        "kontakt.html: link[href]",
+        "o-nas.html: link[href]",
+        "pasztet-15.html: link[href]",
+        "pierogi-ruskie-12.html: link[href]",
+        "pierogi-z-kaczka-17.html: link[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: link[href]",
+        "pierogi-z-miesem-13.html: link[href]",
+        "pierogi-z-mietusem-8.html: link[href]",
+        "pierogi-z-sandaczem-6.html: link[href]",
+        "pierogi-z-twarogiem-11.html: link[href]",
+        "pierogi-ze-szczupakiem-19.html: link[href]",
+        "polityka-prywatnosci.html: link[href]",
+        "produkt.html: link[href]",
+        "regulamin.html: link[href]",
+        "sklep.html: link[href]",
+        "smalec-14.html: link[href]",
+        "torba-harszowa-10.html: link[href]",
+        "uszka-z-grzybami-18.html: link[href]",
+        "voucher-portowy-9.html: link[href]",
+        "zamowienie.html: link[href]"
+      ]
+    },
+    {
+      "path": "index.html",
+      "bytes": 36946,
+      "sha256": "525e2f9c54815012b236475b30ed1fd4898b5ccf0138d492e7b4253143e0a04f",
+      "included_by": [
+        "cookies.html: JSON-LD local URL",
+        "cookies.html: a[href]",
+        "index.html: JSON-LD local URL",
+        "index.html: a[href]",
+        "index.html: link[href]",
+        "index.html: public HTML entrypoint",
+        "index.html: required public page",
+        "kaczka-harszowa-20.html: JSON-LD local URL",
+        "kaczka-harszowa-20.html: a[href]",
+        "kontakt.html: JSON-LD local URL",
+        "kontakt.html: a[href]",
+        "o-nas.html: JSON-LD local URL",
+        "o-nas.html: a[href]",
+        "pasztet-15.html: JSON-LD local URL",
+        "pasztet-15.html: a[href]",
+        "pierogi-ruskie-12.html: JSON-LD local URL",
+        "pierogi-ruskie-12.html: a[href]",
+        "pierogi-z-kaczka-17.html: JSON-LD local URL",
+        "pierogi-z-kaczka-17.html: a[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: JSON-LD local URL",
+        "pierogi-z-kapusta-i-grzybami-16.html: a[href]",
+        "pierogi-z-miesem-13.html: JSON-LD local URL",
+        "pierogi-z-miesem-13.html: a[href]",
+        "pierogi-z-mietusem-8.html: JSON-LD local URL",
+        "pierogi-z-mietusem-8.html: a[href]",
+        "pierogi-z-sandaczem-6.html: JSON-LD local URL",
+        "pierogi-z-sandaczem-6.html: a[href]",
+        "pierogi-z-twarogiem-11.html: JSON-LD local URL",
+        "pierogi-z-twarogiem-11.html: a[href]",
+        "pierogi-ze-szczupakiem-19.html: JSON-LD local URL",
+        "pierogi-ze-szczupakiem-19.html: a[href]",
+        "polityka-prywatnosci.html: JSON-LD local URL",
+        "polityka-prywatnosci.html: a[href]",
+        "produkt.html: a[href]",
+        "regulamin.html: JSON-LD local URL",
+        "regulamin.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: JSON-LD local URL",
+        "sklep.html: a[href]",
+        "smalec-14.html: JSON-LD local URL",
+        "smalec-14.html: a[href]",
+        "torba-harszowa-10.html: JSON-LD local URL",
+        "torba-harszowa-10.html: a[href]",
+        "uszka-z-grzybami-18.html: JSON-LD local URL",
+        "uszka-z-grzybami-18.html: a[href]",
+        "voucher-portowy-9.html: JSON-LD local URL",
+        "voucher-portowy-9.html: a[href]",
+        "zamowienie.html: a[href]"
+      ]
+    },
+    {
+      "path": "js/availability.js",
+      "bytes": 8269,
+      "sha256": "22ad09b6ba860bc0a9e7e29fbb1a1de0a3ca3f4875671aea641c8725e12fb2ea",
+      "included_by": [
+        "app.js: ES module import"
+      ]
+    },
+    {
+      "path": "js/cinema.js",
+      "bytes": 4201,
+      "sha256": "1f6d1305ffcff3f4a52c547f3565b16726d9638295a8ac3ba7aa0f2eb45eafe1",
+      "included_by": [
+        "app.js: ES module import"
+      ]
+    },
+    {
+      "path": "js/footer-film.js",
+      "bytes": 2223,
+      "sha256": "919f67cbdd15fc6ef72c4e4d4802e451f2351b94621df80ad1b11a03fd5ca607",
+      "included_by": [
+        "app.js: ES module import"
+      ]
+    },
+    {
+      "path": "js/i18n.js",
+      "bytes": 7830,
+      "sha256": "9de91f87662bbaa08c73a1f96b29e7dfc043f9bf3fdd3106634fb06a5e0e9edf",
+      "included_by": [
+        "app.js: ES module import",
+        "js/availability.js: ES module import",
+        "js/footer-film.js: ES module import",
+        "js/storefront.js: ES module import"
+      ]
+    },
+    {
+      "path": "js/journey.js",
+      "bytes": 1401,
+      "sha256": "008182407cc289970c2ded50c9caa7ec8f9462895a7f73c389fbdc52efcc04ad",
+      "included_by": [
+        "app.js: ES module import"
+      ]
+    },
+    {
+      "path": "js/shell.js",
+      "bytes": 9223,
+      "sha256": "f9e8ce04e3cdb6062d8e75f8f51eb041205a30f11a5ab8f1926247860abcb56a",
+      "included_by": [
+        "app.js: ES module import"
+      ]
+    },
+    {
+      "path": "js/storefront.js",
+      "bytes": 19463,
+      "sha256": "86aa71a062eaac3070edf0fb7791371929678a3525e1535d53fc9819429164f7",
+      "included_by": [
+        "app.js: ES module import"
+      ]
+    },
+    {
+      "path": "kaczka-harszowa-20.html",
+      "bytes": 8648,
+      "sha256": "c2d7167e09634014de53bf81ecb549e184b7b5c3dcd446b061798bd33322ef32",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "kaczka-harszowa-20.html: JSON-LD local URL",
+        "kaczka-harszowa-20.html: link[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]",
+        "torba-harszowa-10.html: a[href]",
+        "voucher-portowy-9.html: a[href]"
+      ]
+    },
+    {
+      "path": "kontakt.html",
+      "bytes": 6820,
+      "sha256": "83bb462277e9bbbcde7c6311b82203be393e0db4f65793a983fb09afa237f5d9",
+      "included_by": [
+        "cookies.html: a[href]",
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "index.html: required public page",
+        "kontakt.html: JSON-LD local URL",
+        "kontakt.html: link[href]",
+        "o-nas.html: a[href]",
+        "pasztet-15.html: a[href]",
+        "pierogi-ruskie-12.html: a[href]",
+        "pierogi-z-kaczka-17.html: a[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: a[href]",
+        "pierogi-z-miesem-13.html: a[href]",
+        "pierogi-z-mietusem-8.html: a[href]",
+        "pierogi-z-sandaczem-6.html: a[href]",
+        "pierogi-z-twarogiem-11.html: a[href]",
+        "pierogi-ze-szczupakiem-19.html: a[href]",
+        "polityka-prywatnosci.html: a[href]",
+        "regulamin.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "smalec-14.html: a[href]",
+        "uszka-z-grzybami-18.html: a[href]"
+      ]
+    },
+    {
+      "path": "llms.txt",
+      "bytes": 5046,
+      "sha256": "9f980417e86c7065812349836896e599fee97e8708f3de08a2f94000ba1dd8a7",
+      "included_by": [
+        "index.html: public SEO entrypoint"
+      ]
+    },
+    {
+      "path": "logo-motion.css",
+      "bytes": 1662,
+      "sha256": "7cfd96ddfea6b0e48c4a8aa256b66b6f4c04231ee6fa42d6781f7e22d0a768c5",
+      "included_by": [
+        "cookies.html: link[href]",
+        "index.html: link[href]",
+        "kaczka-harszowa-20.html: link[href]",
+        "kontakt.html: link[href]",
+        "o-nas.html: link[href]",
+        "pasztet-15.html: link[href]",
+        "pierogi-ruskie-12.html: link[href]",
+        "pierogi-z-kaczka-17.html: link[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: link[href]",
+        "pierogi-z-miesem-13.html: link[href]",
+        "pierogi-z-mietusem-8.html: link[href]",
+        "pierogi-z-sandaczem-6.html: link[href]",
+        "pierogi-z-twarogiem-11.html: link[href]",
+        "pierogi-ze-szczupakiem-19.html: link[href]",
+        "polityka-prywatnosci.html: link[href]",
+        "produkt.html: link[href]",
+        "regulamin.html: link[href]",
+        "sklep.html: link[href]",
+        "smalec-14.html: link[href]",
+        "torba-harszowa-10.html: link[href]",
+        "uszka-z-grzybami-18.html: link[href]",
+        "voucher-portowy-9.html: link[href]",
+        "zamowienie.html: link[href]"
+      ]
+    },
+    {
+      "path": "marine.css",
+      "bytes": 12415,
+      "sha256": "aa5258293e7c952e2368d158fa29a70b2d983c07231f852540658efee7cc110e",
+      "included_by": [
+        "cookies.html: link[href]",
+        "index.html: link[href]",
+        "kaczka-harszowa-20.html: link[href]",
+        "kontakt.html: link[href]",
+        "o-nas.html: link[href]",
+        "pasztet-15.html: link[href]",
+        "pierogi-ruskie-12.html: link[href]",
+        "pierogi-z-kaczka-17.html: link[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: link[href]",
+        "pierogi-z-miesem-13.html: link[href]",
+        "pierogi-z-mietusem-8.html: link[href]",
+        "pierogi-z-sandaczem-6.html: link[href]",
+        "pierogi-z-twarogiem-11.html: link[href]",
+        "pierogi-ze-szczupakiem-19.html: link[href]",
+        "polityka-prywatnosci.html: link[href]",
+        "produkt.html: link[href]",
+        "regulamin.html: link[href]",
+        "sklep.html: link[href]",
+        "smalec-14.html: link[href]",
+        "torba-harszowa-10.html: link[href]",
+        "uszka-z-grzybami-18.html: link[href]",
+        "voucher-portowy-9.html: link[href]",
+        "zamowienie.html: link[href]"
+      ]
+    },
+    {
+      "path": "o-nas.html",
+      "bytes": 7749,
+      "sha256": "41a7567b663206bfb54693f45ea20a0d3beb8bf7794d2220566c7cd7613b4991",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "index.html: required public page",
+        "o-nas.html: JSON-LD local URL",
+        "o-nas.html: link[href]",
+        "sitemap.xml: sitemap loc"
+      ]
+    },
+    {
+      "path": "pasztet-15.html",
+      "bytes": 8483,
+      "sha256": "a46bf4c33003b1f497ddc0c750598b4f2b61611a84a6643f450c021fa9906f7c",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "pasztet-15.html: JSON-LD local URL",
+        "pasztet-15.html: link[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]",
+        "smalec-14.html: a[href]"
+      ]
+    },
+    {
+      "path": "pierogi-ruskie-12.html",
+      "bytes": 8852,
+      "sha256": "69b6ef0edd83aaadaafa7f4f01d3bc17ce3b764da886d2d47d0407da0fb6f256",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "pierogi-ruskie-12.html: JSON-LD local URL",
+        "pierogi-ruskie-12.html: link[href]",
+        "pierogi-z-kaczka-17.html: a[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: a[href]",
+        "pierogi-z-miesem-13.html: a[href]",
+        "pierogi-z-mietusem-8.html: a[href]",
+        "pierogi-z-sandaczem-6.html: a[href]",
+        "pierogi-z-twarogiem-11.html: a[href]",
+        "pierogi-ze-szczupakiem-19.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]",
+        "uszka-z-grzybami-18.html: a[href]"
+      ]
+    },
+    {
+      "path": "pierogi-z-kaczka-17.html",
+      "bytes": 9022,
+      "sha256": "f2760f7a66ad9024465cdb7171170856933bb63fd9806d1af05af8ccf2a8645e",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "pasztet-15.html: a[href]",
+        "pierogi-ruskie-12.html: a[href]",
+        "pierogi-z-kaczka-17.html: JSON-LD local URL",
+        "pierogi-z-kaczka-17.html: link[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: a[href]",
+        "pierogi-z-miesem-13.html: a[href]",
+        "pierogi-z-mietusem-8.html: a[href]",
+        "pierogi-z-sandaczem-6.html: a[href]",
+        "pierogi-z-twarogiem-11.html: a[href]",
+        "pierogi-ze-szczupakiem-19.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]",
+        "smalec-14.html: a[href]",
+        "uszka-z-grzybami-18.html: a[href]"
+      ]
+    },
+    {
+      "path": "pierogi-z-kapusta-i-grzybami-16.html",
+      "bytes": 9405,
+      "sha256": "2a4ee19d82065a61750a959cfd018585ee5376f9575441810faa68c96f73ee33",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "pierogi-ruskie-12.html: a[href]",
+        "pierogi-z-kaczka-17.html: a[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: JSON-LD local URL",
+        "pierogi-z-kapusta-i-grzybami-16.html: link[href]",
+        "pierogi-z-sandaczem-6.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]"
+      ]
+    },
+    {
+      "path": "pierogi-z-miesem-13.html",
+      "bytes": 8908,
+      "sha256": "affebb5e0d648b2a292ac1f93461f0652023fc6bc4238aeaf00ee1cc205a2a4b",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "pierogi-z-miesem-13.html: JSON-LD local URL",
+        "pierogi-z-miesem-13.html: link[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]"
+      ]
+    },
+    {
+      "path": "pierogi-z-mietusem-8.html",
+      "bytes": 8942,
+      "sha256": "080fc2e1f93b49e94a2d5af17dbea0c90ca08034ff7508243c497587d81aaabb",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "pierogi-z-mietusem-8.html: JSON-LD local URL",
+        "pierogi-z-mietusem-8.html: link[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]"
+      ]
+    },
+    {
+      "path": "pierogi-z-sandaczem-6.html",
+      "bytes": 9114,
+      "sha256": "4e9edf7e08e367f98466b79f6754c1c4aebd789f602dfe8b5e8daefcc471acad",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "kaczka-harszowa-20.html: a[href]",
+        "pasztet-15.html: a[href]",
+        "pierogi-ruskie-12.html: a[href]",
+        "pierogi-z-kaczka-17.html: a[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: a[href]",
+        "pierogi-z-miesem-13.html: a[href]",
+        "pierogi-z-mietusem-8.html: a[href]",
+        "pierogi-z-sandaczem-6.html: JSON-LD local URL",
+        "pierogi-z-sandaczem-6.html: link[href]",
+        "pierogi-z-twarogiem-11.html: a[href]",
+        "pierogi-ze-szczupakiem-19.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]",
+        "smalec-14.html: a[href]",
+        "torba-harszowa-10.html: a[href]",
+        "uszka-z-grzybami-18.html: a[href]",
+        "voucher-portowy-9.html: a[href]"
+      ]
+    },
+    {
+      "path": "pierogi-z-twarogiem-11.html",
+      "bytes": 8995,
+      "sha256": "aa73163c3eaa1c461efa894dc645c171a05f1650debf133a536136679d089800",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "pierogi-z-twarogiem-11.html: JSON-LD local URL",
+        "pierogi-z-twarogiem-11.html: link[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]"
+      ]
+    },
+    {
+      "path": "pierogi-ze-szczupakiem-19.html",
+      "bytes": 9361,
+      "sha256": "b9e40a090018b566971c7446caa56116142a1e4adeaeba72fb9f25c4639f485a",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "pierogi-ze-szczupakiem-19.html: JSON-LD local URL",
+        "pierogi-ze-szczupakiem-19.html: link[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]"
+      ]
+    },
+    {
+      "path": "polityka-prywatnosci.html",
+      "bytes": 18314,
+      "sha256": "511bbf375551c8c4505b9adb007581197398956b8f3f84b9528801152b0eb2ce",
+      "included_by": [
+        "cookies.html: a[href]",
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "index.html: required public page",
+        "kaczka-harszowa-20.html: a[href]",
+        "pasztet-15.html: a[href]",
+        "pierogi-ruskie-12.html: a[href]",
+        "pierogi-z-kaczka-17.html: a[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: a[href]",
+        "pierogi-z-miesem-13.html: a[href]",
+        "pierogi-z-mietusem-8.html: a[href]",
+        "pierogi-z-sandaczem-6.html: a[href]",
+        "pierogi-z-twarogiem-11.html: a[href]",
+        "pierogi-ze-szczupakiem-19.html: a[href]",
+        "polityka-prywatnosci.html: JSON-LD local URL",
+        "polityka-prywatnosci.html: a[href]",
+        "polityka-prywatnosci.html: link[href]",
+        "regulamin.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "smalec-14.html: a[href]",
+        "torba-harszowa-10.html: a[href]",
+        "uszka-z-grzybami-18.html: a[href]",
+        "voucher-portowy-9.html: a[href]",
+        "zamowienie.html: a[href]"
+      ]
+    },
+    {
+      "path": "produkt.html",
+      "bytes": 2570,
+      "sha256": "43bd544d3a65945a9fc45bbc2a9ffd518f9e8d880f0d46bc899c335aba6a0066",
+      "included_by": [
+        "index.html: public HTML entrypoint",
+        "index.html: required public page"
+      ]
+    },
+    {
+      "path": "refinements.css",
+      "bytes": 31687,
+      "sha256": "17dadc9e67edf9576449d8eb11b30065d5ffa7cdd359799b136a5c462a8dbabe",
+      "included_by": [
+        "cookies.html: link[href]",
+        "index.html: link[href]",
+        "kaczka-harszowa-20.html: link[href]",
+        "kontakt.html: link[href]",
+        "o-nas.html: link[href]",
+        "pasztet-15.html: link[href]",
+        "pierogi-ruskie-12.html: link[href]",
+        "pierogi-z-kaczka-17.html: link[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: link[href]",
+        "pierogi-z-miesem-13.html: link[href]",
+        "pierogi-z-mietusem-8.html: link[href]",
+        "pierogi-z-sandaczem-6.html: link[href]",
+        "pierogi-z-twarogiem-11.html: link[href]",
+        "pierogi-ze-szczupakiem-19.html: link[href]",
+        "polityka-prywatnosci.html: link[href]",
+        "produkt.html: link[href]",
+        "regulamin.html: link[href]",
+        "sklep.html: link[href]",
+        "smalec-14.html: link[href]",
+        "torba-harszowa-10.html: link[href]",
+        "uszka-z-grzybami-18.html: link[href]",
+        "voucher-portowy-9.html: link[href]",
+        "zamowienie.html: link[href]"
+      ]
+    },
+    {
+      "path": "regulamin.html",
+      "bytes": 25685,
+      "sha256": "3f19f8d87a1fc07df3d132aa4dbe89e063714618e044db5dc1a92ae1da15c91e",
+      "included_by": [
+        "cookies.html: a[href]",
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "index.html: required public page",
+        "kaczka-harszowa-20.html: a[href]",
+        "pasztet-15.html: a[href]",
+        "pierogi-ruskie-12.html: a[href]",
+        "pierogi-z-kaczka-17.html: a[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: a[href]",
+        "pierogi-z-miesem-13.html: a[href]",
+        "pierogi-z-mietusem-8.html: a[href]",
+        "pierogi-z-sandaczem-6.html: a[href]",
+        "pierogi-z-twarogiem-11.html: a[href]",
+        "pierogi-ze-szczupakiem-19.html: a[href]",
+        "polityka-prywatnosci.html: a[href]",
+        "regulamin.html: JSON-LD local URL",
+        "regulamin.html: a[href]",
+        "regulamin.html: link[href]",
+        "sitemap.xml: sitemap loc",
+        "smalec-14.html: a[href]",
+        "torba-harszowa-10.html: a[href]",
+        "uszka-z-grzybami-18.html: a[href]",
+        "voucher-portowy-9.html: a[href]"
+      ]
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 332,
+      "sha256": "fb4bd4180e7369ed353ab49f964a45e2317cab15feb9e16ce43a6ca78e673fa7",
+      "included_by": [
+        "index.html: public SEO entrypoint"
+      ]
+    },
+    {
+      "path": "shop-refresh.css",
+      "bytes": 6811,
+      "sha256": "9e783b0fa969085b978856d14d9a8509ef2733870f4e93d96af8f51b546a22f6",
+      "included_by": [
+        "sklep.html: link[href]"
+      ]
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 1850,
+      "sha256": "bb0394c1eac1ba3ea3cc6a2772743f9f88634bd592a1063f8bc652ca32eb88cc",
+      "included_by": [
+        "index.html: public SEO entrypoint"
+      ]
+    },
+    {
+      "path": "sklep.html",
+      "bytes": 21815,
+      "sha256": "6d09944acfeb251a186cb581a17ebf8af5095ef6fa851e1dbd02d1f7e028147c",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "index.html: required public page",
+        "kaczka-harszowa-20.html: JSON-LD local URL",
+        "kaczka-harszowa-20.html: a[href]",
+        "o-nas.html: a[href]",
+        "pasztet-15.html: JSON-LD local URL",
+        "pasztet-15.html: a[href]",
+        "pierogi-ruskie-12.html: JSON-LD local URL",
+        "pierogi-ruskie-12.html: a[href]",
+        "pierogi-z-kaczka-17.html: JSON-LD local URL",
+        "pierogi-z-kaczka-17.html: a[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: JSON-LD local URL",
+        "pierogi-z-kapusta-i-grzybami-16.html: a[href]",
+        "pierogi-z-miesem-13.html: JSON-LD local URL",
+        "pierogi-z-miesem-13.html: a[href]",
+        "pierogi-z-mietusem-8.html: JSON-LD local URL",
+        "pierogi-z-mietusem-8.html: a[href]",
+        "pierogi-z-sandaczem-6.html: JSON-LD local URL",
+        "pierogi-z-sandaczem-6.html: a[href]",
+        "pierogi-z-twarogiem-11.html: JSON-LD local URL",
+        "pierogi-z-twarogiem-11.html: a[href]",
+        "pierogi-ze-szczupakiem-19.html: JSON-LD local URL",
+        "pierogi-ze-szczupakiem-19.html: a[href]",
+        "produkt.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: JSON-LD local URL",
+        "sklep.html: link[href]",
+        "smalec-14.html: JSON-LD local URL",
+        "smalec-14.html: a[href]",
+        "torba-harszowa-10.html: JSON-LD local URL",
+        "torba-harszowa-10.html: a[href]",
+        "uszka-z-grzybami-18.html: JSON-LD local URL",
+        "uszka-z-grzybami-18.html: a[href]",
+        "voucher-portowy-9.html: JSON-LD local URL",
+        "voucher-portowy-9.html: a[href]"
+      ]
+    },
+    {
+      "path": "smalec-14.html",
+      "bytes": 8391,
+      "sha256": "a691378fdf45943b850c5f9f9b0a1306e36b1549820bc386eb31d51e421576d5",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "pasztet-15.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]",
+        "smalec-14.html: JSON-LD local URL",
+        "smalec-14.html: link[href]"
+      ]
+    },
+    {
+      "path": "styles.css",
+      "bytes": 28330,
+      "sha256": "7fa4f4188878879b05051d88fdfa6d89f6ccae87baeca82ab892d27323a121aa",
+      "included_by": [
+        "cookies.html: link[href]",
+        "index.html: link[href]",
+        "kaczka-harszowa-20.html: link[href]",
+        "kontakt.html: link[href]",
+        "o-nas.html: link[href]",
+        "pasztet-15.html: link[href]",
+        "pierogi-ruskie-12.html: link[href]",
+        "pierogi-z-kaczka-17.html: link[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: link[href]",
+        "pierogi-z-miesem-13.html: link[href]",
+        "pierogi-z-mietusem-8.html: link[href]",
+        "pierogi-z-sandaczem-6.html: link[href]",
+        "pierogi-z-twarogiem-11.html: link[href]",
+        "pierogi-ze-szczupakiem-19.html: link[href]",
+        "polityka-prywatnosci.html: link[href]",
+        "produkt.html: link[href]",
+        "regulamin.html: link[href]",
+        "sklep.html: link[href]",
+        "smalec-14.html: link[href]",
+        "torba-harszowa-10.html: link[href]",
+        "uszka-z-grzybami-18.html: link[href]",
+        "voucher-portowy-9.html: link[href]",
+        "zamowienie.html: link[href]"
+      ]
+    },
+    {
+      "path": "torba-harszowa-10.html",
+      "bytes": 8017,
+      "sha256": "821bada017cd2bd4c1e613d225da2c0cc75d7afb2898164196534e663524be4a",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "kaczka-harszowa-20.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]",
+        "torba-harszowa-10.html: JSON-LD local URL",
+        "torba-harszowa-10.html: link[href]",
+        "voucher-portowy-9.html: a[href]"
+      ]
+    },
+    {
+      "path": "uszka-z-grzybami-18.html",
+      "bytes": 9002,
+      "sha256": "9524ed3f7b35eb36e0303ac370c59c9287721e59dcff3ebd635c241e191267cd",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]",
+        "uszka-z-grzybami-18.html: JSON-LD local URL",
+        "uszka-z-grzybami-18.html: link[href]"
+      ]
+    },
+    {
+      "path": "voucher-portowy-9.html",
+      "bytes": 8343,
+      "sha256": "3c704600e7fdda1a01427916231e31114ecfa265fdcfb66db4d01a8604bdbad9",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "kaczka-harszowa-20.html: a[href]",
+        "sitemap.xml: sitemap loc",
+        "sklep.html: a[href]",
+        "torba-harszowa-10.html: a[href]",
+        "voucher-portowy-9.html: JSON-LD local URL",
+        "voucher-portowy-9.html: link[href]"
+      ]
+    },
+    {
+      "path": "zamowienie.html",
+      "bytes": 5331,
+      "sha256": "ed6f091bd5f9f1772543186f7a53019049f936004a3c9c7cc80fc455b08176f2",
+      "included_by": [
+        "index.html: a[href]",
+        "index.html: public HTML entrypoint",
+        "index.html: required public page",
+        "kaczka-harszowa-20.html: a[href]",
+        "pasztet-15.html: a[href]",
+        "pierogi-ruskie-12.html: a[href]",
+        "pierogi-z-kaczka-17.html: a[href]",
+        "pierogi-z-kapusta-i-grzybami-16.html: a[href]",
+        "pierogi-z-miesem-13.html: a[href]",
+        "pierogi-z-mietusem-8.html: a[href]",
+        "pierogi-z-sandaczem-6.html: a[href]",
+        "pierogi-z-twarogiem-11.html: a[href]",
+        "pierogi-ze-szczupakiem-19.html: a[href]",
+        "smalec-14.html: a[href]",
+        "torba-harszowa-10.html: a[href]",
+        "uszka-z-grzybami-18.html: a[href]",
+        "voucher-portowy-9.html: a[href]",
+        "zamowienie.html: link[href]"
+      ]
+    }
+  ]
+}
