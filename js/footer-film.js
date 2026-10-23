@@ -1,4 +1,4 @@
-import { getLanguage } from './i18n.js?v=20261023-menu';
+import { getLanguage } from './i18n.js?v=20261023-direct';
 
 // The illustration belongs to the footer; its description follows the selected language.
 const ALT = {

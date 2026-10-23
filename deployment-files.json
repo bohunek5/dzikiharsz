@@ -1,9 +1,9 @@
 {
   "format_version": 1,
-  "generated_at": "2026-10-23T20:52:56.642039+00:00",
+  "generated_at": "2026-10-23T21:08:17.357818+00:00",
   "site_url": "https://bohunek5.github.io/dzikiharsz/",
   "payload_file_count": 142,
-  "payload_bytes": 12687896,
+  "payload_bytes": 12688008,
   "manifest_filename": "deployment-files.json",
   "manifest_note": "This manifest is not self-hashed. All payload files, including .nojekyll, are hashed.",
   "text_normalization": {
@@ -98,8 +98,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 820,
-      "sha256": "ddd51845fb539c1a4873e53d54d82d88dfdf3f1dac877257bf6b5806e5c9b826",
+      "bytes": 838,
+      "sha256": "f1e480be761498665d83098740a1cbff006171ece63f949482eac1eb0f137471",
       "included_by": [
         "cookies.html: script[src]",
         "index.html: script[src]",
@@ -1042,8 +1042,8 @@
     },
     {
       "path": "cookies.html",
-      "bytes": 11739,
-      "sha256": "25efee15cb41e1c224019a2c31c4ef587f0c4a39066f350f4b440a4d838cac0c",
+      "bytes": 11752,
+      "sha256": "0563ec81eab247383a11e8bf1b8339e92c4ea7163e6bbde5467a5140c1826f8b",
       "included_by": [
         "cookies.html: JSON-LD local URL",
         "cookies.html: a[href]",
@@ -1283,8 +1283,8 @@
     },
     {
       "path": "header-refined.css",
-      "bytes": 7210,
-      "sha256": "d9bbf995313c42f7a67c35b63df01d16db2e133864480b6a5511aa78c8ae78cc",
+      "bytes": 6722,
+      "sha256": "9a9f6530c38ac76b933cc0c69508e6034d040fdfc031448c72d7caf118a9588b",
       "included_by": [
         "cookies.html: link[href]",
         "index.html: link[href]",
@@ -1313,8 +1313,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 28176,
-      "sha256": "0a1c0d65e416ed57b646c0d2a3f865be72a468edd9401ae92b94a09367b6b30d",
+      "bytes": 28188,
+      "sha256": "bbebac1561882516e37c9ef1ffbd8552d53069576ba7020d9d4d3a0e184f0bfd",
       "included_by": [
         "cookies.html: JSON-LD local URL",
         "cookies.html: a[href]",
@@ -1398,40 +1398,40 @@
     },
     {
       "path": "js/availability.js",
-      "bytes": 8285,
-      "sha256": "8025eb8c8e37b3727a8cf65c5b967c535c465e73ba4f6903494cfcce28ec1c17",
+      "bytes": 8445,
+      "sha256": "0e2a7155dac5f66215c4870fbb06a3627f3988d8c96c3561f3607088f6586ffb",
       "included_by": [
         "app.js: ES module import"
       ]
     },
     {
       "path": "js/cinema.js",
-      "bytes": 4848,
-      "sha256": "33d9f1ad161b076cb32eda3898b0db4d0591b45729e25d9f6a4cd4118b66756c",
+      "bytes": 4850,
+      "sha256": "f40ab65e85ef95fe3f38be728ac855796c0172d7a4b28b3bafbc642a7c38fea8",
       "included_by": [
         "app.js: ES module import"
       ]
     },
     {
       "path": "js/contact-map.js",
-      "bytes": 2783,
-      "sha256": "d717d00d3f8b891f4c2758a62de6eb787771cb02d3d1c2404daccf560c5c61ae",
+      "bytes": 2785,
+      "sha256": "3506d7179879dbeebbfe98507b73fa710b73c2243be3ca30b3180c2a3509e040",
       "included_by": [
         "app.js: ES module import"
       ]
     },
     {
       "path": "js/footer-film.js",
-      "bytes": 5962,
-      "sha256": "65d156a58fa82e8f786fdde6916800524c6258511ac0978f6ccf967d7ca5640f",
+      "bytes": 5964,
+      "sha256": "d902fb96229a1df657e820779b86946a14dbc0d42ce8b93ed9b56caea23d5aaa",
       "included_by": [
         "app.js: ES module import"
       ]
     },
     {
       "path": "js/i18n.js",
-      "bytes": 7878,
-      "sha256": "1f7b619b46082b57a2cba509b15a919229f23a6d95a07637139e36ebf3c656d8",
+      "bytes": 7880,
+      "sha256": "219e42bb321049169e7d7e49c81b24f92d801740a687db184bab2040036615e7",
       "included_by": [
         "app.js: ES module import",
         "js/availability.js: ES module import",
@@ -1445,40 +1445,40 @@
     },
     {
       "path": "js/journey.js",
-      "bytes": 2256,
-      "sha256": "0d40b393a5ec764ce738d5a0f3e0b7dab301bf815201ad64e8d88b09162f594c",
+      "bytes": 2258,
+      "sha256": "dc8aa38bbf719cc0d46ef76bdf2c3169ecd92844554cf1f0c89cfc51d3ae5062",
       "included_by": [
         "app.js: ES module import"
       ]
     },
     {
       "path": "js/pierogi-offer.js",
-      "bytes": 6633,
-      "sha256": "cb28ca47d6cc2c884be4f9b9ea6123a783bdc03e6b4584952000bb9d5cf41bbe",
+      "bytes": 6637,
+      "sha256": "0ff32cf977f2836cc9d5500796e91319a81926fe62d538540316448e2fa12a37",
       "included_by": [
         "app.js: ES module import"
       ]
     },
     {
       "path": "js/shell.js",
-      "bytes": 11381,
-      "sha256": "0bc51ea6189a0c68f1fb3d3285fe8dc3dfa675f1df153b4d0d9fabbc1dbc4b13",
+      "bytes": 10895,
+      "sha256": "09808695033cc2b008cfae2636f7fbace2edd13949feeab517fb9da0a5bc81af",
       "included_by": [
         "app.js: ES module import"
       ]
     },
     {
       "path": "js/storefront.js",
-      "bytes": 19380,
-      "sha256": "6fe4b5436bc102d698e439a7548973ce1b28d288c983fa344013cb7edac440a2",
+      "bytes": 19450,
+      "sha256": "2eb8e4147f7319565e9b731fa10711b35d9df90b76f7e6420faa8d5885fdd02f",
       "included_by": [
         "app.js: ES module import"
       ]
     },
     {
       "path": "kaczka-harszowa-20.html",
-      "bytes": 9217,
-      "sha256": "6cf6ddf6f54a32272cf00fd9d32fb777a3d25ab17e18e3c2b2f673647daebef0",
+      "bytes": 9229,
+      "sha256": "4d7d36829251f0116568ee9e851b00e987c4fdd3136571d4baea726e8ff2d7c0",
       "included_by": [
         "index.html: public HTML entrypoint",
         "kaczka-harszowa-20.html: JSON-LD local URL",
@@ -1491,8 +1491,8 @@
     },
     {
       "path": "kontakt.html",
-      "bytes": 8366,
-      "sha256": "0009b1dbf5528ba006224e2f7460bdf54ef598233d018fb7aa64abcfad604925",
+      "bytes": 8379,
+      "sha256": "97a7ced9ebff65b7fd908f3ece9dd3f23c3c5d600e730cffbf740422c0322b29",
       "included_by": [
         "cookies.html: a[href]",
         "index.html: a[href]",
@@ -1587,8 +1587,8 @@
     },
     {
       "path": "o-nas.html",
-      "bytes": 8340,
-      "sha256": "e98a6e244878760c264601ad93051a49f9bd3f571040eb213216104023a77448",
+      "bytes": 8353,
+      "sha256": "bc4ad71a7e64374ae4e6cb50fe717c440577e535fecaf8d41d30777f19193235",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1600,8 +1600,8 @@
     },
     {
       "path": "pasztet-15.html",
-      "bytes": 9052,
-      "sha256": "d8eeef6e389a3e74b25aee171ce6e654f56f8a6f2b587e6f186d1565a542a2a8",
+      "bytes": 9064,
+      "sha256": "2978a2e7c61f15885c93b9f6d21668da7e5c20ed3dcc4ada56e49ceedd3a8da0",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1622,8 +1622,8 @@
     },
     {
       "path": "pierogi-ruskie-12.html",
-      "bytes": 9421,
-      "sha256": "f2b9e1e8f30c89a6132f3c2f9adadb41cc9f872b72d42875c7bdd54ebc69b8cc",
+      "bytes": 9433,
+      "sha256": "051f6799ddd8c5303f3e5e1a55d5116132e70f696337a7dd41ab7b4fb83d7337",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1643,8 +1643,8 @@
     },
     {
       "path": "pierogi-z-kaczka-17.html",
-      "bytes": 9591,
-      "sha256": "634c5ad50656166d9c963799cbc4241592863a898dd55e7716573e219f06b63b",
+      "bytes": 9603,
+      "sha256": "a4bb527c4e13edb02f149e458d736ad68b7706689519c5cc1228f61e577689cc",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1666,8 +1666,8 @@
     },
     {
       "path": "pierogi-z-kapusta-i-grzybami-16.html",
-      "bytes": 9974,
-      "sha256": "fba4f88ffaf4bf18423b11689832f7c289e75c1aa97d6675710b0fc17726d86f",
+      "bytes": 9986,
+      "sha256": "b504a6aa09887685e0fc842af02a66cda45c0fceada5d7b9877c1afa068d76c2",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1682,8 +1682,8 @@
     },
     {
       "path": "pierogi-z-miesem-13.html",
-      "bytes": 9477,
-      "sha256": "f53aad22a4048cb6aa63371a05c66cdd71197bbba50b57c67e7b1d926c34180b",
+      "bytes": 9489,
+      "sha256": "007cd34c5e87469ddc57a6a79dcdd91d4a3d7b58ada84a6e11e9e3ff19784c99",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1695,8 +1695,8 @@
     },
     {
       "path": "pierogi-z-mietusem-8.html",
-      "bytes": 9511,
-      "sha256": "abf33498c9b9b476c59dac1485372bfba45cd909ffbfdf61e58b6e4494a4e816",
+      "bytes": 9523,
+      "sha256": "83b6d8e9669775b132237dd2eaca1686c2739045d3841c9f82d968437b35dca2",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1708,8 +1708,8 @@
     },
     {
       "path": "pierogi-z-sandaczem-6.html",
-      "bytes": 9683,
-      "sha256": "38ff788807dc1bb5bea51aec3ed8efbf59814f704f95f6695a8916b22f2cb310",
+      "bytes": 9695,
+      "sha256": "0a9322d7dd9c89cc32b8ecc658a1f849b7b8c7492590395a98c585e6595fd8e1",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1734,8 +1734,8 @@
     },
     {
       "path": "pierogi-z-twarogiem-11.html",
-      "bytes": 9564,
-      "sha256": "7a4973f949d0c18a2c73dda6bc6cfd00ef4a4d8b79c6ad7baebea22403b7c21d",
+      "bytes": 9576,
+      "sha256": "ff83bab61b93d996e95c35a4e4cc76154c667d75a5355d1942054ecf2e350569",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1747,8 +1747,8 @@
     },
     {
       "path": "pierogi-ze-szczupakiem-19.html",
-      "bytes": 9930,
-      "sha256": "0c3bb8849fd36f3959cce34d5fc7d77613d8b5620ca83c64d8fd020ab0d2235f",
+      "bytes": 9942,
+      "sha256": "135c4f6f33c83503dab1427c01e48ba80aed5c73ce6359df63c4b1e79287573b",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1760,8 +1760,8 @@
     },
     {
       "path": "polityka-prywatnosci.html",
-      "bytes": 18917,
-      "sha256": "fd813b30a09d3f665472c41c6ed4477ad7132ecf741b4929736e0a94877d51d0",
+      "bytes": 18930,
+      "sha256": "346604f72615f301f231da47d745454647e8c20623b0cf89e082c0219c3e01c9",
       "included_by": [
         "cookies.html: a[href]",
         "index.html: a[href]",
@@ -1791,8 +1791,8 @@
     },
     {
       "path": "produkt.html",
-      "bytes": 3173,
-      "sha256": "fb7d47382ed1730ff071189e1ea7b3f745a50288e721baec9efda047fc21526d",
+      "bytes": 3186,
+      "sha256": "00884c613919b4a723696f9786f7ec1dce9a8a86b22ddc8328bc7e24bcfb7087",
       "included_by": [
         "index.html: public HTML entrypoint",
         "index.html: required public page"
@@ -1830,8 +1830,8 @@
     },
     {
       "path": "regulamin.html",
-      "bytes": 26288,
-      "sha256": "5650267a0ecf6897004f9ee4dfbdcbb31b99edaa8f0214d576abf810c7f94359",
+      "bytes": 26301,
+      "sha256": "2e7c47ca9d37364d44b2a6af115330eea10349193bd00144cd7b655a0c3e3788",
       "included_by": [
         "cookies.html: a[href]",
         "index.html: a[href]",
@@ -1898,8 +1898,8 @@
     },
     {
       "path": "shop-refresh.css",
-      "bytes": 6811,
-      "sha256": "9e783b0fa969085b978856d14d9a8509ef2733870f4e93d96af8f51b546a22f6",
+      "bytes": 7991,
+      "sha256": "515859369dc8b09599cb5edaef55f5c31bf1a566cf8ae2a03595a484f5357d2e",
       "included_by": [
         "sklep.html: link[href]"
       ]
@@ -1914,8 +1914,8 @@
     },
     {
       "path": "sklep.html",
-      "bytes": 23991,
-      "sha256": "4539edffe974b336255c630bbae1c8c2de161ea41ea5560255e117929b9f3043",
+      "bytes": 23364,
+      "sha256": "f33f0514152aacb50819af023e6d32287cd772b3a83045f7d30f20c6e30e5ea8",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -1957,8 +1957,8 @@
     },
     {
       "path": "smalec-14.html",
-      "bytes": 8960,
-      "sha256": "e7cfdc7962db0a483f30e915a279093c7507a0ac34eb481c1b10297efd9b88c2",
+      "bytes": 8972,
+      "sha256": "6bbd62320481f7b9fec5058b559ffe9eebfbf9937c294bb8be72e8f03a3c4d06",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -2031,8 +2031,8 @@
     },
     {
       "path": "torba-harszowa-10.html",
-      "bytes": 8586,
-      "sha256": "8eabd9b2f5c0b51d2ce1f7915d450a764e389455690a3bd504d4f5eff4b95543",
+      "bytes": 8598,
+      "sha256": "d448231e30357f34b4ea57bae31321a97602d7de1eb896637612783b2e61135a",
       "included_by": [
         "index.html: public HTML entrypoint",
         "kaczka-harszowa-20.html: a[href]",
@@ -2075,8 +2075,8 @@
     },
     {
       "path": "uszka-z-grzybami-18.html",
-      "bytes": 9571,
-      "sha256": "73dcfae0c0f1f467080503d55b03a7cb9e02ad28bfc79137ffc307a1d0cc3215",
+      "bytes": 9583,
+      "sha256": "911ac178f0d108c2967daa8602a93f7eddad1427ca7232694e697c30900da7da",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",
@@ -2088,8 +2088,8 @@
     },
     {
       "path": "voucher-portowy-9.html",
-      "bytes": 8912,
-      "sha256": "7df8c3619b1e0810de123b9b4e843dc52829276ace2b16c697e3889891636b72",
+      "bytes": 8924,
+      "sha256": "0bcdc351ece145bec29aebc0e0d272473541f6e578317d1ed27a76ab73f3a7e0",
       "included_by": [
         "index.html: public HTML entrypoint",
         "kaczka-harszowa-20.html: a[href]",
@@ -2102,8 +2102,8 @@
     },
     {
       "path": "zamowienie.html",
-      "bytes": 5899,
-      "sha256": "011e674006d3d4f727ce05842e5ab038a58a6c99e371feac50b78185f224859d",
+      "bytes": 5912,
+      "sha256": "5c271ca2083074e5d91ad752d44ea62d2c76189f4778f00edb47b55d969b715c",
       "included_by": [
         "index.html: a[href]",
         "index.html: public HTML entrypoint",

@@ -28,7 +28,7 @@ export function initShell() {
   header.innerHTML = `<a class="brand" href="index.html" aria-label="Dziki Harsz — strona główna">${logo}</a>
     <nav class="main-nav" id="navigation" aria-label="Główna nawigacja">
       ${[['index.html','Strona główna'],['sklep.html','Sklep'],['o-nas.html','O nas'],['kontakt.html','Kontakt']].map(([url,label])=>`<a href="${url}" ${page===url?'aria-current="page"':''}>${label}</a>`).join('')}
-      <div class="mobile-menu-settings"><span>Po Twojemu</span><label for="mobile-language-select">Język</label><select id="mobile-language-select" aria-label="Wybierz język">${languageOptions}</select><button class="theme-switch mobile-theme" aria-label="Zmień tryb dzień/noc">${icons.moon}<span class="theme-label">Tryb nocny</span></button><a class="menu-search" href="sklep.html?szukaj=1">${icons.search}<span>Szukaj w sklepie</span></a><a class="menu-contact" href="tel:+48722277527">722 277 527</a></div>
+      <div class="mobile-menu-utilities"><a class="menu-search" href="sklep.html?szukaj=1">${icons.search}<span>Szukaj w sklepie</span></a><a class="menu-contact" href="tel:+48722277527">722 277 527</a></div>
     </nav>
     <div class="header-end"><div class="desktop-settings"><button class="icon-button theme-switch" aria-label="Zmień tryb dzień/noc" title="Tryb nocny">${icons.moon}</button><label class="language-control"><span class="sr-only">Język</span>${languageIndicator}<select id="language-select" aria-label="Wybierz język">${languageOptions}</select></label></div><div class="header-actions"><button class="icon-button search-toggle" aria-label="Szukaj w sklepie">${icons.search}</button><button class="bag-button" id="open-bag" aria-haspopup="dialog">${icons.bag}<span class="bag-label">Twoja paczka</span><span id="bag-count">0</span></button><button class="icon-button menu-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg></button></div></div>`;
   initHeaderLanguages(header);
@@ -62,7 +62,6 @@ function initTheme() {
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#07191f' : '#faf8f2');
     document.querySelectorAll('.theme-switch').forEach(button => {
       button.innerHTML = theme === 'dark' ? icons.sun : icons.moon;
-      if (button.classList.contains('mobile-theme')) button.insertAdjacentHTML('beforeend',`<span class="theme-label">${theme === 'dark' ? 'Tryb dzienny' : 'Tryb nocny'}</span>`);
       button.setAttribute('aria-pressed', String(theme === 'dark'));
       button.setAttribute('title', theme === 'dark' ? 'Tryb dzienny' : 'Tryb nocny');
     });

@@ -1,4 +1,4 @@
-import { getLanguage, t } from './i18n.js?v=20261023-menu';
+import { getLanguage, t } from './i18n.js?v=20261023-direct';
 
 // The catalogue is the source of truth. A missing date never means in stock.
 // No year is added: the original product notices only specify 5 November.
@@ -90,8 +90,9 @@ export async function initAvailability() {
         let banner=shop.querySelector('[data-shop-availability]');
         if(!banner){
           banner=document.createElement('aside');banner.className='shop-availability';banner.dataset.shopAvailability='';banner.dataset.noTranslate='';banner.innerHTML='<strong></strong><p></p>';
-          shop.querySelector('.shop-toolbar')?.before(banner);
         }
+        const informationAfter=shop.querySelector('.shop-catalog-tools')||shop.querySelector('#product-grid');
+        if(informationAfter&&banner.previousElementSibling!==informationAfter)informationAfter.after(banner);
         banner.hidden=![...products.values()].some(upcoming);
         banner.querySelector('strong').textContent=copy.title;banner.querySelector('p').textContent=copy.plan;
       }

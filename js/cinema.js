@@ -1,4 +1,4 @@
-import {t} from './i18n.js?v=20261023-menu';
+import {t} from './i18n.js?v=20261023-direct';
 
 const $ = s => document.querySelector(s);
 const filmIcons = {

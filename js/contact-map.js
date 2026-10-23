@@ -1,4 +1,4 @@
-import {getLanguage} from './i18n.js?v=20261023-menu';
+import {getLanguage} from './i18n.js?v=20261023-direct';
 
 const copy = {
   pl: ['DROGA DO HARSZU', 'Do zobaczenia nad Darginem.', 'Pokaż mapę Google', 'Wyznacz trasę', 'Mapa wczyta się po kliknięciu. Wtedy połączysz się z Google.', 'Mapa dojazdu do Dziki Harsz', 'Ukryj mapę'],
